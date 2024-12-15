@@ -1,0 +1,29 @@
+﻿<Window x:Class="Herramientas_Factoria.Paginas.Index"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Menú Principal" Height="600" Width="800" Background="#2D2D30"
+        WindowStartupLocation="CenterScreen"
+        >
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Título de la Página -->
+        <TextBlock Text="Menú Principal" FontSize="24" FontWeight="Bold" Foreground="#FFFFFF" HorizontalAlignment="Center" Margin="10" Grid.Row="0"/>
+
+        <!-- Botones de Navegación -->
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" >
+            <!-- Botón para Generar Certificado de Factura -->
+            <Button Cursor="Hand" Content="Facturación A.M" Background="#007ACC" Foreground="White" Height="40" FontSize="16" Width="250" Click="Button_Facturas"/>
+            <!-- Botón para Certificados de Persona -->
+            <!--<Button Content="Generar Certificado de Persona" Background="#007ACC" Foreground="White" Height="40" FontSize="16" Width="250" Click="Button_GenerarCertificadoPersona"/>-->
+        </StackPanel>
+
+        <!-- Botón Volver (opcional, dependiendo de tu flujo de navegación) -->
+        <Button Cursor="Hand" Click="Button_Volver" Content="Cerrar Sesión" Grid.Row="2" Margin="0,20" Background="#1E1E1E" Foreground="White" Height="40" FontSize="14" HorizontalAlignment="Center" Width="100"/>
+    </Grid>
+</Window>
+

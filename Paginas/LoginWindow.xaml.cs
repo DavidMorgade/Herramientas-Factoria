@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Herramientas_Factoria.Paginas;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -34,8 +35,8 @@ namespace Herramientas_Factoria
             if (username == "admin" && password == "admin")
             {
                 // Crear y mostrar la nueva ventana
-                InvoiceDataWindow invoiceWindow = new InvoiceDataWindow();
-                invoiceWindow.Show();
+                Index index = new Index();
+                index.Show();
 
                 // Cerrar la ventana actual
                 this.Close();
