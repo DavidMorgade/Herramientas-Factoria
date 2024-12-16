@@ -1,4 +1,5 @@
 ﻿using Herramientas_Factoria.GenerarPDF;
+using Herramientas_Factoria.ManipulateExcel;
 using Herramientas_Factoria.Paginas;
 using Microsoft.Win32;
 using System;
@@ -61,7 +62,10 @@ namespace Herramientas_Factoria
                 // Obtener la ruta del archivo seleccionado
                 string filePath = openFileDialog.FileName;
                 // Mostrar la ruta en un TextBlock
-                FilePathTextBlock.Text = "Archivo seleccionado: " + Path.GetFileName(filePath);
+                
+                var data = ExcelReader.ExtractExpedienteAndImporte(filePath);
+
+                FilePathTextBlock.Text = "Expediente: " + data.Expediente + " Importe Factura: " + data.Importe;
             }
         }
     }
