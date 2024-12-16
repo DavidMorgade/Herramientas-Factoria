@@ -5,7 +5,7 @@ using System.Windows;
 
 public class Factura
 {
-    public static void ReplaceFieldsInWord(string expediente, string importe, string nombreFactura)
+    public static void ReplaceFieldsInWord(string expediente, string importe, string nombreFactura, string fechaFactura)
     {
         try
         {
@@ -17,6 +17,7 @@ public class Factura
 
             // Reemplazar los campos en el documento
             document.Replace("{{NombreFactura}}", nombreFactura, false, true);
+            document.Replace("{{FechaFactura}}", fechaFactura, false, true);
             document.Replace("{{Expediente}}", expediente, false, true);
             document.Replace("{{ImporteFactura}}", importe, false, true);
 

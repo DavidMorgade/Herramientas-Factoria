@@ -3,6 +3,7 @@ using Herramientas_Factoria.Paginas;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -27,6 +28,7 @@ namespace Herramientas_Factoria
         private string nombreFactura;
         private string expediente;
         private string importe;
+        private string fechaFactura;
         public InvoiceDataWindow  ()
         {
             InitializeComponent();
@@ -47,11 +49,16 @@ namespace Herramientas_Factoria
         {
             if(this.nombreFactura == null || expediente == null || importe == null)
             {
-                MessageBox.Show("No has seleccionado factura o la factura no es válida", "Alert", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("No has seleccionado factura o la factura no es válida", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+            if(this.fechaFactura == null)
+            {
+                MessageBox.Show("No has seleccionado fecha de factura", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
 
-            Factura.ReplaceFieldsInWord(expediente, importe, nombreFactura);
+            Factura.ReplaceFieldsInWord(expediente, importe, nombreFactura, fechaFactura);
         }
         private void Button_Examinar_Click(object sender, RoutedEventArgs e)
         {
@@ -76,7 +83,25 @@ namespace Herramientas_Factoria
                 this.expediente = data.Expediente;
                 this.importe = data.Importe;
 
-                FilePathTextBlock.Text = "Factura: " + data.NombreFactura + "Expediente: " + data.Expediente + " Importe Factura: " + data.Importe;
+                ExpedienteFacturaTextBlock.Text = "Expediente: " + expediente;
+                NombreFacturaTextBlock.Text = "Factura: " + nombreFactura;
+                ImporteFacturaTextBlock.Text = "Importe Factura: " + importe;
+            }
+        }
+        private void FechaFactura_SelectedDateChanged(object e, SelectionChangedEventArgs args)
+        {
+            // Obtiene la fecha seleccionada del DatePicker
+            if (DatePicker.SelectedDate.HasValue)
+            {
+                DateTime selectedDate = DatePicker.SelectedDate.Value;
+
+
+                // Formatear la fecha como DD/MM/YYYY
+                string formattedDate = selectedDate.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
+                this.fechaFactura = formattedDate;
+
+                // Muestra la fecha en consola o úsala como necesites
+                MessageBox.Show($"Fecha seleccionada: {formattedDate}", "Información");
             }
         }
     }
