@@ -7,10 +7,22 @@ namespace Herramientas_Factoria.ManipulateExcel
 {
     public class ExcelReader
     {
-        public static (string Expediente, string Importe) ExtractExpedienteAndImporte(string filePath)
+        public static (string Expediente, string Importe, string NombreFactura) ExtractExpedienteAndImporte(string filePath)
         {
             string expediente = string.Empty;
             string importe = string.Empty;
+            string nombreFactura = string.Empty;
+
+            // Obtener el nombre del archivo desde la ruta completa
+            string fileName = System.IO.Path.GetFileName(filePath);
+
+            // Buscar el primer espacio y obtener el texto hasta ahí
+            int spaceIndex = fileName.IndexOf(' ');
+            if (spaceIndex > 0)
+            {
+                // Si hay un espacio, devolver la parte antes del primer espacio
+                nombreFactura = fileName.Substring(0, spaceIndex);
+            }
 
             // Configurar EPPlus para manejar archivos Excel
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
@@ -59,7 +71,7 @@ namespace Herramientas_Factoria.ManipulateExcel
                 }
             }
 
-            return (expediente, importe);
+            return (expediente, importe, nombreFactura);
         }
     }
 }

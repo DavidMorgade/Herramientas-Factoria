@@ -65,7 +65,7 @@ namespace Herramientas_Factoria
                 
                 var data = ExcelReader.ExtractExpedienteAndImporte(filePath);
 
-                FilePathTextBlock.Text = "Expediente: " + data.Expediente + " Importe Factura: " + data.Importe;
+                FilePathTextBlock.Text = "Factura: " + data.NombreFactura + "Expediente: " + data.Expediente + " Importe Factura: " + data.Importe;
             }
         }
     }
