@@ -34,7 +34,7 @@
 
         <!-- Botón Generar Certificado centrado en la parte inferior -->
         <StackPanel Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,10">
-            <Button Cursor="Hand" Content="Generar Certificado" Background="#007ACC" Foreground="White" Height="40" FontSize="16" Width="200"/>
+            <Button Click="Button_Generar" Cursor="Hand" Content="Generar Certificado" Background="#007ACC" Foreground="White" Height="40" FontSize="16" Width="200"/>
             <Button Cursor="Hand" Click="Button_Volver" Content="Volver" Grid.Row="2" Margin="0,20" Background="#1E1E1E" Foreground="White" Height="40" FontSize="14"  />
         </StackPanel>
 

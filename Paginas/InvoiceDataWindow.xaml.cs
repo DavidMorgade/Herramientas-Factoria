@@ -1,11 +1,11 @@
-﻿using Herramientas_Factoria.GenerarPDF;
-using Herramientas_Factoria.ManipulateExcel;
+﻿using Herramientas_Factoria.ManipulateExcel;
 using Herramientas_Factoria.Paginas;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -23,6 +23,10 @@ namespace Herramientas_Factoria
     /// </summary>
     public partial class InvoiceDataWindow : Window
     {
+        private string filePath;
+        private string nombreFactura;
+        private string expediente;
+        private string importe;
         public InvoiceDataWindow  ()
         {
             InitializeComponent();
@@ -41,9 +45,13 @@ namespace Herramientas_Factoria
         }
         private void Button_Generar(object sender, RoutedEventArgs e)
         {
-            Factura factura = new Factura();
+            if(this.nombreFactura == null || expediente == null || importe == null)
+            {
+                MessageBox.Show("No has seleccionado factura o la factura no es válida", "Alert", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
 
-            factura.GenerarCertificado();
+            Factura.ReplaceFieldsInWord(expediente, importe, nombreFactura);
         }
         private void Button_Examinar_Click(object sender, RoutedEventArgs e)
         {
@@ -60,10 +68,13 @@ namespace Herramientas_Factoria
             if (result == true)
             {
                 // Obtener la ruta del archivo seleccionado
-                string filePath = openFileDialog.FileName;
+                filePath = openFileDialog.FileName;
                 // Mostrar la ruta en un TextBlock
                 
                 var data = ExcelReader.ExtractExpedienteAndImporte(filePath);
+                this.nombreFactura = data.NombreFactura;
+                this.expediente = data.Expediente;
+                this.importe = data.Importe;
 
                 FilePathTextBlock.Text = "Factura: " + data.NombreFactura + "Expediente: " + data.Expediente + " Importe Factura: " + data.Importe;
             }

@@ -1,50 +1,32 @@
-﻿using PdfSharp.Drawing;
-using PdfSharp.Pdf;
+﻿using Spire.Doc;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows;
 
-namespace Herramientas_Factoria.GenerarPDF
+public class Factura
 {
-    public class Factura
+    public static void ReplaceFieldsInWord(string expediente, string importe, string nombreFactura)
     {
-        public Factura()
+        try
         {
+            string filePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Recursos", "CERTIFICADO GLOBAL.docx");
+
+            // Cargar el documento
+            Document document = new Document();
+            document.LoadFromFile(filePath);
+
+            // Reemplazar los campos en el documento
+            document.Replace("{{NombreFactura}}", nombreFactura, false, true);
+            document.Replace("{{Expediente}}", expediente, false, true);
+            document.Replace("{{ImporteFactura}}", importe, false, true);
+
+
+            // Guardar el documento con los cambios
+            document.SaveToFile("CERTIFICADO GLOBAL JEFE "+nombreFactura + ".pdf", FileFormat.PDF);
         }
-        public void GenerarCertificado()
+        catch (IOException ex)
         {
-            string pdfPath = "certificado.pdf"; // Ruta donde se guardará el PDF
-
-            // Crear un nuevo documento PDF
-            PdfDocument documento = new PdfDocument();
-            documento.Info.Title = "Certificado de Pago";
-
-            // Crear una página en el documento
-            PdfPage pagina = documento.AddPage();
-
-            // Crear un objeto XGraphics para dibujar en la página
-            XGraphics gfx = XGraphics.FromPdfPage(pagina);
-
-            // Crear un objeto XFont para definir la fuente
-            XFont fuente = new XFont("Verdana", 20);
-
-            // Dibujar un texto en el PDF
-            gfx.DrawString("Certificado de Pago", fuente, XBrushes.Black, new XPoint(200, 100));
-
-            // Dibujar más información en el certificado
-            XFont fuenteDetalle = new XFont("Verdana", 12);
-            gfx.DrawString("Fecha: " + DateTime.Now.ToString("dd/MM/yyyy"), fuenteDetalle, XBrushes.Black, new XPoint(200, 150));
-            gfx.DrawString("Monto: $1000", fuenteDetalle, XBrushes.Black, new XPoint(200, 180));
-            gfx.DrawString("Cliente: Juan Pérez", fuenteDetalle, XBrushes.Black, new XPoint(200, 210));
-
-            // Guardar el documento PDF en la ruta especificada
-            documento.Save(pdfPath);
-
-            // Mostrar un mensaje indicando que el certificado fue generado
-            MessageBox.Show("Certificado generado correctamente", "Éxito", MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show($"Error accessing file: {ex.Message}", "File Access Error", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
 }
