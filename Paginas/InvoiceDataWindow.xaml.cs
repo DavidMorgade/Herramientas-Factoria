@@ -58,7 +58,20 @@ namespace Herramientas_Factoria
                 return;
             }
 
-            Factura.ReplaceFieldsInWord(expediente, importe, nombreFactura, fechaFactura);
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+
+            saveFileDialog.Title = "Guardar Certificados";
+            saveFileDialog.Filter = "PDF Files (*.pdf)|*.pdf|Word Documents (*.docx)|*.docx|All files (*.*)|*.*";
+            saveFileDialog.FileName = "CERTIFICADO GLOBAL " + this.nombreFactura; // Nombre por defecto
+            saveFileDialog.DefaultExt = ".pdf"; // Extensión por defecto
+
+            if(saveFileDialog.ShowDialog() == true)
+            {
+                string filePath = saveFileDialog.FileName;
+                Factura.ReplaceFieldsInWord(expediente, importe, nombreFactura, fechaFactura, filePath);
+                MessageBox.Show("Certificado generado correctamente", "Información", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+
         }
         private void Button_Examinar_Click(object sender, RoutedEventArgs e)
         {

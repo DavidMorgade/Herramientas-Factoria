@@ -5,15 +5,15 @@ using System.Windows;
 
 public class Factura
 {
-    public static void ReplaceFieldsInWord(string expediente, string importe, string nombreFactura, string fechaFactura)
+    public static void ReplaceFieldsInWord(string expediente, string importe, string nombreFactura, string fechaFactura, string filePath)
     {
         try
         {
-            string filePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Recursos", "CERTIFICADO GLOBAL.docx");
+            string sourceFilePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Recursos", "CERTIFICADO GLOBAL.docx");
 
             // Cargar el documento
             Document document = new Document();
-            document.LoadFromFile(filePath);
+            document.LoadFromFile(sourceFilePath);
 
             // Reemplazar los campos en el documento
             document.Replace("{{NombreFactura}}", nombreFactura, false, true);
@@ -23,7 +23,7 @@ public class Factura
 
 
             // Guardar el documento con los cambios
-            document.SaveToFile("CERTIFICADO GLOBAL JEFE "+nombreFactura + ".pdf", FileFormat.PDF);
+            document.SaveToFile(filePath, FileFormat.PDF);
         }
         catch (IOException ex)
         {
