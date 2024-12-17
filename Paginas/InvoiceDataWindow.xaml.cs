@@ -29,6 +29,7 @@ namespace Herramientas_Factoria
         private string expediente;
         private string importe;
         private string fechaFactura;
+        List<Dictionary<string, string>> tableData;
         public InvoiceDataWindow  ()
         {
             InitializeComponent();
@@ -68,7 +69,9 @@ namespace Herramientas_Factoria
             if(saveFileDialog.ShowDialog() == true)
             {
                 string filePath = saveFileDialog.FileName;
-                Factura.ReplaceFieldsInWord(expediente, importe, nombreFactura, fechaFactura, filePath);
+                string sinIvaFilePath = saveFileDialog.FileName.Replace("GLOBAL", " SIN IVA.pdf");
+                Factura.GenerarCertificadoGlobal(expediente, importe, nombreFactura, fechaFactura, filePath);
+                Factura.GenerarCertificadoSinIVA(tableData, sinIvaFilePath);
                 MessageBox.Show("Certificado generado correctamente", "Información", MessageBoxButton.OK, MessageBoxImage.Information);
             }
 
@@ -92,7 +95,8 @@ namespace Herramientas_Factoria
                 // Mostrar la ruta en un TextBlock
                 
                 var data = ExcelReader.ExtractExpedienteAndImporte(filePath);
-                this.nombreFactura = data.NombreFactura;
+                this.tableData = ExcelReader.ExtractTableColumns(filePath);
+                this.nombreFactura = data.nombreFactura;
                 this.expediente = data.Expediente;
                 this.importe = data.Importe;
 
