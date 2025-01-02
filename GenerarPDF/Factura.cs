@@ -75,6 +75,16 @@ public class Factura
                 table.Rows[rowIndex + 1].Cells[2].AddParagraph().AppendText(row["Albarán"]);
                 table.Rows[rowIndex + 1].Cells[3].AddParagraph().AppendText(row["Importe Total (IVA)"]);
             }
+            foreach (TableRow row in table.Rows)
+            {
+                foreach (TableCell cell in row.Cells)
+                {
+                    foreach (Paragraph paragraph in cell.Paragraphs)
+                    {
+                        Console.WriteLine($"Contenido de la celda: {paragraph.Text}"); // Mostrar el texto de cada celda
+                    }
+                }
+            }
 
             // Ajustar el ancho de la tabla
             table.AutoFit(AutoFitBehaviorType.AutoFitToContents);
