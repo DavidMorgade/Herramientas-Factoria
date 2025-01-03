@@ -90,7 +90,7 @@ public class Factura
             table.AutoFit(AutoFitBehaviorType.AutoFitToContents);
 
             // Guardar el documento Word
-            document.SaveToFile(filePath, FileFormat.Docx);
+            document.SaveToFile(filePath, FileFormat.PDF);
         }
         catch (IOException ex)
         {
