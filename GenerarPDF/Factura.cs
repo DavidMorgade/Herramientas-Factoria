@@ -1,11 +1,10 @@
 ﻿using Spire.Doc;
 using Spire.Doc.Documents;
+using Spire.Doc.Fields;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Windows;
-using System.Collections.Generic;
-using Spire.Doc.Fields;
-using System.Globalization;
 using HorizontalAlignment = Spire.Doc.Documents.HorizontalAlignment;
 
 public class Factura
@@ -44,57 +43,100 @@ public class Factura
             Document document = new Document();
             Section section = document.AddSection();
 
-            // Añadir un título opcional al documento
+            // Añadir un título al documento
             Paragraph title = section.AddParagraph();
             title.AppendText("Resumen de Datos");
             title.ApplyStyle(BuiltinStyle.Title);
             title.Format.HorizontalAlignment = HorizontalAlignment.Center;
 
-            // Crear la tabla
-            Table table = section.AddTable(true);
-            table.ResetCells(tableData.Count + 1, 4); // +1 para la fila de encabezado y 4 columnas
+            int rowsPerPage = 60; // Número de filas por página
+            int currentRowCount = 0;
 
-            // --- Insertar el encabezado ---
-            string[] headers = { "UNOR", "Nombre", "Albarán", "Importe Total (IVA)" };
-            for (int i = 0; i < headers.Length; i++)
-            {
-                TableCell cell = table.Rows[0].Cells[i];
-                Paragraph p = cell.AddParagraph();
-                p.AppendText(headers[i]);
-                p.Format.HorizontalAlignment = HorizontalAlignment.Center;
-                p.ApplyStyle(BuiltinStyle.Heading3); // Aplicar estilo de encabezado
-                Console.WriteLine($"Claves en la fila: {string.Join(", ", cell)}");
-            }
+            Table table = CreateTable(section); // Crear la primera tabla
 
-            // --- Insertar los datos ---
             for (int rowIndex = 0; rowIndex < tableData.Count; rowIndex++)
             {
                 var row = tableData[rowIndex];
-                table.Rows[rowIndex + 1].Cells[0].AddParagraph().AppendText(row["UNOR"]);
-                table.Rows[rowIndex + 1].Cells[1].AddParagraph().AppendText(row["Nombre"]);
-                table.Rows[rowIndex + 1].Cells[2].AddParagraph().AppendText(row["Albarán"]);
-                table.Rows[rowIndex + 1].Cells[3].AddParagraph().AppendText(row["Importe Total (IVA)"]);
-            }
-            foreach (TableRow row in table.Rows)
-            {
-                foreach (TableCell cell in row.Cells)
+
+                // Verificar si la fila contiene datos relevantes
+                if (string.IsNullOrWhiteSpace(row["UNOR"]) ||
+                    string.IsNullOrWhiteSpace(row["Nombre"]) ||
+                    string.IsNullOrWhiteSpace(row["Albarán"]) ||
+                    string.IsNullOrWhiteSpace(row["Importe Total (IVA)"]))
                 {
-                    foreach (Paragraph paragraph in cell.Paragraphs)
-                    {
-                        Console.WriteLine($"Contenido de la celda: {paragraph.Text}"); // Mostrar el texto de cada celda
-                    }
+                    continue; // Saltar filas vacías
+                }
+
+                // Añadir fila de datos
+                TableRow newRow = table.AddRow();
+                AppendFormattedText(newRow.Cells[0], row["UNOR"]);
+                AppendFormattedText(newRow.Cells[1], row["Nombre"]);
+                AppendFormattedText(newRow.Cells[2], row["Albarán"]);
+                AppendFormattedText(newRow.Cells[3], row["Importe Total (IVA)"]);
+
+                currentRowCount++;
+
+                // Crear nueva tabla si se alcanza el límite de filas
+                if (currentRowCount == rowsPerPage)
+                {
+                    AddSignatureSpace(section); // Añadir espacio para la firma
+                    section.AddParagraph().AppendBreak(BreakType.PageBreak); // Salto de página
+                    section = document.AddSection(); // Nueva sección
+                    table = CreateTable(section); // Nueva tabla en la nueva sección
+                    table.AutoFit(AutoFitBehaviorType.AutoFitToWindow); // Ajustar la tabla al ancho de la página
+                    currentRowCount = 0; // Reiniciar el contador de filas
                 }
             }
 
-            // Ajustar el ancho de la tabla
-            table.AutoFit(AutoFitBehaviorType.AutoFitToContents);
-
-            // Guardar el documento Word
+            // Guardar el documento como PDF
             document.SaveToFile(filePath, FileFormat.PDF);
         }
         catch (IOException ex)
         {
-            MessageBox.Show($"Error accessing file: {ex.Message}", "File Access Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            MessageBox.Show($"Error al acceder al archivo: {ex.Message}", "Error de acceso", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
+
+    // Crear una tabla con encabezados
+    private static Table CreateTable(Section section)
+    {
+        Table table = section.AddTable(true);
+        table.ResetCells(1, 4); // Encabezado con 4 columnas
+
+        string[] headers = { "UNOR", "Nombre", "Albarán", "Importe Total (IVA)" };
+        for (int i = 0; i < headers.Length; i++)
+        {
+            TableCell cell = table.Rows[0].Cells[i];
+
+            Paragraph p = cell.AddParagraph();
+            p.Format.HorizontalAlignment = HorizontalAlignment.Center;
+
+            TextRange headerText = p.AppendText(headers[i]);
+            headerText.CharacterFormat.Bold = true;
+            headerText.CharacterFormat.FontName = "Calibri";
+            headerText.CharacterFormat.FontSize = 12;
+        }
+
+        return table;
+    }
+
+    // Añadir texto formateado a una celda
+    private static void AppendFormattedText(TableCell cell, string text)
+    {
+        Paragraph p = cell.AddParagraph();
+        TextRange textRange = p.AppendText(text);
+        textRange.CharacterFormat.FontName = "Calibri";
+        textRange.CharacterFormat.FontSize = 8;
+        p.Format.HorizontalAlignment = HorizontalAlignment.Center; // Centrar horizontalmente
+    }
+
+    // Añadir espacio para la firma
+    private static void AddSignatureSpace(Section section)
+    {
+        Paragraph signatureSpace = section.AddParagraph();
+        signatureSpace.AppendText(" "); // Añadir un espacio vacío para dejar el margen
+        signatureSpace.Format.AfterSpacing = 50; // Espacio adicional para la firma
+    }
+
+
 }
