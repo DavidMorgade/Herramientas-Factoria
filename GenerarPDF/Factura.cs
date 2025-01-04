@@ -83,7 +83,6 @@ public class Factura
                     section.AddParagraph().AppendBreak(BreakType.PageBreak); // Salto de página
                     section = document.AddSection(); // Nueva sección
                     table = CreateTable(section); // Nueva tabla en la nueva sección
-                    table.AutoFit(AutoFitBehaviorType.AutoFitToWindow); // Ajustar la tabla al ancho de la página
                     currentRowCount = 0; // Reiniciar el contador de filas
                 }
             }
@@ -102,7 +101,20 @@ public class Factura
     {
         Table table = section.AddTable(true);
         table.ResetCells(1, 4); // Encabezado con 4 columnas
+        table.AutoFit(AutoFitBehaviorType.AutoFitToContents); // Ajustar la tabla al ancho de la página
+                                                              // Calcular el ancho de la tabla como 4/5 del ancho de la página
+        float pageWidth = section.PageSetup.PageSize.Width - section.PageSetup.Margins.Left - section.PageSetup.Margins.Right;
+        float tableWidth = pageWidth * 4 / 5;
 
+        // Establecer el ancho de la tabla
+        table.PreferredWidth = new PreferredWidth(WidthType.Percentage, 100);
+
+        // Centrar la tabla en la página
+        table.TableFormat.HorizontalAlignment = RowAlignment.Center;
+
+
+        // Centrar la tabla en la página
+        table.TableFormat.HorizontalAlignment = RowAlignment.Center;
         string[] headers = { "UNOR", "Nombre", "Albarán", "Importe Total (IVA)" };
         for (int i = 0; i < headers.Length; i++)
         {
