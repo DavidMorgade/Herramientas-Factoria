@@ -3,6 +3,7 @@ using Spire.Doc.Documents;
 using Spire.Doc.Fields;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Windows;
 using HorizontalAlignment = Spire.Doc.Documents.HorizontalAlignment;
@@ -43,12 +44,8 @@ public class Factura
             Document document = new Document();
             Section section = document.AddSection();
 
-            // Añadir un título al documento
-            Paragraph title = section.AddParagraph();
-            title.AppendText("Resumen de Datos");
-            title.ApplyStyle(BuiltinStyle.Title);
-            title.Format.HorizontalAlignment = HorizontalAlignment.Center;
-
+            // Añadir el texto de inicio antes de la tabla de unidades
+            AddEncabezadoCertificado(section, "F202400079", 5, "diciembre", 2024);
             int rowsPerPage = 60; // Número de filas por página
             int currentRowCount = 0;
 
@@ -74,6 +71,8 @@ public class Factura
                 AppendFormattedText(newRow.Cells[2], row["Albarán"]);
                 AppendFormattedText(newRow.Cells[3], row["Importe Total (IVA)"]);
 
+
+
                 currentRowCount++;
 
                 // Crear nueva tabla si se alcanza el límite de filas
@@ -95,6 +94,28 @@ public class Factura
             MessageBox.Show($"Error al acceder al archivo: {ex.Message}", "Error de acceso", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
+    private static void AddEncabezadoCertificado(Section section, string numeroFactura, int dia, string mes, int año)
+    {
+        // Crear el texto formateado con los parámetros proporcionados
+        string text = $"ANEXO. RESUMEN DE SUMINISTROS POR BUI CORRESPONDIENTE A LA FACTURA N° {numeroFactura} DE FECHA {dia} de {mes} de {año} EMITIDA POR LA EMPRESA UTE UCALSA-BAYPORT-BESS NACIONAL NIF U70914627.";
+
+        // Crear un nuevo párrafo
+        Paragraph paragraph = section.AddParagraph();
+
+        // Añadir el texto al párrafo
+        TextRange textRange = paragraph.AppendText(text);
+
+        // Establecer el formato del texto
+        textRange.CharacterFormat.FontName = "Arial";
+        textRange.CharacterFormat.FontSize = 12;
+        // espaciado entre lineas
+        paragraph.Format.LineSpacing = 15;
+        // margen abajo
+        paragraph.Format.AfterSpacing = 20;
+
+        // Centrar el párrafo
+        paragraph.Format.HorizontalAlignment = HorizontalAlignment.Center;
+    }
 
     // Crear una tabla con encabezados
     private static Table CreateTable(Section section)
@@ -106,7 +127,7 @@ public class Factura
         float pageWidth = section.PageSetup.PageSize.Width - section.PageSetup.Margins.Left - section.PageSetup.Margins.Right;
         float tableWidth = pageWidth * 4 / 5;
 
-        // Establecer el ancho de la tabla
+        // Establecer el ancho de la tabla fijo para que todas las tablas sean iguales
         table.PreferredWidth = new PreferredWidth(WidthType.Percentage, 100);
 
         // Centrar la tabla en la página
@@ -124,6 +145,8 @@ public class Factura
             p.Format.HorizontalAlignment = HorizontalAlignment.Center;
 
             TextRange headerText = p.AppendText(headers[i]);
+            // Establecer el color de fondo del texto del encabezado
+            headerText.CharacterFormat.HighlightColor = Color.LightBlue;
             headerText.CharacterFormat.Bold = true;
             headerText.CharacterFormat.FontName = "Calibri";
             headerText.CharacterFormat.FontSize = 12;
