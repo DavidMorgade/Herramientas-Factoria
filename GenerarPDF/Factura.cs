@@ -40,16 +40,18 @@ public class Factura
     {
         try
         {
-            // Crear un nuevo documento Word
-            Document document = new Document();
-            Section section = document.AddSection();
+            // Cargar el documento template
+            string sourceFilePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Recursos", "CERTIFICADO SIN IVA.docx");
 
-            // Añadir el texto de inicio antes de la tabla de unidades
-            AddEncabezadoCertificado(section, "F202400079", 5, "diciembre", 2024);
+            Document document = new Document();
+            document.LoadFromFile(sourceFilePath);
+            // agregar la seccion restante
+            Section lastSection = document.Sections[document.Sections.Count - 1];
+
             int rowsPerPage = 60; // Número de filas por página
             int currentRowCount = 0;
 
-            Table table = CreateTable(section); // Crear la primera tabla
+            Table table = CreateTable(lastSection); // Crear la primera tabla
 
             for (int rowIndex = 0; rowIndex < tableData.Count; rowIndex++)
             {
@@ -78,10 +80,10 @@ public class Factura
                 // Crear nueva tabla si se alcanza el límite de filas
                 if (currentRowCount == rowsPerPage)
                 {
-                    AddSignatureSpace(section); // Añadir espacio para la firma
-                    section.AddParagraph().AppendBreak(BreakType.PageBreak); // Salto de página
-                    section = document.AddSection(); // Nueva sección
-                    table = CreateTable(section); // Nueva tabla en la nueva sección
+                    AddSignatureSpace(lastSection); // Añadir espacio para la firma
+                    lastSection.AddParagraph().AppendBreak(BreakType.PageBreak); // Salto de página
+                    lastSection = document.AddSection(); // Nueva sección
+                    table = CreateTable(lastSection); // Nueva tabla en la nueva sección
                     currentRowCount = 0; // Reiniciar el contador de filas
                 }
             }
