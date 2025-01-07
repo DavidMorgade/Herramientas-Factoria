@@ -4,18 +4,8 @@ using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
 
 namespace Herramientas_Factoria
 {
@@ -30,7 +20,7 @@ namespace Herramientas_Factoria
         private string importe;
         private string fechaFactura;
         List<Dictionary<string, string>> tableData;
-        public InvoiceDataWindow  ()
+        public InvoiceDataWindow()
         {
             InitializeComponent();
         }
@@ -48,12 +38,12 @@ namespace Herramientas_Factoria
         }
         private void Button_Generar(object sender, RoutedEventArgs e)
         {
-            if(this.nombreFactura == null || expediente == null || importe == null)
+            if (this.nombreFactura == null || expediente == null || importe == null)
             {
                 MessageBox.Show("No has seleccionado factura o la factura no es válida", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
-            if(this.fechaFactura == null)
+            if (this.fechaFactura == null)
             {
                 MessageBox.Show("No has seleccionado fecha de factura", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
@@ -63,13 +53,12 @@ namespace Herramientas_Factoria
 
             saveFileDialog.Title = "Guardar Certificados";
             saveFileDialog.Filter = "PDF Files (*.pdf)|*.pdf|Word Documents (*.docx)|*.docx|All files (*.*)|*.*";
-            saveFileDialog.FileName = "CERTIFICADO GLOBAL " + this.nombreFactura; // Nombre por defecto
-            saveFileDialog.DefaultExt = ".pdf"; // Extensión por defecto
+            saveFileDialog.FileName = "CERTIFICADO GLOBAL " + this.nombreFactura + ".docx"; // Nombre por defecto
 
-            if(saveFileDialog.ShowDialog() == true)
+            if (saveFileDialog.ShowDialog() == true)
             {
                 string filePath = saveFileDialog.FileName;
-                string sinIvaFilePath = saveFileDialog.FileName.Replace("GLOBAL", " SIN IVA.pdf");
+                string sinIvaFilePath = saveFileDialog.FileName.Replace("GLOBAL", " SIN IVA");
                 Factura.GenerarCertificadoGlobal(expediente, importe, nombreFactura, fechaFactura, filePath);
                 Factura.GenerarCertificadoSinIVA(tableData, sinIvaFilePath);
                 MessageBox.Show("Certificado generado correctamente", "Información", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -93,7 +82,7 @@ namespace Herramientas_Factoria
                 // Obtener la ruta del archivo seleccionado
                 filePath = openFileDialog.FileName;
                 // Mostrar la ruta en un TextBlock
-                
+
                 var data = ExcelReader.ExtractExpedienteAndImporte(filePath);
                 this.tableData = ExcelReader.ExtractTableColumns(filePath);
                 this.nombreFactura = data.nombreFactura;

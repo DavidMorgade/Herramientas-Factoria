@@ -28,7 +28,7 @@ public class Factura
 
 
             // Guardar el documento con los cambios
-            document.SaveToFile(filePath, FileFormat.PDF);
+            document.SaveToFile(filePath, FileFormat.Docx);
         }
         catch (IOException ex)
         {
@@ -48,7 +48,7 @@ public class Factura
             // agregar la seccion restante
             Section lastSection = document.Sections[document.Sections.Count - 1];
 
-            int rowsPerPage = 60; // Número de filas por página
+            int rowsPerPage = 40; // Número de filas por página
             int currentRowCount = 0;
 
             Table table = CreateTable(lastSection); // Crear la primera tabla
@@ -80,6 +80,7 @@ public class Factura
                 // Crear nueva tabla si se alcanza el límite de filas
                 if (currentRowCount == rowsPerPage)
                 {
+                    rowsPerPage = 50;
                     AddSignatureSpace(lastSection); // Añadir espacio para la firma
                     lastSection.AddParagraph().AppendBreak(BreakType.PageBreak); // Salto de página
                     lastSection = document.AddSection(); // Nueva sección
@@ -89,7 +90,7 @@ public class Factura
             }
 
             // Guardar el documento como PDF
-            document.SaveToFile(filePath, FileFormat.PDF);
+            document.SaveToFile(filePath, FileFormat.Docx);
         }
         catch (IOException ex)
         {
