@@ -36,21 +36,21 @@ public class Factura
         }
     }
 
-    public static void GenerarCertificadoSinIVA(List<Dictionary<string, string>> tableData, string filePath)
+    public static void GenerarCertificadoSinIVA(List<Dictionary<string, string>> tableData, string outputDirectory)
     {
         try
         {
             // Cargar el documento template
             string sourceFilePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Recursos", "CERTIFICADO SIN IVA.docx");
 
-            Document document = new Document();
-            document.LoadFromFile(sourceFilePath);
-            // agregar la seccion restante
-            Section lastSection = document.Sections[document.Sections.Count - 1];
-
             int rowsPerPage = 40; // Número de filas por página
             int currentRowCount = 0;
+            int fileCount = 1;
 
+            Document document = new Document();
+            document.LoadFromFile(sourceFilePath);
+
+            Section lastSection = document.Sections[document.Sections.Count - 1];
             Table table = CreateTable(lastSection); // Crear la primera tabla
 
             for (int rowIndex = 0; rowIndex < tableData.Count; rowIndex++)
@@ -73,24 +73,23 @@ public class Factura
                 AppendFormattedText(newRow.Cells[2], row["Albarán"]);
                 AppendFormattedText(newRow.Cells[3], row["Importe Total (IVA)"]);
 
-
-
                 currentRowCount++;
 
-                // Crear nueva tabla si se alcanza el límite de filas
-                if (currentRowCount == rowsPerPage)
+                // Crear nuevo documento si se alcanza el límite de páginas
+                if (document.PageCount >= 3 || rowIndex == tableData.Count - 1)
                 {
-                    rowsPerPage = 50;
-                    AddSignatureSpace(lastSection); // Añadir espacio para la firma
-                    lastSection.AddParagraph().AppendBreak(BreakType.PageBreak); // Salto de página
-                    lastSection = document.AddSection(); // Nueva sección
-                    table = CreateTable(lastSection); // Nueva tabla en la nueva sección
-                    currentRowCount = 0; // Reiniciar el contador de filas
+                    string filePath = $"{outputDirectory}/DocumentPart{fileCount}.pdf";
+                    document.SaveToFile(filePath, FileFormat.PDF);
+
+                    // Reiniciar variables para el siguiente documento
+                    document = new Document();
+                    document.LoadFromFile(sourceFilePath);
+                    lastSection = document.Sections[document.Sections.Count - 1];
+                    table = CreateTable(lastSection);
+                    fileCount++;
+                    currentRowCount = 0;
                 }
             }
-
-            // Guardar el documento como PDF
-            document.SaveToFile(filePath, FileFormat.Docx);
         }
         catch (IOException ex)
         {
