@@ -60,7 +60,7 @@ namespace Herramientas_Factoria
                 string filePath = saveFileDialog.FileName;
                 string sinIvaFilePath = saveFileDialog.FileName.Replace("GLOBAL", " SIN IVA");
                 Factura.GenerarCertificadoGlobal(expediente, importe, nombreFactura, fechaFactura, filePath);
-                Factura.GenerarCertificadoSinIVA(tableData, sinIvaFilePath);
+                Factura.GenerarCertificadoSinIVA(tableData, sinIvaFilePath, expediente, importe, nombreFactura, fechaFactura);
                 MessageBox.Show("Certificado generado correctamente", "Información", MessageBoxButton.OK, MessageBoxImage.Information);
             }
 

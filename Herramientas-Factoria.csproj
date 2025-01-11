@@ -281,6 +281,9 @@
     <Content Include="Recursos\CERTIFICADO SIN IVA.docx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Recursos\MODELO SIN IVA.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

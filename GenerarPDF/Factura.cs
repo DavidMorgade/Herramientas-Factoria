@@ -36,25 +36,46 @@ public class Factura
         }
     }
 
-    public static void GenerarCertificadoSinIVA(List<Dictionary<string, string>> tableData, string outputDirectory)
+    public static void GenerarCertificadoSinIVA(List<Dictionary<string, string>> tableData, string outputDirectory, string expediente, string importe, string nombreFactura, string fechaFactura)
     {
         try
         {
             // Cargar el documento template
             string sourceFilePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Recursos", "CERTIFICADO SIN IVA.docx");
+            string modeloSinIvaPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Recursos", "MODELO SIN IVA.docx");
 
             int rowsPerPage = 40; // Número de filas por página
             int currentRowCount = 0;
             int fileCount = 1;
+            Console.WriteLine("Generando sin iva...");
 
             Document document = new Document();
             document.LoadFromFile(sourceFilePath);
+
+            document.Replace("{{NombreFactura}}", nombreFactura, false, true);
+            document.Replace("{{FechaFactura}}", fechaFactura, false, true);
+            document.Replace("{{Expediente}}", expediente, false, true);
+            document.Replace("{{ImporteFactura}}", importe, false, true);
 
             Section lastSection = document.Sections[document.Sections.Count - 1];
             Table table = CreateTable(lastSection); // Crear la primera tabla
 
             for (int rowIndex = 0; rowIndex < tableData.Count; rowIndex++)
             {
+                if (currentRowCount == rowsPerPage)
+                {
+                    Console.WriteLine("Entro en if");
+                    string filePath = $"{outputDirectory}/DocumentPart{fileCount}.pdf";
+                    document.SaveToFile(filePath, FileFormat.PDF);
+
+                    // Reiniciar variables para el siguiente documento
+                    document = new Document();
+                    document.LoadFromFile(modeloSinIvaPath);
+                    lastSection = document.Sections[document.Sections.Count - 1];
+                    table = CreateTable(lastSection);
+                    fileCount++;
+                    currentRowCount = 0;
+                }
                 var row = tableData[rowIndex];
 
                 // Verificar si la fila contiene datos relevantes
@@ -63,7 +84,11 @@ public class Factura
                     string.IsNullOrWhiteSpace(row["Albarán"]) ||
                     string.IsNullOrWhiteSpace(row["Importe Total (IVA)"]))
                 {
-                    continue; // Saltar filas vacías
+                    string[] pdfFiles = Directory.GetFiles(outputDirectory, "DocumentPart*.pdf");
+                    string mergedPdfPath = $"{outputDirectory}.pdf";
+                    PdfMergerUtility.MergePdfFiles(pdfFiles, mergedPdfPath);
+                    Console.WriteLine("PDFs combinados.");
+                    break; // Saltar filas vacías
                 }
 
                 // Añadir fila de datos
@@ -75,20 +100,6 @@ public class Factura
 
                 currentRowCount++;
 
-                // Crear nuevo documento si se alcanza el límite de páginas
-                if (document.PageCount >= 3 || rowIndex == tableData.Count - 1)
-                {
-                    string filePath = $"{outputDirectory}/DocumentPart{fileCount}.pdf";
-                    document.SaveToFile(filePath, FileFormat.PDF);
-
-                    // Reiniciar variables para el siguiente documento
-                    document = new Document();
-                    document.LoadFromFile(sourceFilePath);
-                    lastSection = document.Sections[document.Sections.Count - 1];
-                    table = CreateTable(lastSection);
-                    fileCount++;
-                    currentRowCount = 0;
-                }
             }
         }
         catch (IOException ex)
