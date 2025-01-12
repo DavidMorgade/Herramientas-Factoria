@@ -55,6 +55,8 @@ namespace Herramientas_Factoria
             saveFileDialog.Filter = "PDF Files (*.pdf)|*.pdf|Word Documents (*.docx)|*.docx|All files (*.*)|*.*";
             saveFileDialog.FileName = "CERTIFICADO GLOBAL " + this.nombreFactura.Substring(nombreFactura.Length - 3) + " JEFE" + ".pdf"; // Nombre por defecto
 
+
+
             if (saveFileDialog.ShowDialog() == true)
             {
                 string filePath = saveFileDialog.FileName;
