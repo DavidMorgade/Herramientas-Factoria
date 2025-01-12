@@ -28,7 +28,7 @@ public class Factura
 
 
             // Guardar el documento con los cambios
-            document.SaveToFile(filePath, FileFormat.Docx);
+            document.SaveToFile(filePath, FileFormat.PDF);
         }
         catch (IOException ex)
         {
