@@ -87,6 +87,7 @@ public class Factura
                     string[] pdfFiles = Directory.GetFiles(outputDirectory, "DocumentPart*.pdf");
                     string mergedPdfPath = $"{outputDirectory}.pdf";
                     PdfMergerUtility.MergePdfFiles(pdfFiles, mergedPdfPath);
+                    Directory.Delete(outputDirectory);
                     Console.WriteLine("PDFs combinados.");
                     break; // Saltar filas vacías
                 }

@@ -1,5 +1,7 @@
 ﻿using iText.Kernel.Pdf;
 using iText.Kernel.Utils;
+using System;
+using System.IO;
 
 public class PdfMergerUtility
 {
@@ -22,6 +24,20 @@ public class PdfMergerUtility
                 }
             }
         }
+        // delete pdf files after merge
+        foreach (string file in pdfFiles)
+        {
+            try
+            {
+                File.Delete(file);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error deleting file {file}: {ex.Message}");
+            }
+        }
+
+
     }
 
 }
