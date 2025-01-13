@@ -108,28 +108,6 @@ public class Factura
             MessageBox.Show($"Error al acceder al archivo: {ex.Message}", "Error de acceso", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
-    private static void AddEncabezadoCertificado(Section section, string numeroFactura, int dia, string mes, int año)
-    {
-        // Crear el texto formateado con los parámetros proporcionados
-        string text = $"ANEXO. RESUMEN DE SUMINISTROS POR BUI CORRESPONDIENTE A LA FACTURA N° {numeroFactura} DE FECHA {dia} de {mes} de {año} EMITIDA POR LA EMPRESA UTE UCALSA-BAYPORT-BESS NACIONAL NIF U70914627.";
-
-        // Crear un nuevo párrafo
-        Paragraph paragraph = section.AddParagraph();
-
-        // Añadir el texto al párrafo
-        TextRange textRange = paragraph.AppendText(text);
-
-        // Establecer el formato del texto
-        textRange.CharacterFormat.FontName = "Arial";
-        textRange.CharacterFormat.FontSize = 12;
-        // espaciado entre lineas
-        paragraph.Format.LineSpacing = 15;
-        // margen abajo
-        paragraph.Format.AfterSpacing = 20;
-
-        // Centrar el párrafo
-        paragraph.Format.HorizontalAlignment = HorizontalAlignment.Center;
-    }
 
     // Crear una tabla con encabezados
     private static Table CreateTable(Section section)
