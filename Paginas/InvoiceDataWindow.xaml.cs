@@ -92,7 +92,7 @@ namespace Herramientas_Factoria
                     {
                         string fileName = Path.GetFileName(filePath);
                         string destinationPath = Path.Combine(fullDirectoryPath, fileName);
-                        File.Copy(filePath, destinationPath, true); // El true sobrescribe el archivo si ya existe
+                        File.Move(filePath, destinationPath);
                         Console.WriteLine($"File {fileName} copied to {destinationPath}");
                     }
                     else

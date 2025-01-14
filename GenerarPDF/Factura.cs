@@ -88,6 +88,7 @@ public class Factura
                     string mergedPdfPath = $"{outputDirectory}.pdf";
                     PdfMergerUtility.MergePdfFiles(pdfFiles, mergedPdfPath);
                     Directory.Delete(outputDirectory);
+                    RenameFile(mergedPdfPath, outputDirectory.Replace(".pdf", ""), ".pdf");
                     Console.WriteLine("PDFs combinados.");
                     break; // Saltar filas vacías
                 }
@@ -106,6 +107,32 @@ public class Factura
         catch (IOException ex)
         {
             MessageBox.Show($"Error al acceder al archivo: {ex.Message}", "Error de acceso", MessageBoxButton.OK, MessageBoxImage.Error);
+        }
+    }
+    private static void RenameFile(string filePath, string newFileName, string newFileExtension)
+    {
+        // Ensure the file exists
+        if (!File.Exists(filePath))
+        {
+            Console.WriteLine($"File {filePath} does not exist.");
+            return;
+        }
+
+        // Get the directory of the file
+        string directory = Path.GetDirectoryName(filePath);
+
+        // Combine the directory with the new file name and extension to get the new file path
+        string newFilePath = Path.Combine(directory, newFileName + newFileExtension);
+
+        try
+        {
+            // Rename (move) the file
+            File.Move(filePath, newFilePath);
+            Console.WriteLine($"File renamed successfully to {newFilePath}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"An error occurred: {ex.Message}");
         }
     }
 
