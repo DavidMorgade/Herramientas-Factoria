@@ -20,6 +20,8 @@ namespace Herramientas_Factoria
         private string expediente;
         private string importe;
         private string fechaFactura;
+        private string excelFilePath;
+        private string pdfFilePath;
         List<Dictionary<string, string>> tableData;
         public InvoiceDataWindow()
         {
@@ -63,7 +65,7 @@ namespace Herramientas_Factoria
                 string folderOfTheFile = Path.GetDirectoryName(saveFileDialog.FileName);
                 string filePath = saveFileDialog.FileName;
                 string sinIvaFilePath = saveFileDialog.FileName.Replace("GLOBAL", "SIN IVA");
-                string[] bothFiles = { filePath, sinIvaFilePath };
+                string[] bothFiles = { filePath, sinIvaFilePath, pdfFilePath, excelFilePath };
                 Factura.GenerarCertificadoGlobal(expediente, importe, nombreFactura, fechaFactura, filePath);
                 Factura.GenerarCertificadoSinIVA(tableData, sinIvaFilePath, expediente, importe, nombreFactura, fechaFactura);
                 this.CreateDirectoryAndSaveFiles(folderOfTheFile, this.nombreFactura, bothFiles);
@@ -111,8 +113,9 @@ namespace Herramientas_Factoria
             // Crear un cuadro de diálogo para abrir archivos
             OpenFileDialog openFileDialog = new OpenFileDialog
             {
-                Filter = "Archivos de Excel (*.xls;*.xlsx)|*.xls;*.xlsx|Todos los archivos (*.*)|*.*",
-                Title = "Seleccionar archivo Excel"
+                Filter = "Todos los archivos (*.*)|*.*",
+                Title = "Seleccionar archivos (Excel y PDF)",
+                Multiselect = true // Permitir selección múltiple
             };
 
             // Mostrar el cuadro de diálogo
@@ -120,19 +123,43 @@ namespace Herramientas_Factoria
 
             if (result == true)
             {
-                // Obtener la ruta del archivo seleccionado
-                filePath = openFileDialog.FileName;
-                // Mostrar la ruta en un TextBlock
+                // Obtener las rutas de los archivos seleccionados
+                string[] filePaths = openFileDialog.FileNames;
 
-                var data = ExcelReader.ExtractExpedienteAndImporte(filePath);
-                this.tableData = ExcelReader.ExtractTableColumns(filePath);
-                this.nombreFactura = data.nombreFactura;
-                this.expediente = data.Expediente;
-                this.importe = data.Importe;
+                // Filtrar y asignar rutas
+                foreach (var filePath in filePaths)
+                {
+                    if (filePath.EndsWith(".xls") || filePath.EndsWith(".xlsx"))
+                    {
+                        excelFilePath = filePath;
+                    }
+                    else if (filePath.EndsWith(".pdf"))
+                    {
+                        pdfFilePath = filePath;
+                    }
+                }
 
-                ExpedienteFacturaTextBlock.Text = "Expediente: " + expediente;
-                NombreFacturaTextBlock.Text = "Factura: " + nombreFactura;
-                ImporteFacturaTextBlock.Text = "Importe Factura: " + importe;
+                // Verificar que ambos archivos fueron seleccionados
+                if (excelFilePath != null && pdfFilePath != null)
+                {
+
+                    // Procesar el archivo Excel
+                    var data = ExcelReader.ExtractExpedienteAndImporte(excelFilePath);
+                    this.tableData = ExcelReader.ExtractTableColumns(excelFilePath);
+                    this.nombreFactura = data.nombreFactura;
+                    this.expediente = data.Expediente;
+                    this.importe = data.Importe;
+
+                    // Mostrar la información del archivo Excel en los TextBlocks
+                    ExpedienteFacturaTextBlock.Text = "Expediente: " + expediente;
+                    NombreFacturaTextBlock.Text = "Factura: " + nombreFactura;
+                    ImporteFacturaTextBlock.Text = "Importe Factura: " + importe;
+                }
+                else
+                {
+                    // Mostrar un mensaje de error si no se seleccionaron ambos archivos
+                    MessageBox.Show("Por favor, seleccione un archivo Excel y un archivo PDF.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
             }
         }
         private void FechaFactura_SelectedDateChanged(object e, SelectionChangedEventArgs args)

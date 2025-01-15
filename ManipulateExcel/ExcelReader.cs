@@ -1,8 +1,8 @@
-﻿using System;
-using OfficeOpenXml;
-using System.IO;
-using System.Globalization;
+﻿using OfficeOpenXml;
+using System;
 using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
 
 namespace Herramientas_Factoria.ManipulateExcel
 {
@@ -44,7 +44,6 @@ namespace Herramientas_Factoria.ManipulateExcel
                     {
                         var cellValue = worksheet.Cells[row, col].Text.Trim();  // Trim para eliminar espacios adicionales
 
-                        Console.WriteLine($"Celda ({row}, {col}) - Valor: '{cellValue}'");  // Verifica lo que contiene cada celda
 
                         // Buscar "Expediente" y obtener el valor en la celda siguiente
                         if (cellValue.Equals("Expediente", StringComparison.OrdinalIgnoreCase))
