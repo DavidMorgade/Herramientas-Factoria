@@ -1,4 +1,5 @@
-﻿using Spire.Doc;
+﻿using Herramientas_Factoria.Utils;
+using Spire.Doc;
 using Spire.Doc.Documents;
 using Spire.Doc.Fields;
 using System;
@@ -15,6 +16,7 @@ public class Factura
         try
         {
             string sourceFilePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Recursos", "CERTIFICADO GLOBAL.docx");
+            string expedienteFormateado = Texto.FormatearContratoAGlobal(expediente);
 
             // Cargar el documento
             Document document = new Document();
@@ -23,7 +25,7 @@ public class Factura
             // Reemplazar los campos en el documento
             document.Replace("{{NombreFactura}}", nombreFactura, false, true);
             document.Replace("{{FechaFactura}}", fechaFactura, false, true);
-            document.Replace("{{Expediente}}", expediente, false, true);
+            document.Replace("{{Expediente}}", expedienteFormateado, false, true);
             document.Replace("{{ImporteFactura}}", importe, false, true);
 
 
@@ -40,6 +42,7 @@ public class Factura
     {
         try
         {
+            string fechaFormateadaSinIVA = Texto.FormatearFechaSinIVA(fechaFactura);
             // Cargar el documento template
             string sourceFilePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Recursos", "CERTIFICADO SIN IVA.docx");
             string modeloSinIvaPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Recursos", "MODELO SIN IVA.docx");
@@ -53,7 +56,7 @@ public class Factura
             document.LoadFromFile(sourceFilePath);
 
             document.Replace("{{NombreFactura}}", nombreFactura, false, true);
-            document.Replace("{{FechaFactura}}", fechaFactura, false, true);
+            document.Replace("{{FechaFactura}}", fechaFormateadaSinIVA, false, true);
             document.Replace("{{Expediente}}", expediente, false, true);
             document.Replace("{{ImporteFactura}}", importe, false, true);
 
