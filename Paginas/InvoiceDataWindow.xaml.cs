@@ -60,16 +60,18 @@ namespace Herramientas_Factoria
 
 
 
+
             if (saveFileDialog.ShowDialog() == true)
             {
                 string folderOfTheFile = Path.GetDirectoryName(saveFileDialog.FileName);
                 string filePath = saveFileDialog.FileName;
                 string sinIvaFilePath = saveFileDialog.FileName.Replace("GLOBAL", "SIN IVA");
-                string[] bothFiles = { filePath, sinIvaFilePath, pdfFilePath, excelFilePath };
+                string[] bothFiles = { filePath, sinIvaFilePath };
+                string[] pdfAndExcel = { pdfFilePath, excelFilePath };
                 Factura.GenerarCertificadoGlobal(expediente, importe, nombreFactura, fechaFactura, filePath);
                 Factura.GenerarCertificadoSinIVA(tableData, sinIvaFilePath, expediente, importe, nombreFactura, fechaFactura);
                 this.CreateDirectoryAndSaveFiles(folderOfTheFile, this.nombreFactura, bothFiles);
-                MessageBox.Show("Certificado generado correctamente", "Información", MessageBoxButton.OK, MessageBoxImage.Information);
+                this.CopyFilesToDirectory(Path.Combine(folderOfTheFile, this.nombreFactura), pdfAndExcel);
             }
 
         }
@@ -84,7 +86,17 @@ namespace Herramientas_Factoria
                 if (!Directory.Exists(fullDirectoryPath))
                 {
                     Directory.CreateDirectory(fullDirectoryPath);
+                    Directory.CreateDirectory(Path.Combine(fullDirectoryPath, "FIRMADOS"));
                     Console.WriteLine($"Directory created at {fullDirectoryPath}");
+                }
+                else
+                {
+                    foreach (string filePath in filePaths)
+                    {
+                        string fileName = Path.GetFileName(filePath);
+                        File.Delete(filePath);
+                    }
+                    MessageBox.Show("La carpeta de la factura ya existe", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
 
                 // Copiar cada archivo a la nueva carpeta
@@ -96,6 +108,7 @@ namespace Herramientas_Factoria
                         string destinationPath = Path.Combine(fullDirectoryPath, fileName);
                         File.Move(filePath, destinationPath);
                         Console.WriteLine($"File {fileName} copied to {destinationPath}");
+                        MessageBox.Show("Certificado generado correctamente", "Información", MessageBoxButton.OK, MessageBoxImage.Information);
                     }
                     else
                     {
@@ -176,6 +189,36 @@ namespace Herramientas_Factoria
 
                 // Muestra la fecha en consola o úsala como necesites
                 MessageBox.Show($"Fecha seleccionada: {formattedDate}", "Información");
+            }
+        }
+        private void CopyFilesToDirectory(string targetDirectory, string[] filePaths)
+        {
+            // Verificar si la carpeta de destino existe, si no, crearla
+            if (!Directory.Exists(targetDirectory))
+            {
+                Directory.CreateDirectory(targetDirectory);
+            }
+
+            // Iterar sobre cada archivo en el array de rutas de archivos
+            foreach (string filePath in filePaths)
+            {
+                // Obtener el nombre del archivo
+                string fileName = Path.GetFileName(filePath);
+
+                // Crear la ruta completa del archivo de destino
+                string destFilePath = Path.Combine(targetDirectory, fileName);
+
+                try
+                {
+                    // Copiar el archivo a la nueva ubicación
+                    File.Copy(filePath, destFilePath, true);
+                    Console.WriteLine($"Archivo copiado: {filePath} a {destFilePath}");
+                }
+                catch (Exception ex)
+                {
+                    // Manejar cualquier error que ocurra durante la copia de archivos
+                    Console.WriteLine($"Error al copiar el archivo {filePath}: {ex.Message}");
+                }
             }
         }
     }
