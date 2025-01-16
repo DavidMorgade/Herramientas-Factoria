@@ -188,19 +188,17 @@ public class Factura
         table.TableFormat.HorizontalAlignment = RowAlignment.Center;
 
 
-        // Centrar la tabla en la página
-        table.TableFormat.HorizontalAlignment = RowAlignment.Center;
         string[] headers = { "UNOR", "Nombre", "Albarán", "Importe Total (IVA)" };
         for (int i = 0; i < headers.Length; i++)
         {
             TableCell cell = table.Rows[0].Cells[i];
-
+            // Colorear el fondo de las celdas del encabezado
+            cell.CellFormat.BackColor = Color.LightBlue;
             Paragraph p = cell.AddParagraph();
             p.Format.HorizontalAlignment = HorizontalAlignment.Center;
 
             TextRange headerText = p.AppendText(headers[i]);
             // Establecer el color de fondo del texto del encabezado
-            cell.CellFormat.BackColor = Color.Blue;
             headerText.CharacterFormat.Bold = true;
             headerText.CharacterFormat.FontName = "Calibri";
             headerText.CharacterFormat.FontSize = 12;
@@ -213,6 +211,7 @@ public class Factura
     private static void AppendFormattedText(TableCell cell, string text, HorizontalAlignment Alignment)
     {
         Paragraph p = cell.AddParagraph();
+        cell.CellFormat.BackColor = Color.White;
         TextRange textRange = p.AppendText(text);
         textRange.CharacterFormat.FontName = "Calibri";
         textRange.CharacterFormat.FontSize = 8;
