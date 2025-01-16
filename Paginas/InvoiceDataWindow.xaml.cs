@@ -70,7 +70,10 @@ namespace Herramientas_Factoria
                 string[] bothFiles = { filePath, sinIvaFilePath };
                 string[] pdfAndExcel = { pdfFilePath, excelFilePath };
                 Factura.GenerarCertificadoGlobal(expediente, importe, nombreFactura, fechaFactura, filePath);
-                Factura.GenerarCertificadoSinIVA(tableData, sinIvaFilePath, expediente, importe, importeActas, nombreFactura, fechaFactura);
+                if (GenerarSinIVA.IsChecked == true)
+                {
+                    Factura.GenerarCertificadoSinIVA(tableData, sinIvaFilePath, expediente, importe, importeActas, nombreFactura, fechaFactura);
+                }
                 this.CreateDirectoryAndSaveFiles(folderOfTheFile, this.nombreFactura, bothFiles);
                 this.CopyFilesToDirectory(Path.Combine(folderOfTheFile, this.nombreFactura), pdfAndExcel);
             }
