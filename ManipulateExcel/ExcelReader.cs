@@ -8,10 +8,11 @@ namespace Herramientas_Factoria.ManipulateExcel
 {
     public class ExcelReader
     {
-        public static (string Expediente, string Importe, string nombreFactura) ExtractExpedienteAndImporte(string filePath)
+        public static (string Expediente, string Importe, string ImporteActas, string nombreFactura) ExtractExpedienteAndImporte(string filePath)
         {
             string Expediente = string.Empty;
             string Importe = string.Empty;
+            string ImporteActas = string.Empty;
             string NombreFactura = string.Empty;
 
             // Obtener el nombre del archivo desde la ruta completa
@@ -67,11 +68,27 @@ namespace Herramientas_Factoria.ManipulateExcel
                                 Importe = importeCellValue.ToString().Trim();
                             }
                         }
+                        // Buscar "Importe Actas" y obtener el valor en la celda siguiente
+                        if (cellValue.ToLower().Replace(" ", "").Equals("importeactas", StringComparison.OrdinalIgnoreCase))
+                        {
+                            // Usamos .Value para obtener el valor real
+                            var importeCellValue = worksheet.Cells[row, col + 1].Value;
+
+                            // Si el valor es un número, lo convertimos a decimal
+                            if (importeCellValue is decimal || importeCellValue is double)
+                            {
+                                ImporteActas = Convert.ToDecimal(importeCellValue).ToString("C", new CultureInfo("es-ES"));
+                            }
+                            else if (importeCellValue is string)
+                            {
+                                ImporteActas = importeCellValue.ToString().Trim();
+                            }
+                        }
                     }
                 }
             }
 
-            return (Expediente, Importe, NombreFactura);
+            return (Expediente, Importe, ImporteActas, NombreFactura);
         }
         public static List<Dictionary<string, string>> ExtractTableColumns(string filePath)
         {

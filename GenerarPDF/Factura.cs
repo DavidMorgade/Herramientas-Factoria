@@ -38,7 +38,7 @@ public class Factura
         }
     }
 
-    public static void GenerarCertificadoSinIVA(List<Dictionary<string, string>> tableData, string outputDirectory, string expediente, string importe, string nombreFactura, string fechaFactura)
+    public static void GenerarCertificadoSinIVA(List<Dictionary<string, string>> tableData, string outputDirectory, string expediente, string importe, string importeActas, string nombreFactura, string fechaFactura)
     {
         try
         {
@@ -87,6 +87,12 @@ public class Factura
                     string.IsNullOrWhiteSpace(row["Albarán"]) ||
                     string.IsNullOrWhiteSpace(row["Importe Total (IVA)"]))
                 {
+                    // Agrego importe facturas y actas al final
+                    AgregarImporteActasImporteFactura(document, importeActas, importe);
+                    // Cuando ya es el ultimo documento tambien tengo que guardarlo...
+                    Console.WriteLine("Guardando ultimo documento...");
+                    string filePath = $"{outputDirectory}/DocumentPart{fileCount}.pdf";
+                    document.SaveToFile(filePath, FileFormat.PDF);
                     string[] pdfFiles = Directory.GetFiles(outputDirectory, "DocumentPart*.pdf");
                     string mergedPdfPath = $"{outputDirectory}.pdf";
                     PdfMergerUtility.MergePdfFiles(pdfFiles, mergedPdfPath);
@@ -98,12 +104,13 @@ public class Factura
 
                 // Añadir fila de datos
                 TableRow newRow = table.AddRow();
-                AppendFormattedText(newRow.Cells[0], row["UNOR"]);
-                AppendFormattedText(newRow.Cells[1], row["Nombre"]);
-                AppendFormattedText(newRow.Cells[2], row["Albarán"]);
-                AppendFormattedText(newRow.Cells[3], row["Importe Total (IVA)"]);
+                AppendFormattedText(newRow.Cells[0], row["UNOR"], HorizontalAlignment.Center);
+                AppendFormattedText(newRow.Cells[1], row["Nombre"], HorizontalAlignment.Center);
+                AppendFormattedText(newRow.Cells[2], row["Albarán"], HorizontalAlignment.Center);
+                AppendFormattedText(newRow.Cells[3], row["Importe Total (IVA)"], HorizontalAlignment.Center);
 
                 currentRowCount++;
+
 
             }
         }
@@ -111,6 +118,31 @@ public class Factura
         {
             MessageBox.Show($"Error al acceder al archivo: {ex.Message}", "Error de acceso", MessageBoxButton.OK, MessageBoxImage.Error);
         }
+    }
+    private static void AgregarImporteActasImporteFactura(Document documento, string importeActas, string importeFactura)
+    {
+        Section section = documento.Sections[0];
+        // Añadir un párrafo vacío para margen superior
+        Paragraph emptyParagraph = section.AddParagraph();
+        emptyParagraph.Format.AfterSpacing = 10; // Espacio después del párrafo
+        // Añadir una tabla con 2 filas y 2 columnas
+        Table table = section.AddTable(true);
+        table.ResetCells(2, 2);
+        table.AutoFit(AutoFitBehaviorType.AutoFitToContents);
+        table.TableFormat.HorizontalAlignment = RowAlignment.Left;
+
+
+        // Configurar la primera fila
+        TableRow row1 = table.Rows[0];
+        AppendFormattedText(row1.Cells[0], "Importe Actas:  ", HorizontalAlignment.Left);
+        AppendFormattedTextImporte(row1.Cells[1], "   " + importeActas, HorizontalAlignment.Left);
+
+        // Configurar la segunda fila
+        TableRow row2 = table.Rows[1];
+        AppendFormattedText(row2.Cells[0], "Importe Factura:  ", HorizontalAlignment.Left);
+        AppendFormattedTextImporte(row2.Cells[1], "   " + importeFactura, HorizontalAlignment.Left);
+
+
     }
     private static void RenameFile(string filePath, string newFileName, string newFileExtension)
     {
@@ -168,7 +200,7 @@ public class Factura
 
             TextRange headerText = p.AppendText(headers[i]);
             // Establecer el color de fondo del texto del encabezado
-            headerText.CharacterFormat.HighlightColor = Color.LightBlue;
+            cell.CellFormat.BackColor = Color.Blue;
             headerText.CharacterFormat.Bold = true;
             headerText.CharacterFormat.FontName = "Calibri";
             headerText.CharacterFormat.FontSize = 12;
@@ -178,13 +210,22 @@ public class Factura
     }
 
     // Añadir texto formateado a una celda
-    private static void AppendFormattedText(TableCell cell, string text)
+    private static void AppendFormattedText(TableCell cell, string text, HorizontalAlignment Alignment)
     {
         Paragraph p = cell.AddParagraph();
         TextRange textRange = p.AppendText(text);
         textRange.CharacterFormat.FontName = "Calibri";
         textRange.CharacterFormat.FontSize = 8;
-        p.Format.HorizontalAlignment = HorizontalAlignment.Center; // Centrar horizontalmente
+        p.Format.HorizontalAlignment = Alignment; // Centrar horizontalmente
+    }
+    private static void AppendFormattedTextImporte(TableCell cell, string text, HorizontalAlignment Alignment)
+    {
+        Paragraph p = cell.AddParagraph();
+        TextRange textRange = p.AppendText(text);
+        textRange.CharacterFormat.FontName = "Calibri";
+        textRange.CharacterFormat.FontSize = 8;
+        textRange.CharacterFormat.Bold = true;
+        p.Format.HorizontalAlignment = Alignment; // Centrar horizontalmente
     }
 
     // Añadir espacio para la firma

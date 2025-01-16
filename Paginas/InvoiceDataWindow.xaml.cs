@@ -19,6 +19,7 @@ namespace Herramientas_Factoria
         private string nombreFactura;
         private string expediente;
         private string importe;
+        private string importeActas;
         private string fechaFactura;
         private string excelFilePath;
         private string pdfFilePath;
@@ -69,7 +70,7 @@ namespace Herramientas_Factoria
                 string[] bothFiles = { filePath, sinIvaFilePath };
                 string[] pdfAndExcel = { pdfFilePath, excelFilePath };
                 Factura.GenerarCertificadoGlobal(expediente, importe, nombreFactura, fechaFactura, filePath);
-                Factura.GenerarCertificadoSinIVA(tableData, sinIvaFilePath, expediente, importe, nombreFactura, fechaFactura);
+                Factura.GenerarCertificadoSinIVA(tableData, sinIvaFilePath, expediente, importe, importeActas, nombreFactura, fechaFactura);
                 this.CreateDirectoryAndSaveFiles(folderOfTheFile, this.nombreFactura, bothFiles);
                 this.CopyFilesToDirectory(Path.Combine(folderOfTheFile, this.nombreFactura), pdfAndExcel);
             }
@@ -162,6 +163,7 @@ namespace Herramientas_Factoria
                     this.nombreFactura = data.nombreFactura;
                     this.expediente = data.Expediente;
                     this.importe = data.Importe;
+                    this.importeActas = data.ImporteActas;
 
                     // Mostrar la información del archivo Excel en los TextBlocks
                     ExpedienteFacturaTextBlock.Text = "Expediente: " + expediente;
