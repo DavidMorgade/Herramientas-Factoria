@@ -20,6 +20,7 @@
         </StackPanel>
 
         <Button Cursor="Hand" Click="LoginButton_Click" Content="Iniciar Sesión" Grid.Row="2" Margin="0,20" Background="#007ACC" Foreground="White" Height="40" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" Width="200"/>
+        <TextBlock Grid.Row="3" Margin="40" HorizontalAlignment="Center" FontSize="12" FontWeight="Bold" Foreground="White" Text="Aplicación desarrollada por David Morgade Gil - Servicio de subsistencias del ARDIZ" />
 
     </Grid>
 </Window>

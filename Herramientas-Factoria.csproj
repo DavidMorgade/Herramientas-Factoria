@@ -269,6 +269,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Paginas\PDF\ManipularPDF.xaml.cs">
+      <DependentUpon>ManipularPDF.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Utils\Texto.cs" />
     <Page Include="Paginas\LoginWindow.xaml">
       <SubType>Designer</SubType>
@@ -279,6 +282,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Paginas\Index.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paginas\PDF\ManipularPDF.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -305,6 +312,9 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <Resource Include="icono.ico" />
+    <Resource Include="Paginas\PDF\dividirpdf.png" />
+    <Resource Include="Paginas\PDF\unirpdf.png" />
+    <Resource Include="Paginas\PDF\comprimirpdf.png" />
     <Content Include="Recursos\CERTIFICADO GLOBAL.docx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -317,6 +327,9 @@
     <Content Include="Recursos\CERTIFICADO SIN IVA.docx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Recursos\iconos\unirpdf.png" />
+    <Resource Include="Recursos\iconos\dividirpdf.png" />
+    <Resource Include="Recursos\iconos\comprimirpdf.png" />
     <Content Include="Recursos\MODELO SIN IVA.docx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -336,6 +349,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

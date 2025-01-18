@@ -15,11 +15,10 @@
         <TextBlock Text="Menú Principal" FontSize="24" FontWeight="Bold" Foreground="#FFFFFF" HorizontalAlignment="Center" Margin="10" Grid.Row="0"/>
 
         <!-- Botones de Navegación -->
-        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" >
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center"  >
             <!-- Botón para Generar Certificado de Factura -->
-            <Button Cursor="Hand" Content="Facturación A.M" Background="#007ACC" Foreground="White" Height="40" FontSize="16" Width="250" Click="Button_Facturas"/>
-            <!-- Botón para Certificados de Persona -->
-            <!--<Button Content="Generar Certificado de Persona" Background="#007ACC" Foreground="White" Height="40" FontSize="16" Width="250" Click="Button_GenerarCertificadoPersona"/>-->
+            <Button Cursor="Hand" Content="Facturación A.M" Margin="40" Background="#007ACC" Foreground="White" Height="40" FontSize="16" Width="250" Click="Button_Facturas"/>
+            <Button Cursor="Hand" Content="Manipular PDFs" Background="#007ACC" Foreground="White" Height="40" FontSize="16" Width="250" Click="Button_PDF"/>
         </StackPanel>
 
         <!-- Botón Volver (opcional, dependiendo de tu flujo de navegación) -->

@@ -1,16 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Herramientas_Factoria.Paginas.PDF;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Herramientas_Factoria.Paginas
 {
@@ -35,9 +24,17 @@ namespace Herramientas_Factoria.Paginas
 
         private void Button_Facturas(object sender, RoutedEventArgs e)
         {
-            // Volvemos al login <provisional>
+            // Sacamos la ventana de Facturacion A.M
             InvoiceDataWindow invoiceDataWindow = new InvoiceDataWindow();
             invoiceDataWindow.Show();
+            // Cerrar la ventana actual
+            this.Close();
+        }
+        private void Button_PDF(object sender, RoutedEventArgs e)
+        {
+            // Sacamos la ventana de Facturacion A.M
+            ManipularPDF manipularPDFWindow = new ManipularPDF();
+            manipularPDFWindow.Show();
             // Cerrar la ventana actual
             this.Close();
         }
