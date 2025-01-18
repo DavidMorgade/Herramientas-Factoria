@@ -157,6 +157,9 @@
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="PdfiumViewer, Version=2.13.0.0, Culture=neutral, PublicKeyToken=91e4789cfb0609e0, processorArchitecture=MSIL">
+      <HintPath>packages\PdfiumViewer.2.13.0.0\lib\net20\PdfiumViewer.dll</HintPath>
+    </Reference>
     <Reference Include="PdfSharp, Version=6.1.1.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
       <HintPath>packages\PDFsharp.6.1.1\lib\netstandard2.0\PdfSharp.dll</HintPath>
     </Reference>
@@ -272,6 +275,9 @@
     <Compile Include="Paginas\PDF\ManipularPDF.xaml.cs">
       <DependentUpon>ManipularPDF.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Paginas\PDF\UnirPDF.xaml.cs">
+      <DependentUpon>UnirPDF.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Utils\Texto.cs" />
     <Page Include="Paginas\LoginWindow.xaml">
       <SubType>Designer</SubType>
@@ -286,6 +292,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Paginas\PDF\ManipularPDF.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paginas\PDF\UnirPDF.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

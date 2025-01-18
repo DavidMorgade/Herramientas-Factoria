@@ -24,5 +24,14 @@ namespace Herramientas_Factoria.Paginas.PDF
             this.Close();
 
         }
+        private void Button_Unir(object sender, RoutedEventArgs e)
+        {
+            // Vamos a la pagina unir pdf
+            UnirPDF unirPDF = new UnirPDF();
+            unirPDF.Show();
+
+            // Cerrar la ventana actual
+            this.Close();
+        }
     }
 }
