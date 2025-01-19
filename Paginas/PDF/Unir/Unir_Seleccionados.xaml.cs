@@ -59,6 +59,10 @@ namespace Herramientas_Factoria.Paginas.PDF.Unir
                 }
             }
         }
+        private void Button_GenerarPDF(object sender, RoutedEventArgs e)
+        {
+            //TODO: implementar la logica para generar pdf
+        }
         private void pdfListBox_DragOver(object sender, DragEventArgs e)
         {
             e.Effects = DragDropEffects.Move;
