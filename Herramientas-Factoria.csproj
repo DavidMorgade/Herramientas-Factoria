@@ -275,8 +275,11 @@
     <Compile Include="Paginas\PDF\ManipularPDF.xaml.cs">
       <DependentUpon>ManipularPDF.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\PDF\UnirPDF.xaml.cs">
+    <Compile Include="Paginas\PDF\Unir\UnirPDF.xaml.cs">
       <DependentUpon>UnirPDF.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\PDF\Unir\Unir_Seleccionados.xaml.cs">
+      <DependentUpon>Unir_Seleccionados.xaml</DependentUpon>
     </Compile>
     <Compile Include="Utils\Texto.cs" />
     <Page Include="Paginas\LoginWindow.xaml">
@@ -295,7 +298,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Paginas\PDF\UnirPDF.xaml">
+    <Page Include="Paginas\PDF\Unir\UnirPDF.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paginas\PDF\Unir\Unir_Seleccionados.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -359,7 +366,10 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Paginas\PDF\Comprimir\" />
+    <Folder Include="Paginas\PDF\Dividir\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

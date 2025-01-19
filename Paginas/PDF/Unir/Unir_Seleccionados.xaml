@@ -1,0 +1,53 @@
+﻿<Window x:Class="Herramientas_Factoria.Paginas.PDF.Unir.Unir_Seleccionados"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Unir PDFs" Height="800" Width="1000" Background="#2D2D30"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Unir Archivos PDF" FontSize="24" FontWeight="Bold" Foreground="#FFFFFF" HorizontalAlignment="Center" Margin="10" Grid.Row="0"/>
+        <TextBlock Text="Une PDFs y ponlos en el orden que prefieras." FontSize="18"  Foreground="#FFFFFF" HorizontalAlignment="Center" Margin="40" Grid.Row="1"/>
+
+        <!-- Contenedor de PDFs -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Margin="10">
+            <ListBox x:Name="pdfListBox" AllowDrop="True"
+                     Background="#1E1E1E" Foreground="White" Margin="10"
+                     PreviewMouseLeftButtonDown="pdfListBox_PreviewMouseLeftButtonDown"
+                     Drop="pdfListBox_Drop"
+                     DragOver="pdfListBox_DragOver"
+                     SelectionMode="Single">
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Width="{Binding (FrameworkElement.ActualWidth), RelativeSource={RelativeSource AncestorType=ScrollViewer}}" Cursor="Hand" ItemWidth="180" ItemHeight="180"/>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Border Background="#1E1E1E" BorderBrush="White" BorderThickness="1" Width="180" Height="180" Margin="5">
+                            <TextBlock Text="{Binding}" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap"/>
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </ScrollViewer>
+
+        <!-- Botón para añadir PDFs -->
+        <StackPanel Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10">
+            <Button Click="Button_AddPDF" Cursor="Hand" Content="Añadir PDF" Width="200" Margin="0,20" Background="#007ACC" Foreground="White" Height="40" FontSize="14"/>
+        </StackPanel>
+
+        <!-- Botón Volver centrado en la parte inferior -->
+        <StackPanel Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,10">
+            <Button Click="Button_Volver" Cursor="Hand" Content="Volver" Width="200" Margin="0,20" Background="#1E1E1E" Foreground="White" Height="40" FontSize="14"/>
+        </StackPanel>
+    </Grid>
+</Window>

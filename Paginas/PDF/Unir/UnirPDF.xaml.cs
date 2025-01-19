@@ -1,15 +1,17 @@
 ﻿using Microsoft.Win32;
-using System.Collections.Generic;
+using System;
+using System.Collections.ObjectModel;
 using System.Windows;
 
-namespace Herramientas_Factoria.Paginas.PDF
+namespace Herramientas_Factoria.Paginas.PDF.Unir
+
 {
     /// <summary>
     /// Lógica de interacción para UnirPDF.xaml
     /// </summary>
     public partial class UnirPDF : Window
     {
-        private List<string> pdfFiles;
+        public ObservableCollection<string> PdfFiles = new ObservableCollection<string>();
         public UnirPDF()
         {
             InitializeComponent();
@@ -19,9 +21,7 @@ namespace Herramientas_Factoria.Paginas.PDF
         {
             // Volvemos a la pagina princial
             ManipularPDF manipularPDF = new ManipularPDF();
-            manipularPDF.Show();
-            // Cerrar la ventana actual
-            this.Close();
+            this.CerrarVentanaYAbrir(manipularPDF);
         }
         private void Button_Seleccionar(object sender, RoutedEventArgs e)
         {
@@ -36,14 +36,25 @@ namespace Herramientas_Factoria.Paginas.PDF
             {
                 foreach (string file in openFileDialog.FileNames)
                 {
-                    pdfFiles.Add(file);
+                    PdfFiles.Add(file);
+                    Console.WriteLine(file);
                 }
             }
+            if (this.PdfFiles == null)
+            {
+                MessageBox.Show("No has seleccionado ningún fichero PDF", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+            Unir_Seleccionados unir_Seleccionados = new Unir_Seleccionados(PdfFiles);
+            this.CerrarVentanaYAbrir(unir_Seleccionados);
+
+
+        }
+        private void CerrarVentanaYAbrir(Window ventana)
+        {
+            this.Close();
+            ventana.Show();
         }
 
-        public List<string> GetPdfFiles()
-        {
-            return this.pdfFiles;
-        }
     }
 }
