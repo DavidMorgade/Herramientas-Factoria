@@ -27,13 +27,16 @@
                      SelectionMode="Single">
                 <ListBox.ItemsPanel>
                     <ItemsPanelTemplate>
-                        <WrapPanel Width="{Binding (FrameworkElement.ActualWidth), RelativeSource={RelativeSource AncestorType=ScrollViewer}}" Cursor="Hand" ItemWidth="180" ItemHeight="180"/>
+                        <WrapPanel Width="{Binding (FrameworkElement.ActualWidth), RelativeSource={RelativeSource AncestorType=ScrollViewer}}" ItemWidth="180" ItemHeight="240"/>
                     </ItemsPanelTemplate>
                 </ListBox.ItemsPanel>
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <Border Background="#1E1E1E" BorderBrush="White" BorderThickness="1" Width="180" Height="180" Margin="5">
-                            <TextBlock Text="{Binding}" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap"/>
+                        <Border Background="#1E1E1E" BorderBrush="White" BorderThickness="1" Width="170" Height="240" Margin="5">
+                            <StackPanel>
+                                <Image Source="{Binding Thumbnail}" Stretch="Uniform" Height="220"/>
+                                <TextBlock Text="{Binding FileName}" Foreground="White" TextAlignment="Center" Margin="5,0,5,5" TextWrapping="Wrap"/>
+                            </StackPanel>
                         </Border>
                     </DataTemplate>
                 </ListBox.ItemTemplate>

@@ -1,7 +1,12 @@
 ﻿using Microsoft.Win32;
 using System.Collections.ObjectModel;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media.Imaging;
+using PdfDocument = PdfiumViewer.PdfDocument;
 
 namespace Herramientas_Factoria.Paginas.PDF.Unir
 {
@@ -10,11 +15,15 @@ namespace Herramientas_Factoria.Paginas.PDF.Unir
     /// </summary>
     public partial class Unir_Seleccionados : Window
     {
-        public ObservableCollection<string> PdfFiles { get; set; }
-        public Unir_Seleccionados(ObservableCollection<string> pdfFiles)
+        public ObservableCollection<PdfFile> PdfFiles = new ObservableCollection<PdfFile>();
+        public Unir_Seleccionados(ObservableCollection<string> pdfFilePaths)
         {
             InitializeComponent();
-            this.PdfFiles = pdfFiles;
+            foreach (var filePath in pdfFilePaths)
+            {
+                var firstPage = RenderPdfFirstPage(filePath);
+                PdfFiles.Add(new PdfFile { FilePath = filePath, Thumbnail = firstPage });
+            }
             pdfListBox.ItemsSource = PdfFiles;
         }
 
@@ -46,7 +55,7 @@ namespace Herramientas_Factoria.Paginas.PDF.Unir
             {
                 foreach (string filename in openFileDialog.FileNames)
                 {
-                    PdfFiles.Add(filename);
+                    PdfFiles.Add(new PdfFile { FilePath = filename, Thumbnail = RenderPdfFirstPage(filename) });
                 }
             }
         }
@@ -56,10 +65,10 @@ namespace Herramientas_Factoria.Paginas.PDF.Unir
         }
         private void pdfListBox_Drop(object sender, DragEventArgs e)
         {
-            if (e.Data.GetDataPresent(typeof(string)))
+            if (e.Data.GetDataPresent(typeof(PdfFile)))
             {
-                string data = e.Data.GetData(typeof(string)) as string;
-                var target = ((FrameworkElement)e.OriginalSource).DataContext as string;
+                PdfFile data = e.Data.GetData(typeof(PdfFile)) as PdfFile;
+                var target = ((FrameworkElement)e.OriginalSource).DataContext as PdfFile;
 
                 int oldIndex = PdfFiles.IndexOf(data);
                 int newIndex = PdfFiles.IndexOf(target);
@@ -70,6 +79,33 @@ namespace Herramientas_Factoria.Paginas.PDF.Unir
                 }
             }
         }
-
+        private BitmapSource RenderPdfFirstPage(string pdfPath)
+        {
+            using (var document = PdfDocument.Load(pdfPath))
+            {
+                using (var image = document.Render(0, 300, 300, true))
+                {
+                    // Asegurarse de que la imagen sea un Bitmap
+                    using (var bitmap = new Bitmap(image))
+                    {
+                        return ConvertBitmapToBitmapSource(bitmap);
+                    }
+                }
+            }
+        }
+        private BitmapSource ConvertBitmapToBitmapSource(Bitmap bitmap)
+        {
+            using (var memory = new MemoryStream())
+            {
+                bitmap.Save(memory, ImageFormat.Png);
+                memory.Position = 0;
+                var bitmapImage = new BitmapImage();
+                bitmapImage.BeginInit();
+                bitmapImage.StreamSource = memory;
+                bitmapImage.CacheOption = BitmapCacheOption.OnLoad;
+                bitmapImage.EndInit();
+                return bitmapImage;
+            }
+        }
     }
 }
