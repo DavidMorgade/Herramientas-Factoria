@@ -1,5 +1,6 @@
 ﻿using Microsoft.Win32;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
@@ -79,6 +80,9 @@ namespace Herramientas_Factoria.Paginas.PDF.Unir
                 string folderOfTheFile = saveFileDialog.FileName;
                 string[] filePathsToMerge = PdfFiles.Select(pdf => pdf.FilePath).ToArray();
                 PdfMergerUtility.MergePdfFiles(filePathsToMerge, saveFileDialog.FileName);
+
+                // Open the merged PDF with the default PDF viewer
+                Process.Start(new ProcessStartInfo(saveFileDialog.FileName) { UseShellExecute = true });
             }
 
         }
