@@ -39,14 +39,14 @@ namespace Herramientas_Factoria.Paginas.PDF.Unir
                     PdfFiles.Add(file);
                     Console.WriteLine(file);
                 }
+                Unir_Seleccionados unir_Seleccionados = new Unir_Seleccionados(PdfFiles);
+                this.CerrarVentanaYAbrir(unir_Seleccionados);
             }
             if (this.PdfFiles == null)
             {
                 MessageBox.Show("No has seleccionado ningún fichero PDF", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
-            Unir_Seleccionados unir_Seleccionados = new Unir_Seleccionados(PdfFiles);
-            this.CerrarVentanaYAbrir(unir_Seleccionados);
 
 
         }
