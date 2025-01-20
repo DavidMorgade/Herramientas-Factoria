@@ -3,6 +3,7 @@ using System.Collections.ObjectModel;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
@@ -62,6 +63,24 @@ namespace Herramientas_Factoria.Paginas.PDF.Unir
         private void Button_GenerarPDF(object sender, RoutedEventArgs e)
         {
             //TODO: implementar la logica para generar pdf
+            if (this.PdfFiles.Count <= 1)
+            {
+                MessageBox.Show("No has seleccionado mas de un fichero pdf para unir", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+
+            saveFileDialog.Title = "Guardar PDF";
+            saveFileDialog.Filter = "PDF Files (*.pdf)|*.pdf|All files (*.*)|*.*";
+            saveFileDialog.FileName = "PDF unido" + PdfFiles[0].FileName;
+
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                string folderOfTheFile = saveFileDialog.FileName;
+                string[] filePathsToMerge = PdfFiles.Select(pdf => pdf.FilePath).ToArray();
+                PdfMergerUtility.MergePdfFiles(filePathsToMerge, saveFileDialog.FileName);
+            }
+
         }
         private void pdfListBox_DragOver(object sender, DragEventArgs e)
         {
