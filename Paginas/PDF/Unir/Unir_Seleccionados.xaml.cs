@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32;
+using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Drawing;
@@ -59,6 +60,17 @@ namespace Herramientas_Factoria.Paginas.PDF.Unir
                 {
                     PdfFiles.Add(new PdfFile { FilePath = filename, Thumbnail = RenderPdfFirstPage(filename) });
                 }
+            }
+        }
+        private void RemovePdf_Click(object sender, RoutedEventArgs e)
+        {
+            e.Handled = true;
+            Console.WriteLine("Pdf removed");
+            // Find the PdfFile associated with the clicked button
+            if (sender is Button button && button.DataContext is PdfFile pdfFile)
+            {
+                // Remove the PdfFile from the ObservableCollection
+                PdfFiles.Remove(pdfFile);
             }
         }
         private void Button_GenerarPDF(object sender, RoutedEventArgs e)

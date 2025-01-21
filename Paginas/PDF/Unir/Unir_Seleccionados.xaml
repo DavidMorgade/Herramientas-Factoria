@@ -32,11 +32,16 @@
                 </ListBox.ItemsPanel>
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <Border Background="#1E1E1E" BorderBrush="White" BorderThickness="0.5" Width="160" Height="240" Margin="5">
-                            <StackPanel>
-                                <Image Source="{Binding Thumbnail}" Stretch="Uniform" Height="220"/>
-                                <TextBlock Text="{Binding FileName}" Foreground="White" TextAlignment="Center" Margin="5,0,5,5" TextWrapping="Wrap"/>
-                            </StackPanel>
+                        <Border Background="#1E1E1E" BorderBrush="White" BorderThickness="1" Width="170" Height="260" Margin="5">
+                            <Grid>
+                                <!-- StackPanel to hold Image and TextBlock -->
+                                <StackPanel>
+                                    <Image Source="{Binding Thumbnail}" Stretch="Uniform" Height="220"/>
+                                    <TextBlock Text="{Binding FileName}" Foreground="White" TextAlignment="Center" Margin="5,0,5,5" TextWrapping="Wrap"/>
+                                </StackPanel>
+                                <!-- Button positioned on top left of the Image -->
+                                <Button Content="X" Background="Black" Foreground="White" Width="20" Height="20" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="15, 5" Click="RemovePdf_Click"/>
+                            </Grid>
                         </Border>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
