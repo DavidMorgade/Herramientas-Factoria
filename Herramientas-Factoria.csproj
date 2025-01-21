@@ -305,6 +305,7 @@
     <Resource Include="Paginas\PDF\unirpdf.png" />
     <Resource Include="Paginas\PDF\comprimirpdf.png" />
     <Resource Include="ILLink\ILLink.Descriptors.LibraryBuild.xml" />
+    <Resource Include="fondo-app.png" />
     <Content Include="libs\pdfium.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
