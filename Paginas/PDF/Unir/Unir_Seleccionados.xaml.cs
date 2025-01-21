@@ -1,5 +1,4 @@
 ﻿using Microsoft.Win32;
-using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Drawing;
@@ -8,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using System.Windows.Media.Imaging;
 using PdfDocument = PdfiumViewer.PdfDocument;
 
@@ -62,12 +62,13 @@ namespace Herramientas_Factoria.Paginas.PDF.Unir
                 }
             }
         }
-        private void RemovePdf_Click(object sender, RoutedEventArgs e)
+        private void RemovePdf_Click(object sender, MouseButtonEventArgs e)
         {
+            // Ensure the event is not handled by other controls
             e.Handled = true;
-            Console.WriteLine("Pdf removed");
-            // Find the PdfFile associated with the clicked button
-            if (sender is Button button && button.DataContext is PdfFile pdfFile)
+
+            // Find the PdfFile associated with the clicked Border
+            if (sender is Border border && border.DataContext is PdfFile pdfFile)
             {
                 // Remove the PdfFile from the ObservableCollection
                 PdfFiles.Remove(pdfFile);

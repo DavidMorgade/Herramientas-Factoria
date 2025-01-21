@@ -57,7 +57,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>icono.ico</ApplicationIcon>
+    <ApplicationIcon>logo-app.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>E7AC7E3994996545ADDFDC7D6E28F377870B4FC9</ManifestCertificateThumbprint>
@@ -301,7 +301,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Resource Include="icono.ico" />
     <Resource Include="Paginas\PDF\dividirpdf.png" />
     <Resource Include="Paginas\PDF\unirpdf.png" />
     <Resource Include="Paginas\PDF\comprimirpdf.png" />
@@ -309,6 +308,7 @@
     <Content Include="libs\pdfium.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="logo-app.ico" />
     <Content Include="Recursos\CERTIFICADO GLOBAL.docx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

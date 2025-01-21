@@ -14,8 +14,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <TextBlock Text="Unir Archivos PDF" FontSize="24" FontWeight="Bold" Foreground="#FFFFFF" HorizontalAlignment="Center" Margin="10" Grid.Row="0"/>
-        <TextBlock Text="Une PDFs y ponlos en el orden que prefieras." FontSize="18"  Foreground="#FFFFFF" HorizontalAlignment="Center" Margin="40" Grid.Row="1"/>
+        <TextBlock Text="Arrastra los ficheros para cambiarlos de posición, para elimintarlos utiliza click derecho" FontSize="18"  Foreground="#FFFFFF" HorizontalAlignment="Center" Margin="10" Grid.Row="0"/>
 
         <!-- Contenedor de PDFs -->
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Margin="10">
@@ -32,15 +31,13 @@
                 </ListBox.ItemsPanel>
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <Border Background="#1E1E1E" BorderBrush="White" BorderThickness="1" Width="170" Height="260" Margin="5">
+                        <Border MouseRightButtonUp="RemovePdf_Click" Background="#1E1E1E" BorderBrush="White" BorderThickness="1" Width="160" Height="260" Margin="5" Cursor="Hand">
                             <Grid>
                                 <!-- StackPanel to hold Image and TextBlock -->
                                 <StackPanel>
                                     <Image Source="{Binding Thumbnail}" Stretch="Uniform" Height="220"/>
-                                    <TextBlock Text="{Binding FileName}" Foreground="White" TextAlignment="Center" Margin="5,0,5,5" TextWrapping="Wrap"/>
+                                    <TextBlock Text="{Binding FileName}" Foreground="White" TextAlignment="Center" Margin="5,0,5,5" TextWrapping="Wrap" />
                                 </StackPanel>
-                                <!-- Button positioned on top left of the Image -->
-                                <Button Content="X" Background="Black" Foreground="White" Width="20" Height="20" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="15, 5" Click="RemovePdf_Click"/>
                             </Grid>
                         </Border>
                     </DataTemplate>
