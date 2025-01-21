@@ -254,6 +254,9 @@
     <Compile Include="Paginas\PDF\Unir\Unir_Seleccionados.xaml.cs">
       <DependentUpon>Unir_Seleccionados.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Paginas\Productos\ProductosPagina.xaml.cs">
+      <DependentUpon>ProductosPagina.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Utils\Texto.cs" />
     <Page Include="Paginas\LoginWindow.xaml">
       <SubType>Designer</SubType>
@@ -276,6 +279,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Paginas\PDF\Unir\Unir_Seleccionados.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paginas\Productos\ProductosPagina.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

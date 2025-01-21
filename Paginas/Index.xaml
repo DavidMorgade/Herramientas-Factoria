@@ -17,8 +17,9 @@
         <!-- Botones de Navegación -->
         <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center"  >
             <!-- Botón para Generar Certificado de Factura -->
-            <Button Cursor="Hand" Content="Facturación A.M" Margin="40" Background="#007ACC" Foreground="White" Height="40" FontSize="16" Width="250" Click="Button_Facturas"/>
-            <Button Cursor="Hand" Content="Manipular PDFs" Background="#007ACC" Foreground="White" Height="40" FontSize="16" Width="250" Click="Button_PDF"/>
+            <Button Cursor="Hand" Content="Facturación A.M" Margin="20" Background="#007ACC" Foreground="White" Height="40" FontSize="16" Width="250" Click="Button_Facturas"/>
+            <Button Cursor="Hand" Content="Manipular PDFs" Margin="20" Background="#007ACC" Foreground="White" Height="40" FontSize="16" Width="250" Click="Button_PDF"/>
+            <Button Cursor="Hand" Content="Listado de Productos" Margin="20" Background="#007ACC" Foreground="White" Height="40" FontSize="16" Width="250" Click="Button_Productos"/>
         </StackPanel>
 
         <!-- Botón Volver (opcional, dependiendo de tu flujo de navegación) -->
