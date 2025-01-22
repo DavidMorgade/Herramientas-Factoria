@@ -1,0 +1,3784 @@
+{
+  "Productos": [
+    {
+      "NIIN": "332041308",
+      "Descripción": "ARROZ BLANCO REDONDO 1 KG",
+      "Nombre": "ARROZ BLANCO REDONDO 1 KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.38
+    },
+    {
+      "NIIN": "332036123",
+      "Descripción": "ARROZ NATURAL TIPO BLANCO LARGO SEMILARGO BOLSA 1 KG",
+      "Nombre": "ARROZ NATURAL TIPO BLANCO LARGO SEMILARGO BOLSA 1 KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.26
+    },
+    {
+      "NIIN": "332039123",
+      "Descripción": "ARROZ TRES DELICIAS CONGELADO Caja de 4 bolsas de 2,5 KG.",
+      "Nombre": "ARROZ TRES DELICIAS CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 7.07
+    },
+    {
+      "NIIN": "332036122",
+      "Descripción": "ARROZ VAPORIZADO TIPO BLANCO GRANO LARGO, BOLSA 1 KG",
+      "Nombre": "ARROZ VAPORIZADO TIPO BLANCO GRANO LARGO, BOLSA 1 KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.53
+    },
+    {
+      "NIIN": "332080441",
+      "Descripción": "HARINA FINA DE MAIZ",
+      "Nombre": "HARINA FINA DE MAIZ",
+      "Cód. U.Entrega": "BX",
+      "Precio": 3.6
+    },
+    {
+      "NIIN": "332038144",
+      "Descripción": "HARINA PANADERA SACO 25 KG Saco 25 KG.",
+      "Nombre": "HARINA PANADERA SACO 25 KG",
+      "Cód. U.Entrega": "BG",
+      "Precio": 17.5
+    },
+    {
+      "NIIN": "332128486",
+      "Descripción": "BAGUETTE CLASICA 220-260 G PRECOCIDA CONGELADA Caja de 39 unidades de  250 gr",
+      "Nombre": "BAGUETTE CLASICA 220-260 G PRECOCIDA CONGELADA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 21.54
+    },
+    {
+      "NIIN": "332132617",
+      "Descripción": "BARRA DE PAN 250-310 G BARRA DE PAN 250-310 g",
+      "Nombre": "BARRA DE PAN 250-310 G",
+      "Cód. U.Entrega": "KG",
+      "Precio": 3.09
+    },
+    {
+      "NIIN": "332132618",
+      "Descripción": "CHAPATA 250-350 G CHAPATA 250-350 g",
+      "Nombre": "CHAPATA 250-350 G",
+      "Cód. U.Entrega": "KG",
+      "Precio": 3.5
+    },
+    {
+      "NIIN": "332132621",
+      "Descripción": "PAN BAGUETTE 200-250 G PAN BAGUETTE 200-250 g",
+      "Nombre": "PAN BAGUETTE 200-250 G",
+      "Cód. U.Entrega": "KG",
+      "Precio": 2.9
+    },
+    {
+      "NIIN": "332132628",
+      "Descripción": "PAN BAGUETTE PRECOCINADO ATMOSFERA CONTROLADA 55 G Caja de 12 bolsas de 4 unidades de 50 gr",
+      "Nombre": "PAN BAGUETTE PRECOCINADO ATMOSFERA CONTROLADA 55 G",
+      "Cód. U.Entrega": "BX",
+      "Precio": 10.72
+    },
+    {
+      "NIIN": "332058112",
+      "Descripción": "PAN MAXI BURGUER 300 GR Caja de 6 bolsas de  300 gr",
+      "Nombre": "PAN MAXI BURGUER 300 GR",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.88
+    },
+    {
+      "NIIN": "332057695",
+      "Descripción": "PAN MOLDE BLANCO 700-1100 G Caja de 5 bolsas de  1 KG",
+      "Nombre": "PAN MOLDE BLANCO 700-1100 G",
+      "Cód. U.Entrega": "BX",
+      "Precio": 2.18
+    },
+    {
+      "NIIN": "332057694",
+      "Descripción": "PAN PERRITO 330 GR Bolsa de 4 UNIDADES DE 55 GR",
+      "Nombre": "PAN PERRITO 330 GR",
+      "Cód. U.Entrega": "BG",
+      "Precio": 0.61
+    },
+    {
+      "NIIN": "332132663",
+      "Descripción": "PAN PRECOCINADO BAGUETTE ATMOSFERA CONTROLADA 220-260 G Caja de 12 bolsas de 2 unidades de 125 gr",
+      "Nombre": "PAN PRECOCINADO BAGUETTE ATMOSFERA CONTROLADA 220-260 G",
+      "Cód. U.Entrega": "BX",
+      "Precio": 10.41
+    },
+    {
+      "NIIN": "004642224",
+      "Descripción": "PAN, RALLADO Caja de 18 embalajes de 500 gr",
+      "Nombre": "PAN, RALLADO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.22
+    },
+    {
+      "NIIN": "332132616",
+      "Descripción": "PANECILLO 50-120 G. PANECILLO 50-120 g.",
+      "Nombre": "PANECILLO 50-120 G.",
+      "Cód. U.Entrega": "KG",
+      "Precio": 2.92
+    },
+    {
+      "NIIN": "332132636",
+      "Descripción": "PICOS DE PAN CASERO Cajas de 20 bolsas de 230 gr",
+      "Nombre": "PICOS DE PAN CASERO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 21.2
+    },
+    {
+      "NIIN": "332039030",
+      "Descripción": "BIZCOCHOS SECOS caja de  1,8 Kg con 40 paquetes de 3 ud",
+      "Nombre": "BIZCOCHOS SECOS",
+      "Cód. U.Entrega": "BX",
+      "Precio": 10.8
+    },
+    {
+      "NIIN": "332039033",
+      "Descripción": "BOLLO  RELLENO CHOCO Caja de 950 gr con 25 unidades",
+      "Nombre": "BOLLO  RELLENO CHOCO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 6.17
+    },
+    {
+      "NIIN": "332075580",
+      "Descripción": "BOLLO MEDIAS NOCHES 200-350 GR Caja de 1 Kg con 28 unidades",
+      "Nombre": "BOLLO MEDIAS NOCHES 200-350 GR",
+      "Cód. U.Entrega": "BX",
+      "Precio": 6
+    },
+    {
+      "NIIN": "332038893",
+      "Descripción": "BOLLO TIPO BERLINA AZUCAR CONG Caja con 72 unidades",
+      "Nombre": "BOLLO TIPO BERLINA AZUCAR CONG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 27
+    },
+    {
+      "NIIN": "332038892",
+      "Descripción": "BOLLO TIPO BERLINA CHOCO CONG Caja con 76 unidades",
+      "Nombre": "BOLLO TIPO BERLINA CHOCO CONG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 31.35
+    },
+    {
+      "NIIN": "332075583",
+      "Descripción": "CA?A RELLENA CREMA TAMA?O XL Caja de 36 unidades de 107 gr",
+      "Nombre": "CA?A RELLENA CREMA TAMA?O XL",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.95
+    },
+    {
+      "NIIN": "332070492",
+      "Descripción": "CA?A RELLENA DE CREMA Caja de 2,55KG 34ud de 75g envuelta",
+      "Nombre": "CA?A RELLENA DE CREMA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 16.57
+    },
+    {
+      "NIIN": "332058876",
+      "Descripción": "CA?AS DE CABELLO DE ANGEL 4U Caja de 2,55KG 34ud de 75g envuelta",
+      "Nombre": "CA?AS DE CABELLO DE ANGEL 4U",
+      "Cód. U.Entrega": "BX",
+      "Precio": 16.57
+    },
+    {
+      "NIIN": "332037508",
+      "Descripción": "CHURRO LAZO  CONG Caja de  2 bolsas de 2 KG",
+      "Nombre": "CHURRO LAZO  CONG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.9
+    },
+    {
+      "NIIN": "332132640",
+      "Descripción": "CONCHAS DE CHOCOLATE Caja con 32 unidades",
+      "Nombre": "CONCHAS DE CHOCOLATE",
+      "Cód. U.Entrega": "BX",
+      "Precio": 11.52
+    },
+    {
+      "NIIN": "332091109",
+      "Descripción": "CROISSANT RECTO CONG Caja de 60 unidades de 100g",
+      "Nombre": "CROISSANT RECTO CONG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 30
+    },
+    {
+      "NIIN": "332154910",
+      "Descripción": "CROISSANT RELLENO DE CACAO Caja de  1 Kg con 25 unidades",
+      "Nombre": "CROISSANT RELLENO DE CACAO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 5
+    },
+    {
+      "NIIN": "332058879",
+      "Descripción": "CROISSANTS BOLSA 10 U Caja de 70 unidades de 25 gr",
+      "Nombre": "CROISSANTS BOLSA 10 U",
+      "Cód. U.Entrega": "BX",
+      "Precio": 8.34
+    },
+    {
+      "NIIN": "332075582",
+      "Descripción": "DONUTS BOMBON BLISTER 2 UDS o EQUIVALENTE Caja de 14 packs de 2 unidades",
+      "Nombre": "DONUTS BOMBON BLISTER 2 UDS o EQUIVALENTE",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.16
+    },
+    {
+      "NIIN": "332075581",
+      "Descripción": "DONUTS CLASSIC 2 UDS AZUCAR o EQUIVALENTE Caja de 14 packs de 2 unidades",
+      "Nombre": "DONUTS CLASSIC 2 UDS AZUCAR o EQUIVALENTE",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.09
+    },
+    {
+      "NIIN": "332064445",
+      "Descripción": "EMPANADA ATUN CONGELADA 500-600 GR Caja de 10 unidades de 570g EA",
+      "Nombre": "EMPANADA ATUN CONGELADA 500-600 GR",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.53
+    },
+    {
+      "NIIN": "332038882",
+      "Descripción": "GALLETAS TIPO MARIA 5 UNIDADES. Caja de 144 paquetes de 25g",
+      "Nombre": "GALLETAS TIPO MARIA 5 UNIDADES.",
+      "Cód. U.Entrega": "BX",
+      "Precio": 10.83
+    },
+    {
+      "NIIN": "332038883",
+      "Descripción": "GALLETAS RELIEVE. Caja de 12 paquetes de  800 gr",
+      "Nombre": "GALLETAS RELIEVE.",
+      "Cód. U.Entrega": "BX",
+      "Precio": 23.71
+    },
+    {
+      "NIIN": "332038888",
+      "Descripción": "GALLETAS RELLENA, SABOR CHOCOLATE Caja de 24 paquetes de 180 gr",
+      "Nombre": "GALLETAS RELLENA, SABOR CHOCOLATE",
+      "Cód. U.Entrega": "BX",
+      "Precio": 13.73
+    },
+    {
+      "NIIN": "332038890",
+      "Descripción": "GALLETAS RELLENAS, SABOR FRESA Caja de 24 paquetes de 180 gr",
+      "Nombre": "GALLETAS RELLENAS, SABOR FRESA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 16.84
+    },
+    {
+      "NIIN": "332038891",
+      "Descripción": "GALLETAS RELLENAS, SABOR LIMON. Caja de 24 paquetes de 180 gr",
+      "Nombre": "GALLETAS RELLENAS, SABOR LIMON.",
+      "Cód. U.Entrega": "BX",
+      "Precio": 16.84
+    },
+    {
+      "NIIN": "332038889",
+      "Descripción": "GALLETAS RELLENAS, SABOR NATA Caja de 24 paquetes de 180 gr",
+      "Nombre": "GALLETAS RELLENAS, SABOR NATA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 16.84
+    },
+    {
+      "NIIN": "332091104",
+      "Descripción": "HERRADURA DE CHOCOLATE 170 G CONGELADA Caja de 40 unidades de 170 gr",
+      "Nombre": "HERRADURA DE CHOCOLATE 170 G CONGELADA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 44.2
+    },
+    {
+      "NIIN": "332039035",
+      "Descripción": "MAGDALENAS caja de  1,56 Kg con 24 paquetes de 2ud",
+      "Nombre": "MAGDALENAS",
+      "Cód. U.Entrega": "BX",
+      "Precio": 4.02
+    },
+    {
+      "NIIN": "332057698",
+      "Descripción": "MAGDALENAS ALARGADAS (VALENCIANAS) caja de  1,95 Kg con 30 paquetes de 2ud",
+      "Nombre": "MAGDALENAS ALARGADAS (VALENCIANAS)",
+      "Cód. U.Entrega": "BX",
+      "Precio": 8.28
+    },
+    {
+      "NIIN": "332091105",
+      "Descripción": "NAPOLITANA DE CHOCOLATE CONGELADA Caja de 70 unidades de 115 gr",
+      "Nombre": "NAPOLITANA DE CHOCOLATE CONGELADA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 29.46
+    },
+    {
+      "NIIN": "332091106",
+      "Descripción": "NAPOLITANA DE CREMA CONGELADA Caja de 70 unidades de 115 gr",
+      "Nombre": "NAPOLITANA DE CREMA CONGELADA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 52.32
+    },
+    {
+      "NIIN": "332058604",
+      "Descripción": "PALMERA BOMBON XL Caja de 32 unidades de 125 gr",
+      "Nombre": "PALMERA BOMBON XL",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.02
+    },
+    {
+      "NIIN": "332063816",
+      "Descripción": "PALMERA CHOCOLATE (80 GR) Caja de 1,28 kg con 16 unidades de 80g aprox",
+      "Nombre": "PALMERA CHOCOLATE (80 GR)",
+      "Cód. U.Entrega": "BX",
+      "Precio": 8.28
+    },
+    {
+      "NIIN": "332039032",
+      "Descripción": "PALMERITAS Caja de 1,5 Kg con 67 paquetes de 2 ud",
+      "Nombre": "PALMERITAS",
+      "Cód. U.Entrega": "BX",
+      "Precio": 12.43
+    },
+    {
+      "NIIN": "332132641",
+      "Descripción": "PASTELES CONGELADOS Caja de  1,68KG",
+      "Nombre": "PASTELES CONGELADOS",
+      "Cód. U.Entrega": "BX",
+      "Precio": 30.94
+    },
+    {
+      "NIIN": "332083121",
+      "Descripción": "PLANCHA DE HOJALDRE Caja de 12 unidades de 900 gr",
+      "Nombre": "PLANCHA DE HOJALDRE",
+      "Cód. U.Entrega": "BX",
+      "Precio": 3.63
+    },
+    {
+      "NIIN": "332039029",
+      "Descripción": "PLUM CAKE CHOCOLATE Caja de 3 Kg",
+      "Nombre": "PLUM CAKE CHOCOLATE",
+      "Cód. U.Entrega": "BX",
+      "Precio": 13.08
+    },
+    {
+      "NIIN": "332039028",
+      "Descripción": "PLUM CAKE FRUTA Caja de 3 Kg",
+      "Nombre": "PLUM CAKE FRUTA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 14.88
+    },
+    {
+      "NIIN": "332075596",
+      "Descripción": "SURTIDO DE SALADITOS Caja de 6 Bg de 1Kg",
+      "Nombre": "SURTIDO DE SALADITOS",
+      "Cód. U.Entrega": "BX",
+      "Precio": 4.36
+    },
+    {
+      "NIIN": "332038887",
+      "Descripción": "SURTIDO GALLETAS. Caja de 6 estuches de 402 gr",
+      "Nombre": "SURTIDO GALLETAS.",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.99
+    },
+    {
+      "NIIN": "332076017",
+      "Descripción": "TARTA CONGELADA QUESO Y ARANDANOS 1,8 KG Caja que contiene una EA de  1,8KG",
+      "Nombre": "TARTA CONGELADA QUESO Y ARANDANOS 1,8 KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 14.76
+    },
+    {
+      "NIIN": "332132647",
+      "Descripción": "TARTA CONGELADA SAN MARCOS 1,8 KG Caja que contiene una EA de  1,8KG",
+      "Nombre": "TARTA CONGELADA SAN MARCOS 1,8 KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 14.76
+    },
+    {
+      "NIIN": "332132646",
+      "Descripción": "TARTA CONGELADA SELVA NEGRA 1,8 KG Caja que contiene una EA de  1,8KG",
+      "Nombre": "TARTA CONGELADA SELVA NEGRA 1,8 KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 14.76
+    },
+    {
+      "NIIN": "332077136",
+      "Descripción": "TORTAS DE ACEITE Caja de 10 paquetes de 180 gr",
+      "Nombre": "TORTAS DE ACEITE",
+      "Cód. U.Entrega": "BX",
+      "Precio": 27.28
+    },
+    {
+      "NIIN": "332058603",
+      "Descripción": "BASE PIZZA CONG Caja de 15 paquetes de 3 unidades de 125 gr",
+      "Nombre": "BASE PIZZA CONG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 16.25
+    },
+    {
+      "NIIN": "332037487",
+      "Descripción": "PIZZAS CONGELADA DE ATUN Caja de 10 unidades de 1035 gr",
+      "Nombre": "PIZZAS CONGELADA DE ATUN",
+      "Cód. U.Entrega": "BX",
+      "Precio": 6.83
+    },
+    {
+      "NIIN": "332037506",
+      "Descripción": "PIZZAS CONGELADA MARGARITA Caja de 10 unidades de 950 gr",
+      "Nombre": "PIZZAS CONGELADA MARGARITA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 2.85
+    },
+    {
+      "NIIN": "332132330",
+      "Descripción": "LASA?A CARNE CONGELADA CAJAS DE 12 ENVASES DE 300GR",
+      "Nombre": "LASA?A CARNE CONGELADA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.22
+    },
+    {
+      "NIIN": "332037510",
+      "Descripción": "LASA?A VEGETAL CONGELADA Caja de 30 unidades de  175 gr",
+      "Nombre": "LASA?A VEGETAL CONGELADA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.55
+    },
+    {
+      "NIIN": "332037130",
+      "Descripción": "ESPAGHETTI  10 bolsas de 1KG",
+      "Nombre": "ESPAGHETTI  10KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.5
+    },
+    {
+      "NIIN": "332037150",
+      "Descripción": "ESPIRALES 3 SAB. 5KG Caja que contiene 1 bolsa de  5KG",
+      "Nombre": "ESPIRALES 3 SAB. 5KG",
+      "Cód. U.Entrega": "BG",
+      "Precio": 7.35
+    },
+    {
+      "NIIN": "332037146",
+      "Descripción": "FIDEO CABELLIN 1KG Caja de 12 bolsas de  1KG",
+      "Nombre": "FIDEO CABELLIN 1KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.5
+    },
+    {
+      "NIIN": "332037144",
+      "Descripción": "MACARRON PLUMA 1KG Caja de 10 bolsas de  1KG",
+      "Nombre": "MACARRON PLUMA 1KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.5
+    },
+    {
+      "NIIN": "332132653",
+      "Descripción": "PASTA PRECOCIDA PARA LASA?A Caja de 6 KG",
+      "Nombre": "PASTA PRECOCIDA PARA LASA?A",
+      "Cód. U.Entrega": "BX",
+      "Precio": 36.14
+    },
+    {
+      "NIIN": "332039723",
+      "Descripción": "KELLOGG?S CHOCO KRISPIES o EQUIVALENTE Caja de 40 unidades de 0,035 KG.",
+      "Nombre": "KELLOGG?S CHOCO KRISPIES o EQUIVALENTE",
+      "Cód. U.Entrega": "BX",
+      "Precio": 35.8
+    },
+    {
+      "NIIN": "332039721",
+      "Descripción": "KELLOGG?S CORN FLAKES o EQUIVALENTE Caja de 40 unidades de 0,024 KG.",
+      "Nombre": "KELLOGG?S CORN FLAKES o EQUIVALENTE",
+      "Cód. U.Entrega": "BX",
+      "Precio": 21.74
+    },
+    {
+      "NIIN": "332039720",
+      "Descripción": "KELLOGG?S FROSTIES o EQUIVALENTE Caja de 40 unidades de 0,035 KG.",
+      "Nombre": "KELLOGG?S FROSTIES o EQUIVALENTE",
+      "Cód. U.Entrega": "BX",
+      "Precio": 35.8
+    },
+    {
+      "NIIN": "332132655",
+      "Descripción": "AGUJA DE A?OJO CONG Caja 20 KG.",
+      "Nombre": "AGUJA DE A?OJO CONG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 8.8
+    },
+    {
+      "NIIN": "332054050",
+      "Descripción": "AGUJA DE A?OJO FRESCA KG.",
+      "Nombre": "AGUJA DE A?OJO FRESCA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 9.89
+    },
+    {
+      "NIIN": "332038532",
+      "Descripción": "ASAR VACUNO CON MALLA CONG KILO Caja 12 KG. aprox. piezas 2 KG.",
+      "Nombre": "ASAR VACUNO CON MALLA CONG KILO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 9.1
+    },
+    {
+      "NIIN": "332038536",
+      "Descripción": "CHULETON A?OJO CONG KILO Caja 5 KG.",
+      "Nombre": "CHULETON A?OJO CONG KILO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 13.3
+    },
+    {
+      "NIIN": "332054115",
+      "Descripción": "CHULETON DE A?OJO, FRESCA KG.",
+      "Nombre": "CHULETON DE A?OJO, FRESCA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 14.14
+    },
+    {
+      "NIIN": "332038537",
+      "Descripción": "ENTRECOT DE A?OJO CON HUESO CONG KILO Caja 3 piezas de 4,5 KG. aprox.",
+      "Nombre": "ENTRECOT DE A?OJO CON HUESO CONG KILO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 12.51
+    },
+    {
+      "NIIN": "332054116",
+      "Descripción": "ENTRECOT DE A?OJO, FRESCA KG.",
+      "Nombre": "ENTRECOT DE A?OJO, FRESCA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 13.18
+    },
+    {
+      "NIIN": "332054060",
+      "Descripción": "ESPALDA SIN HUESO DE A?OJO, FRESCA KG.",
+      "Nombre": "ESPALDA SIN HUESO DE A?OJO, FRESCA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 7.92
+    },
+    {
+      "NIIN": "332038534",
+      "Descripción": "ESTOFADO TACOS A?OJO CONGELADO Caja 10 KG. aprox.",
+      "Nombre": "ESTOFADO TACOS A?OJO CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 9.84
+    },
+    {
+      "NIIN": "332054059",
+      "Descripción": "FALDA CON HUESO DE A?OJO, FRESCA KG.",
+      "Nombre": "FALDA CON HUESO DE A?OJO, FRESCA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 6.18
+    },
+    {
+      "NIIN": "332054114",
+      "Descripción": "FALDA SIN HUESO DE A?OJO, FRESCA KG.",
+      "Nombre": "FALDA SIN HUESO DE A?OJO, FRESCA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 7.11
+    },
+    {
+      "NIIN": "332038530",
+      "Descripción": "FILETE DE A?OJO CONG KILO Caja 20 KG. aprox.",
+      "Nombre": "FILETE DE A?OJO CONG KILO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 11.96
+    },
+    {
+      "NIIN": "332054044",
+      "Descripción": "LOMOS DE A?OJO, FRESCA KG.",
+      "Nombre": "LOMOS DE A?OJO, FRESCA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 9.77
+    },
+    {
+      "NIIN": "332038539",
+      "Descripción": "MEDALLONES VACUNO CONG KILO Caja 5 KG. aprox.",
+      "Nombre": "MEDALLONES VACUNO CONG KILO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 8.04
+    },
+    {
+      "NIIN": "332075664",
+      "Descripción": "MORCILLO DE A?OJO FRESCO KG.",
+      "Nombre": "MORCILLO DE A?OJO FRESCO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 8.2
+    },
+    {
+      "NIIN": "332075665",
+      "Descripción": "PECHO O ALETA DE A?OJO FRESCA KG.",
+      "Nombre": "PECHO O ALETA DE A?OJO FRESCA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 7.43
+    },
+    {
+      "NIIN": "332054049",
+      "Descripción": "REDONDO DE A?OJO, FRESCA KG.",
+      "Nombre": "REDONDO DE A?OJO, FRESCA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 10.4
+    },
+    {
+      "NIIN": "332038535",
+      "Descripción": "SOLOMILLO DE A?OJO CONG KILO Caja 20 KG. aprox.",
+      "Nombre": "SOLOMILLO DE A?OJO CONG KILO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 24.74
+    },
+    {
+      "NIIN": "332054041",
+      "Descripción": "SOLOMILLO DE A?OJO FRESCA KG.",
+      "Nombre": "SOLOMILLO DE A?OJO FRESCA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 25.75
+    },
+    {
+      "NIIN": "332054053",
+      "Descripción": "TAPA DE A?OJO FRESCA KG.",
+      "Nombre": "TAPA DE A?OJO FRESCA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 10.24
+    },
+    {
+      "NIIN": "332038544",
+      "Descripción": "CHULETAS DE CERDO CENTRO CONG",
+      "Nombre": "CHULETAS DE CERDO CENTRO CONG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 5.07
+    },
+    {
+      "NIIN": "332054058",
+      "Descripción": "CHULETAS DE CERDO DE CENTRO FRESCAS KILO KG.",
+      "Nombre": "CHULETAS DE CERDO DE CENTRO FRESCAS KILO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 6.7
+    },
+    {
+      "NIIN": "332054042",
+      "Descripción": "CINTA DE LOMO DE CERDO FRESCA KILO KG.",
+      "Nombre": "CINTA DE LOMO DE CERDO FRESCA KILO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 7.01
+    },
+    {
+      "NIIN": "332054120",
+      "Descripción": "COCHINILLO CANAL ENTERO FRESCO KILO KG.",
+      "Nombre": "COCHINILLO CANAL ENTERO FRESCO KILO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 17.55
+    },
+    {
+      "NIIN": "332054045",
+      "Descripción": "COSTILLAR DE CERDO FRESCO KILO KG.",
+      "Nombre": "COSTILLAR DE CERDO FRESCO KILO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 5.5
+    },
+    {
+      "NIIN": "332038549",
+      "Descripción": "FILETE CINTA DE LOMO CONG Caja 6 KG. 4 bolsas 1,5 KG.",
+      "Nombre": "FILETE CINTA DE LOMO CONG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 6.42
+    },
+    {
+      "NIIN": "332038546",
+      "Descripción": "FILETES DE JAMON DE CERDO CONG Caja 6 KG.",
+      "Nombre": "FILETES DE JAMON DE CERDO CONG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 4.57
+    },
+    {
+      "NIIN": "332038547",
+      "Descripción": "JAMON DE CERDO ENTERO CONGELADO Caja 20 KG.",
+      "Nombre": "JAMON DE CERDO ENTERO CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 4.27
+    },
+    {
+      "NIIN": "332099172",
+      "Descripción": "JAMON DE CERDO ENTERO FRESCO KG.",
+      "Nombre": "JAMON DE CERDO ENTERO FRESCO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 5.78
+    },
+    {
+      "NIIN": "332038553",
+      "Descripción": "JAMON DESHUESADO CERDO CONGELADO Caja 2 piezas 7 KG.",
+      "Nombre": "JAMON DESHUESADO CERDO CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 5.4
+    },
+    {
+      "NIIN": "332129862",
+      "Descripción": "LOMO DE CERDO CONGELADO ENTERO Caja 20 KG.",
+      "Nombre": "LOMO DE CERDO CONGELADO ENTERO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 4.2
+    },
+    {
+      "NIIN": "332057046",
+      "Descripción": "LOMO DE CERDO FRESCO KILO KG.",
+      "Nombre": "LOMO DE CERDO FRESCO KILO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 6.37
+    },
+    {
+      "NIIN": "332038551",
+      "Descripción": "SOLOMILLO DE CERDO CONG Caja 6 KG.",
+      "Nombre": "SOLOMILLO DE CERDO CONG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 9.29
+    },
+    {
+      "NIIN": "332054057",
+      "Descripción": "CANAL DE CORDERO ENTERO FRESCO KILO KG.",
+      "Nombre": "CANAL DE CORDERO ENTERO FRESCO KILO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 8.54
+    },
+    {
+      "NIIN": "332038540",
+      "Descripción": "CHULETAS DE CORDERO CONGELADA KILO Caja 20 KG. aprox.",
+      "Nombre": "CHULETAS DE CORDERO CONGELADA KILO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 8.6
+    },
+    {
+      "NIIN": "332054071",
+      "Descripción": "CHULETAS DE CORDERO DE Ri?ONADA FRESCA, KG.",
+      "Nombre": "CHULETAS DE CORDERO DE Ri?ONADA FRESCA,",
+      "Cód. U.Entrega": "KG",
+      "Precio": 15.97
+    },
+    {
+      "NIIN": "332054065",
+      "Descripción": "PALETILLA DE CORDERO,  FRESCA KG.",
+      "Nombre": "PALETILLA DE CORDERO,  FRESCA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 14.84
+    },
+    {
+      "NIIN": "332038541",
+      "Descripción": "PIERNA DE CORDERO CONGELADA Caja 18 KG.",
+      "Nombre": "PIERNA DE CORDERO CONGELADA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 7.01
+    },
+    {
+      "NIIN": "332132665",
+      "Descripción": "PINCHO POLLO CATERING, 80 GR. Caja de 4 KG",
+      "Nombre": "PINCHO POLLO CATERING, 80 GR.",
+      "Cód. U.Entrega": "BX",
+      "Precio": 8.49
+    },
+    {
+      "NIIN": "332039044",
+      "Descripción": "REDONDO DE PAVO CONGELADO Caja de 5 piezas de 2 Kg",
+      "Nombre": "REDONDO DE PAVO CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 4.75
+    },
+    {
+      "NIIN": "332039037",
+      "Descripción": "ALAS DE POLLO CONGELADO",
+      "Nombre": "ALAS DE POLLO CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 2.6
+    },
+    {
+      "NIIN": "332055111",
+      "Descripción": "ALITAS DE POLLO FRESCO KG.",
+      "Nombre": "ALITAS DE POLLO FRESCO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 4
+    },
+    {
+      "NIIN": "332055112",
+      "Descripción": "CANAL DE POLLO FRESCO KG.",
+      "Nombre": "CANAL DE POLLO FRESCO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 3.24
+    },
+    {
+      "NIIN": "332039047",
+      "Descripción": "FILETE DE PAVO CONGELADO Caja 8 KG. 4 paquetes 2 KG.",
+      "Nombre": "FILETE DE PAVO CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 7
+    },
+    {
+      "NIIN": "332039039",
+      "Descripción": "FILETES DE PECHUGAS DE POLLO CONGELADO Caja 10 KG. aprox.",
+      "Nombre": "FILETES DE PECHUGAS DE POLLO CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 6
+    },
+    {
+      "NIIN": "332055107",
+      "Descripción": "FILETES PECHUGA DE POLLO FRESCA KG.",
+      "Nombre": "FILETES PECHUGA DE POLLO FRESCA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 7.43
+    },
+    {
+      "NIIN": "332091507",
+      "Descripción": "JAMONCITOS DE PAVO CONGELADOS Caja 10 KG.",
+      "Nombre": "JAMONCITOS DE PAVO CONGELADOS",
+      "Cód. U.Entrega": "BX",
+      "Precio": 3.5
+    },
+    {
+      "NIIN": "332054460",
+      "Descripción": "MUSLO DE POLLO FRESCO KG.",
+      "Nombre": "MUSLO DE POLLO FRESCO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 3.75
+    },
+    {
+      "NIIN": "332055110",
+      "Descripción": "MUSLO Y CONTRAMUSLO DE POLLO FRESCA KG.",
+      "Nombre": "MUSLO Y CONTRAMUSLO DE POLLO FRESCA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 3.6
+    },
+    {
+      "NIIN": "332064466",
+      "Descripción": "PAVO ENTERO FRESCO KG.",
+      "Nombre": "PAVO ENTERO FRESCO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 4.8
+    },
+    {
+      "NIIN": "332039036",
+      "Descripción": "POLLO DESPOJADO TIPO EUROPEO CONGELADO",
+      "Nombre": "POLLO DESPOJADO TIPO EUROPEO CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 2.55
+    },
+    {
+      "NIIN": "332039038",
+      "Descripción": "TRASEROS DE POLLO, SIN PUNTA, CONGELADO Caja 10 KG.",
+      "Nombre": "TRASEROS DE POLLO, SIN PUNTA, CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 2.9
+    },
+    {
+      "NIIN": "332039041",
+      "Descripción": "CONEJO  ENTERO  CONGELADO Caja 12 KG. con 10 unidades",
+      "Nombre": "CONEJO  ENTERO  CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 5.85
+    },
+    {
+      "NIIN": "332038911",
+      "Descripción": "PECHUGA DE PAVO caja 1 pieza de 5 kg",
+      "Nombre": "PECHUGA DE PAVO.",
+      "Cód. U.Entrega": "BX",
+      "Precio": 4.27
+    },
+    {
+      "NIIN": "332038522",
+      "Descripción": "CHORIZO PAMPLONA EX Caja de 2 unidades de 1,6Kg EA",
+      "Nombre": "CHORIZO PAMPLONA EX",
+      "Cód. U.Entrega": "BX",
+      "Precio": 7.31
+    },
+    {
+      "NIIN": "332038529",
+      "Descripción": "CHORIZO RISTRA BARB Caja de 2 paquetes de aprox 2Kg  PG",
+      "Nombre": "CHORIZO RISTRA BARB",
+      "Cód. U.Entrega": "BX",
+      "Precio": 5.35
+    },
+    {
+      "NIIN": "332038525",
+      "Descripción": "CHORIZO SARTA DULCE Caja de 2 paquetes de aprox 2Kg PG",
+      "Nombre": "CHORIZO SARTA DULCE",
+      "Cód. U.Entrega": "BX",
+      "Precio": 7.71
+    },
+    {
+      "NIIN": "332038526",
+      "Descripción": "CHORIZO VELA EXTRA Caja de 4 piezas de 1,650 Kg EA",
+      "Nombre": "CHORIZO VELA EXTRA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 8.02
+    },
+    {
+      "NIIN": "332042653",
+      "Descripción": "FIAMBRE DE LOMO ADOBADO Caja de  2 ud de 5,5Kg",
+      "Nombre": "FIAMBRE DE LOMO ADOBADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 5.43
+    },
+    {
+      "NIIN": "332038909",
+      "Descripción": "FIAMBRE PALETA COCIDA EN BARRA. Caja de 3ud de 3 Kg",
+      "Nombre": "FIAMBRE PALETA COCIDA EN BARRA.",
+      "Cód. U.Entrega": "BX",
+      "Precio": 3.17
+    },
+    {
+      "NIIN": "332042644",
+      "Descripción": "JAMON BODEGA CURADO CON HUESO Pieza de 7,5 KG aprox",
+      "Nombre": "JAMON BODEGA CURADO CON HUESO",
+      "Cód. U.Entrega": "EA",
+      "Precio": 5.38
+    },
+    {
+      "NIIN": "332038910",
+      "Descripción": "JAMON COCIDO EXTRA Pieza de 7,3kg",
+      "Nombre": "JAMON COCIDO EXTRA",
+      "Cód. U.Entrega": "EA",
+      "Precio": 5.81
+    },
+    {
+      "NIIN": "332042648",
+      "Descripción": "JAMON SERRANO DESHUESADO Caja de 2 piezas de 5 Kg (peso variable)",
+      "Nombre": "JAMON SERRANO DESHUESADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 10.5
+    },
+    {
+      "NIIN": "332038523",
+      "Descripción": "SALAMI EXTRA Caja de 1 pieza de 4Kg",
+      "Nombre": "SALAMI EXTRA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 5.43
+    },
+    {
+      "NIIN": "332041418",
+      "Descripción": "SALCHICHA DE PAVO Caja de 36 paquetes de  220 gr",
+      "Nombre": "SALCHICHA DE PAVO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.77
+    },
+    {
+      "NIIN": "332038510",
+      "Descripción": "SALCHICHAS COCIDAS ESTILO FRANKFURT AHUMADAS Caja de 36 paquetes de  220 gr",
+      "Nombre": "SALCHICHAS COCIDAS ESTILO FRANKFURT AHUMADAS",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.55
+    },
+    {
+      "NIIN": "332038524",
+      "Descripción": "SALCHICHON EXTRA Caja de 4 piezas de 1,6Kg",
+      "Nombre": "SALCHICHON EXTRA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 7
+    },
+    {
+      "NIIN": "332037524",
+      "Descripción": "ALBONDIGA MIXTA CONG",
+      "Nombre": "ALBONDIGA MIXTA CONG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 2.34
+    },
+    {
+      "NIIN": "332038520",
+      "Descripción": "ALBONDIGAS SALSA LATA 3 KG Caja 6 latas 3 KG. (2,6 KGNE)",
+      "Nombre": "ALBONDIGAS SALSA LATA 3 KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 11.1
+    },
+    {
+      "NIIN": "332038517",
+      "Descripción": "CALLOS VACUNO LATA 3 KG Caja 6 latas 3 KG.",
+      "Nombre": "CALLOS VACUNO LATA 3 KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 15.9
+    },
+    {
+      "NIIN": "332038528",
+      "Descripción": "CA?A DE LOMO IBERICO DE CEBO Caja 4 piezas 1,5 KG.",
+      "Nombre": "CA?A DE LOMO IBERICO DE CEBO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 33.5
+    },
+    {
+      "NIIN": "332038995",
+      "Descripción": "CHOPPED DE PAVO Caja 2 piezas 3 KG. aprox.",
+      "Nombre": "CHOPPED DE PAVO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 4.03
+    },
+    {
+      "NIIN": "332038994",
+      "Descripción": "CHOPPED PORK 2 piezas de 2,5 kg",
+      "Nombre": "CHOPPED PORK",
+      "Cód. U.Entrega": "BX",
+      "Precio": 3.16
+    },
+    {
+      "NIIN": "332057681",
+      "Descripción": "CHOPPED TERNERA Caja 3 piezas 2 KG. aprox.",
+      "Nombre": "CHOPPED TERNERA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 4.77
+    },
+    {
+      "NIIN": "332038527",
+      "Descripción": "CHORIZO IBERICO Caja 6-8 piezas 1 KG. aprox.  Cada pieza",
+      "Nombre": "CHORIZO IBERICO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 11.93
+    },
+    {
+      "NIIN": "332038515",
+      "Descripción": "COCIDO MADRILE?O 3KG Caja 6 latas 3 KG. (2,6 KGNE)",
+      "Nombre": "COCIDO MADRILE?O 3KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 11.04
+    },
+    {
+      "NIIN": "332038513",
+      "Descripción": "FABADA ASTURIANA LATA 3KG Caja 6 latas 3 KG. (2,6 KGNE)",
+      "Nombre": "FABADA ASTURIANA LATA 3KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 8.76
+    },
+    {
+      "NIIN": "332042652",
+      "Descripción": "LACON CURADO DE GALICIA Caja 4 piezas 3 KG. aprox.",
+      "Nombre": "LACON CURADO DE GALICIA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 8.09
+    },
+    {
+      "NIIN": "332063589",
+      "Descripción": "LENTEJAS CON CHORIZO LATA 3 KG Caja 6 latas 3 KG. (2,6 KGNE)",
+      "Nombre": "LENTEJAS CON CHORIZO LATA 3 KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 9.52
+    },
+    {
+      "NIIN": "332055395",
+      "Descripción": "LOMO EMBUCHADO Caja 3 piezas 1,8 KG. aprox.",
+      "Nombre": "LOMO EMBUCHADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 11.98
+    },
+    {
+      "NIIN": "332038907",
+      "Descripción": "LOMO SAJONIA. Caja 2 piezas 4 KG. aprox.",
+      "Nombre": "LOMO SAJONIA.",
+      "Cód. U.Entrega": "BX",
+      "Precio": 7.31
+    },
+    {
+      "NIIN": "332038878",
+      "Descripción": "MORTADELA 2 piezas de 3 kg",
+      "Nombre": "MORTADELA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 2.85
+    },
+    {
+      "NIIN": "332057680",
+      "Descripción": "MORTADELA PAVO",
+      "Nombre": "MORTADELA PAVO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 3.24
+    },
+    {
+      "NIIN": "332042650",
+      "Descripción": "PANCETA (BACON) AHUMADA SIN TERNILLA",
+      "Nombre": "PANCETA (BACON) AHUMADA SIN TERNILLA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 5.71
+    },
+    {
+      "NIIN": "332038512",
+      "Descripción": "PATE HIGADO DE CERD Caja 6 envases 1 KG. (0,825 KG. Neto)",
+      "Nombre": "PATE HIGADO DE CERD",
+      "Cód. U.Entrega": "BX",
+      "Precio": 3.83
+    },
+    {
+      "NIIN": "332041477",
+      "Descripción": "SALCHICHON IBERICO Caja 6 piezas 1 KG. aprox.",
+      "Nombre": "SALCHICHON IBERICO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 11.98
+    },
+    {
+      "NIIN": "332052424",
+      "Descripción": "ABADEJO FRESCO Kg",
+      "Nombre": "ABADEJO FRESCO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 8.8
+    },
+    {
+      "NIIN": "332052426",
+      "Descripción": "ATUN ROJO FRESCO Kg",
+      "Nombre": "ATUN ROJO FRESCO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 19.68
+    },
+    {
+      "NIIN": "332052324",
+      "Descripción": "BACALADILLA FRESCA Kg",
+      "Nombre": "BACALADILLA FRESCA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 3.99
+    },
+    {
+      "NIIN": "332052197",
+      "Descripción": "BACALAO FILETES FRESCO Kg",
+      "Nombre": "BACALAO FILETES FRESCO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 9.38
+    },
+    {
+      "NIIN": "332052330",
+      "Descripción": "BACALAO FRESCO Kg",
+      "Nombre": "BACALAO FRESCO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 8.99
+    },
+    {
+      "NIIN": "332052207",
+      "Descripción": "BESUGO FRESCO Kg",
+      "Nombre": "BESUGO FRESCO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 26.72
+    },
+    {
+      "NIIN": "332052422",
+      "Descripción": "BONITO FRESCO Kg",
+      "Nombre": "BONITO FRESCO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 9.35
+    },
+    {
+      "NIIN": "332052327",
+      "Descripción": "BOQUERON FRESCO Kg",
+      "Nombre": "BOQUERON FRESCO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 5.64
+    },
+    {
+      "NIIN": "332052198",
+      "Descripción": "CABALLA FRESCA Kg",
+      "Nombre": "CABALLA FRESCA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 3.99
+    },
+    {
+      "NIIN": "332063582",
+      "Descripción": "CAZON FRESCO Kg",
+      "Nombre": "CAZON FRESCO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 6.63
+    },
+    {
+      "NIIN": "332052367",
+      "Descripción": "COLA DE RAPE FRESCO Kg",
+      "Nombre": "COLA DE RAPE FRESCO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 15.69
+    },
+    {
+      "NIIN": "332052369",
+      "Descripción": "DORADA FRESCA Kg",
+      "Nombre": "DORADA FRESCA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 9.73
+    },
+    {
+      "NIIN": "332052423",
+      "Descripción": "GALLO FILETES FRESCO Kg",
+      "Nombre": "GALLO FILETES FRESCO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 15.09
+    },
+    {
+      "NIIN": "332052421",
+      "Descripción": "GALLO FRESCO Kg",
+      "Nombre": "GALLO FRESCO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 8.51
+    },
+    {
+      "NIIN": "332052336",
+      "Descripción": "JUREL FRESCO Kg",
+      "Nombre": "JUREL FRESCO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 5.98
+    },
+    {
+      "NIIN": "332052332",
+      "Descripción": "LENGUADO FRESCO Kg",
+      "Nombre": "LENGUADO FRESCO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 17.88
+    },
+    {
+      "NIIN": "332063581",
+      "Descripción": "LUBINA FRESCA Kg",
+      "Nombre": "LUBINA FRESCA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 8.19
+    },
+    {
+      "NIIN": "332052322",
+      "Descripción": "MERLUZA FRESCA Kg",
+      "Nombre": "MERLUZA FRESCA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 11.79
+    },
+    {
+      "NIIN": "332052390",
+      "Descripción": "PESCADILLA FRESCA Kg",
+      "Nombre": "PESCADILLA FRESCA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 6.95
+    },
+    {
+      "NIIN": "332052205",
+      "Descripción": "RAPE FRESCO Kg",
+      "Nombre": "RAPE FRESCO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 14.6
+    },
+    {
+      "NIIN": "332052317",
+      "Descripción": "SALMON FRESCO Kg",
+      "Nombre": "SALMON FRESCO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 13.31
+    },
+    {
+      "NIIN": "332052203",
+      "Descripción": "SALMONETE FRESCO Kg",
+      "Nombre": "SALMONETE FRESCO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 12.6
+    },
+    {
+      "NIIN": "332052201",
+      "Descripción": "SARDINAS FRESCAS Kg",
+      "Nombre": "SARDINAS FRESCAS",
+      "Cód. U.Entrega": "KG",
+      "Precio": 6.3
+    },
+    {
+      "NIIN": "332052125",
+      "Descripción": "TRUCHA ENTERA FRESCA Kg",
+      "Nombre": "TRUCHA ENTERA FRESCA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 7.92
+    },
+    {
+      "NIIN": "332052329",
+      "Descripción": "TRUCHA FILETES FRESCA Kg",
+      "Nombre": "TRUCHA FILETES FRESCA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 11.21
+    },
+    {
+      "NIIN": "332038776",
+      "Descripción": "ATUN EN TACOS CONGELADO Caja de 5 KGE",
+      "Nombre": "ATUN EN TACOS CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 9.7
+    },
+    {
+      "NIIN": "332038775",
+      "Descripción": "ATUN RODAJAS CONGELADO Caja de 6,4 kgE",
+      "Nombre": "ATUN RODAJAS CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 9.7
+    },
+    {
+      "NIIN": "332038794",
+      "Descripción": "CAELLA RODAJA SIN PIEL CONGELADO Caja de 7,2 KGE",
+      "Nombre": "CAELLA RODAJA SIN PIEL CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 6.4
+    },
+    {
+      "NIIN": "332038774",
+      "Descripción": "FILETE DE MERLUZA CON PIEL CONGELADA Caja de 9 KGE",
+      "Nombre": "FILETE DE MERLUZA CON PIEL CONGELADA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 6.66
+    },
+    {
+      "NIIN": "332038779",
+      "Descripción": "FILETE DE PLATIJA SIN PIEL CONGELADO Caja de 5,6KGE",
+      "Nombre": "FILETE DE PLATIJA SIN PIEL CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 9
+    },
+    {
+      "NIIN": "332038771",
+      "Descripción": "FILETE MERLUZA EMPANADO Caja de 6 paquetes de 1Kg PK",
+      "Nombre": "FILETE MERLUZA EMPANADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 6.3
+    },
+    {
+      "NIIN": "332132657",
+      "Descripción": "FLETAN HALIBUT FILETE CONGELADO Caja de 10 KGE",
+      "Nombre": "FLETAN HALIBUT FILETE CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 6.2
+    },
+    {
+      "NIIN": "332115032",
+      "Descripción": "LIMANDA FILETE CONG",
+      "Nombre": "LIMANDA FILETE CONG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 6.67
+    },
+    {
+      "NIIN": "332038780",
+      "Descripción": "LOMO DE BACALAO CONGELADO Caja de  6,4 KGE",
+      "Nombre": "LOMO DE BACALAO CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 12.42
+    },
+    {
+      "NIIN": "332038773",
+      "Descripción": "MERLUZA EN RODAJAS M-5 CONGELADA Caja de 6 KGE",
+      "Nombre": "MERLUZA EN RODAJAS M-5 CONGELADA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 7.91
+    },
+    {
+      "NIIN": "332038872",
+      "Descripción": "MERLUZA M-5 ENTERA CONGELADA Caja de 12,75 kge",
+      "Nombre": "MERLUZA M-5 ENTERA CONGELADA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 7.15
+    },
+    {
+      "NIIN": "332039022",
+      "Descripción": "PEZ ESPADA  RODAJA CONGELADO Caja de 6 KGE",
+      "Nombre": "PEZ ESPADA  RODAJA CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 11.88
+    },
+    {
+      "NIIN": "332038785",
+      "Descripción": "RAPE COLAS CONGELADO Caja de 6 bolsas de 800 KgEBG (4,8 kge)",
+      "Nombre": "RAPE COLAS CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 8.2
+    },
+    {
+      "NIIN": "332038787",
+      "Descripción": "SALMON EN RODAJAS CONGELADO Caja de 6 KgE (peso variable)",
+      "Nombre": "SALMON EN RODAJAS CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 9.2
+    },
+    {
+      "NIIN": "332052118",
+      "Descripción": "ALMEJA CULTIVADA FRESCA Kg",
+      "Nombre": "ALMEJA CULTIVADA FRESCA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 13.98
+    },
+    {
+      "NIIN": "332052202",
+      "Descripción": "BERBERECHOS FRESCOS Kg",
+      "Nombre": "BERBERECHOS FRESCOS",
+      "Cód. U.Entrega": "KG",
+      "Precio": 9.65
+    },
+    {
+      "NIIN": "332052320",
+      "Descripción": "BOGAVANTE FRESCO Kg",
+      "Nombre": "BOGAVANTE FRESCO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 31.52
+    },
+    {
+      "NIIN": "332064464",
+      "Descripción": "BUEY DE MAR FRESCO Kg",
+      "Nombre": "BUEY DE MAR FRESCO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 18.42
+    },
+    {
+      "NIIN": "332052365",
+      "Descripción": "CHIRLA FRESCA Kg",
+      "Nombre": "CHIRLA FRESCA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 7.5
+    },
+    {
+      "NIIN": "332052206",
+      "Descripción": "PULPO FRESCO Kg",
+      "Nombre": "PULPO FRESCO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 15.7
+    },
+    {
+      "NIIN": "332052388",
+      "Descripción": "SEPIA CHOCO O JIBIA FRESCA Kg",
+      "Nombre": "SEPIA CHOCO O JIBIA FRESCA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 12.69
+    },
+    {
+      "NIIN": "332038782",
+      "Descripción": "CALAMAR ENTERO N 5 CONGELADO CAJA DE 10-11 KGE",
+      "Nombre": "CALAMAR ENTERO N 5 CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 9.25
+    },
+    {
+      "NIIN": "332038790",
+      "Descripción": "CHOCO LIMPIO CONG",
+      "Nombre": "CHOCO LIMPIO CONG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 9.59
+    },
+    {
+      "NIIN": "332039026",
+      "Descripción": "GAMBA ARROCERA CONGELADA Caja de 4,5 kgE",
+      "Nombre": "GAMBA ARROCERA CONGELADA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 6.82
+    },
+    {
+      "NIIN": "332038876",
+      "Descripción": "GAMBA PELADA 70100  CONGELADA Caja de 3,9 Kge",
+      "Nombre": "GAMBA PELADA 70100  CONGELADA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 9.2
+    },
+    {
+      "NIIN": "332038786",
+      "Descripción": "POTA ANILLA  CONGELADA",
+      "Nombre": "POTA ANILLA  CONGELADA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 6.81
+    },
+    {
+      "NIIN": "332038848",
+      "Descripción": "PULPO CONGELADO CRUDO Caja de 14KgE (peso variable) con 4 EA de 3-4KgEEA",
+      "Nombre": "PULPO CONGELADO CRUDO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 14.67
+    },
+    {
+      "NIIN": "332065051",
+      "Descripción": "CARNE DE CANGREJO Caja de 6 bolsas de 1kg",
+      "Nombre": "CARNE DE CANGREJO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 3.16
+    },
+    {
+      "NIIN": "332081036",
+      "Descripción": "EMPANADA REDONDA ATUN CONG 1,0-1,5 KG",
+      "Nombre": "EMPANADA REDONDA ATUN CONG 1,0-1,5 KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 5.77
+    },
+    {
+      "NIIN": "332037507",
+      "Descripción": "PREPARADO DE PAELLA Caja de 5 bolsas de 910gBG",
+      "Nombre": "PREPARADO DE PAELLA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 24.06
+    },
+    {
+      "NIIN": "332132674",
+      "Descripción": "TINTA DE CALAMAR Lata de  0,5KG",
+      "Nombre": "TINTA DE CALAMAR",
+      "Cód. U.Entrega": "CN",
+      "Precio": 6.24
+    },
+    {
+      "NIIN": "332041374",
+      "Descripción": "LECHE BRIK ENTERA Caja de 6 cartones  de  1LT",
+      "Nombre": "LECHE BRIK ENTERA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.9
+    },
+    {
+      "NIIN": "332041373",
+      "Descripción": "LECHE BRIK DESNATAD Caja de 6 cartones  de  1LT",
+      "Nombre": "LECHE BRIK DESNATAD",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.89
+    },
+    {
+      "NIIN": "332071008",
+      "Descripción": "LECHE BRIK SEMIDESNATADA Caja de 6 cartones  de  1LT",
+      "Nombre": "LECHE BRIK SEMIDESNATADA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.9
+    },
+    {
+      "NIIN": "332077040",
+      "Descripción": "YOG SABOR LARGA DURACION FRESA Caja de 6PK de 4 EA de 125G",
+      "Nombre": "YOG SABOR LARGA DURACION FRESA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.4
+    },
+    {
+      "NIIN": "332077041",
+      "Descripción": "YOG SABOR LARGA DURACION MACEDONIA Caja de 6PK de 4 EA de 125G",
+      "Nombre": "YOG SABOR LARGA DURACION MACEDONIA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.4
+    },
+    {
+      "NIIN": "332077037",
+      "Descripción": "YOG SABOR LARGA DURACION NATURAL Caja de 6PK de 4 EA de 125G",
+      "Nombre": "YOG SABOR LARGA DURACION NATURAL",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.4
+    },
+    {
+      "NIIN": "332077039",
+      "Descripción": "YOG SABOR LARGA DURACION PL?TANO Caja de 6PK de 4 EA de 125G",
+      "Nombre": "YOG SABOR LARGA DURACION PL?TANO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.4
+    },
+    {
+      "NIIN": "332076075",
+      "Descripción": "YOGUR BEBIBLE  Caja de 6 botellas de 1 lt",
+      "Nombre": "YOGUR BEBIBLE",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.54
+    },
+    {
+      "NIIN": "332132654",
+      "Descripción": "YOGUR CON TROZOS   PI?A Caja de 24 unidades de 0,125KG",
+      "Nombre": "YOGUR CON TROZOS   PI?A",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.16
+    },
+    {
+      "NIIN": "332055134",
+      "Descripción": "YOGUR CON TROZOS  MELOCOTON Caja de 24 unidades de 0,125KG",
+      "Nombre": "YOGUR CON TROZOS  MELOCOTON",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.16
+    },
+    {
+      "NIIN": "332055132",
+      "Descripción": "YOGUR CON TROZOS DE FRESA Caja de 24 unidades de 0,125KG",
+      "Nombre": "YOGUR CON TROZOS DE FRESA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.16
+    },
+    {
+      "NIIN": "332054603",
+      "Descripción": "YOGUR NATURAL Caja de 12 pack de 4 unidades de 125 gr",
+      "Nombre": "YOGUR NATURAL",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.42
+    },
+    {
+      "NIIN": "332054602",
+      "Descripción": "YOGUR SABOR FRESA Caja de 12 pack de 4 unidades de 125 gr",
+      "Nombre": "YOGUR SABOR FRESA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.79
+    },
+    {
+      "NIIN": "332055125",
+      "Descripción": "YOGUR SABOR MACEDONIA Caja de 12 pack de 4 unidades de 125 gr",
+      "Nombre": "YOGUR SABOR MACEDONIA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.79
+    },
+    {
+      "NIIN": "332055122",
+      "Descripción": "YOGUR SABOR PLATANO Caja de 12 pack de 4 unidades de 125 gr",
+      "Nombre": "YOGUR SABOR PLATANO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.79
+    },
+    {
+      "NIIN": "332038903",
+      "Descripción": "QUESO CURADO DE OVEJA DENOMINACION DE ORIGEN MANCHEGO Caja 2 piezas 3 KG. aprox.",
+      "Nombre": "QUESO CURADO DE OVEJA DENOMINACION DE ORIGEN MANCHEGO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 23.5
+    },
+    {
+      "NIIN": "332038902",
+      "Descripción": "QUESO CURADO DE OVEJA. Caja 2 piezas 3 KG. aprox.",
+      "Nombre": "QUESO CURADO DE OVEJA.",
+      "Cód. U.Entrega": "BX",
+      "Precio": 12.49
+    },
+    {
+      "NIIN": "332038899",
+      "Descripción": "QUESO EN BARRA. CAJA DE 4 UND. DE 3,2 KG",
+      "Nombre": "QUESO EN BARRA.",
+      "Cód. U.Entrega": "BX",
+      "Precio": 7.2
+    },
+    {
+      "NIIN": "332083612",
+      "Descripción": "QUESO FRESCO CON SAL Caja 4 piezas 1 KG. aprox.",
+      "Nombre": "QUESO FRESCO CON SAL",
+      "Cód. U.Entrega": "BX",
+      "Precio": 4.36
+    },
+    {
+      "NIIN": "332039191",
+      "Descripción": "QUESO GOUDA",
+      "Nombre": "QUESO GOUDA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 7.2
+    },
+    {
+      "NIIN": "332038901",
+      "Descripción": "QUESO SEMICURADO.",
+      "Nombre": "QUESO SEMICURADO.",
+      "Cód. U.Entrega": "BX",
+      "Precio": 9.2
+    },
+    {
+      "NIIN": "005821401",
+      "Descripción": "QUESO, AZUL, NATURAL Caja 2 piezas 3 KG. aprox.",
+      "Nombre": "QUESO, AZUL, NATURAL",
+      "Cód. U.Entrega": "BX",
+      "Precio": 10.76
+    },
+    {
+      "NIIN": "332055115",
+      "Descripción": "FLAN  HUEVO LARGA DURACION Caja de 24 unidades de 0,1kg",
+      "Nombre": "FLAN  HUEVO LARGA DURACION",
+      "Cód. U.Entrega": "BX",
+      "Precio": 10.12
+    },
+    {
+      "NIIN": "332055126",
+      "Descripción": "FLAN VAINILLA LARGA DURACION Caja de 24 unidades de 0,1kg",
+      "Nombre": "FLAN VAINILLA LARGA DURACION",
+      "Cód. U.Entrega": "BX",
+      "Precio": 8.83
+    },
+    {
+      "NIIN": "332055147",
+      "Descripción": "NATILLAS CHOCOLATE LARGA DURACION Caja de 24 unidades de  0,125KG",
+      "Nombre": "NATILLAS CHOCOLATE LARGA DURACION",
+      "Cód. U.Entrega": "BX",
+      "Precio": 2.2
+    },
+    {
+      "NIIN": "332055146",
+      "Descripción": "NATILLAS VAINILLA LARGA DURACION Caja de 24 unidades de  0,125",
+      "Nombre": "NATILLAS VAINILLA LARGA DURACION",
+      "Cód. U.Entrega": "BX",
+      "Precio": 2.2
+    },
+    {
+      "NIIN": "332099834",
+      "Descripción": "ARROZ CON LECHE REFRIGERADO Caja de 6 packs de 4 unidades de 125 gr",
+      "Nombre": "ARROZ CON LECHE REFRIGERADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.8
+    },
+    {
+      "NIIN": "332041370",
+      "Descripción": "BATIDO SABOR CHOCOLATE 200 ML Caja 24 packs 3 unidades 0,2 L.",
+      "Nombre": "BATIDO SABOR CHOCOLATE 200 ML",
+      "Cód. U.Entrega": "BX",
+      "Precio": 5.71
+    },
+    {
+      "NIIN": "332041372",
+      "Descripción": "BATIDO SABOR FRESA 200 ML Caja 8 packs 3 unidades 0,2 L.",
+      "Nombre": "BATIDO SABOR FRESA 200 ML",
+      "Cód. U.Entrega": "BX",
+      "Precio": 5.71
+    },
+    {
+      "NIIN": "332041371",
+      "Descripción": "BATIDO SABOR VAINILLA 200 ML Caja 8 packs 3 unidades 0,2 L.",
+      "Nombre": "BATIDO SABOR VAINILLA 200 ML",
+      "Cód. U.Entrega": "BX",
+      "Precio": 5.71
+    },
+    {
+      "NIIN": "332054633",
+      "Descripción": "NATA LIQUIDA DE 1LITRO Caja 6 bricks 1 L.",
+      "Nombre": "NATA LIQUIDA DE 1LITRO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 2.5
+    },
+    {
+      "NIIN": "332132676",
+      "Descripción": "NATA PARA MONTAR 30% MATERIA GRASA REPOSTERIA Caja 12 unidades 1 litro",
+      "Nombre": "NATA PARA MONTAR 30% MATERIA GRASA REPOSTERIA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 3.3
+    },
+    {
+      "NIIN": "332054875",
+      "Descripción": "HUEVO FRESCO TALLA L Caja 30 docenas",
+      "Nombre": "HUEVO FRESCO TALLA L",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.95
+    },
+    {
+      "NIIN": "332054874",
+      "Descripción": "HUEVO FRESCO TALLA M Caja 30 docenas",
+      "Nombre": "HUEVO FRESCO TALLA M",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.98
+    },
+    {
+      "NIIN": "332054876",
+      "Descripción": "HUEVO FRESCO TALLA XL",
+      "Nombre": "HUEVO FRESCO TALLA XL",
+      "Cód. U.Entrega": "BX",
+      "Precio": 2.8
+    },
+    {
+      "NIIN": "332055116",
+      "Descripción": "HUEVO LIQ PASTEURIZADO Caja 10 bricks 1 L.",
+      "Nombre": "HUEVO LIQ PASTEURIZADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 2.88
+    },
+    {
+      "NIIN": "332037916",
+      "Descripción": "TORTILLA DE PATATA CONG",
+      "Nombre": "TORTILLA DE PATATA CONG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.95
+    },
+    {
+      "NIIN": "332056215",
+      "Descripción": "MANTEQUILLA EN PORCIONES Caja 280 porciones 10gr.",
+      "Nombre": "MANTEQUILLA EN PORCIONES",
+      "Cód. U.Entrega": "BX",
+      "Precio": 35.61
+    },
+    {
+      "NIIN": "332037664",
+      "Descripción": "ACEITE DE OLIVA SABOR SUAVE 1 LT Caja de 15 botellas de 1LT",
+      "Nombre": "ACEITE DE OLIVA SABOR SUAVE 1 LT",
+      "Cód. U.Entrega": "BX",
+      "Precio": 7.5
+    },
+    {
+      "NIIN": "332037665",
+      "Descripción": "ACEITE DE OLIVA SABOR SUAVE 5 LTS Caja de 3 garrafas de  5LT",
+      "Nombre": "ACEITE DE OLIVA SABOR SUAVE 5 LTS",
+      "Cód. U.Entrega": "BX",
+      "Precio": 37.25
+    },
+    {
+      "NIIN": "332075579",
+      "Descripción": "ACEITE DE OLIVA VIRGEN EXTRA 20 ML (CAJA DE 350) Caja de 400 unidades de 0,02LT",
+      "Nombre": "ACEITE DE OLIVA VIRGEN EXTRA 20 ML (CAJA DE 350)",
+      "Cód. U.Entrega": "BX",
+      "Precio": 92
+    },
+    {
+      "NIIN": "332075756",
+      "Descripción": "ACEITE DE OLIVA VIRGEN EXTRA 5 LTS Caja de 3 garrafas de  5LT",
+      "Nombre": "ACEITE DE OLIVA VIRGEN EXTRA 5 LTS",
+      "Cód. U.Entrega": "BX",
+      "Precio": 44.45
+    },
+    {
+      "NIIN": "332040576",
+      "Descripción": "ACEITE DE GIRASOL 1 LIT Caja de 15 botellas de 1LT",
+      "Nombre": "ACEITE DE GIRASOL 1 LIT",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.62
+    },
+    {
+      "NIIN": "332040577",
+      "Descripción": "ACEITE DE GIRASOL 5 LIT Caja de 3 garrafas de  5LT",
+      "Nombre": "ACEITE DE GIRASOL 5 LIT",
+      "Cód. U.Entrega": "BX",
+      "Precio": 8.6
+    },
+    {
+      "NIIN": "332051795",
+      "Descripción": "AGUACATES, CATEGORIA EXTRA Kg",
+      "Nombre": "AGUACATES, CATEGORIA EXTRA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 4.11
+    },
+    {
+      "NIIN": "332051935",
+      "Descripción": "ALBARICOQUES, CATEGORIA I Kg",
+      "Nombre": "ALBARICOQUES, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.8
+    },
+    {
+      "NIIN": "332052493",
+      "Descripción": "CAQUI Kg",
+      "Nombre": "CAQUI",
+      "Cód. U.Entrega": "KG",
+      "Precio": 2.39
+    },
+    {
+      "NIIN": "332052001",
+      "Descripción": "CEREZAS FRESCAS, CATEGORIA I Kg",
+      "Nombre": "CEREZAS FRESCAS, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 3.34
+    },
+    {
+      "NIIN": "332132329",
+      "Descripción": "CEREZAS PICOTA CATEGORIA I Kg",
+      "Nombre": "CEREZAS PICOTA CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 3.25
+    },
+    {
+      "NIIN": "332052497",
+      "Descripción": "CHIRIMOYA, CATEGORIA EXTRA Kg",
+      "Nombre": "CHIRIMOYA, CATEGORIA EXTRA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 4.09
+    },
+    {
+      "NIIN": "332051920",
+      "Descripción": "CIRUELAS CLAUDIA, CATEGORIA EXTRA Kg",
+      "Nombre": "CIRUELAS CLAUDIA, CATEGORIA EXTRA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 5.01
+    },
+    {
+      "NIIN": "332051794",
+      "Descripción": "CIRUELAS ROJAS, CATEGORIA EXTRA Kg",
+      "Nombre": "CIRUELAS ROJAS, CATEGORIA EXTRA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 4.14
+    },
+    {
+      "NIIN": "332057718",
+      "Descripción": "FRESON Kg",
+      "Nombre": "FRESON",
+      "Cód. U.Entrega": "KG",
+      "Precio": 2.57
+    },
+    {
+      "NIIN": "332051799",
+      "Descripción": "KIWI FRESCO, CATEGORIA EXTRA Kg",
+      "Nombre": "KIWI FRESCO, CATEGORIA EXTRA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 3.9
+    },
+    {
+      "NIIN": "332051947",
+      "Descripción": "LIMONES FRESCOS, CATEGORIA I Kg",
+      "Nombre": "LIMONES FRESCOS, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.16
+    },
+    {
+      "NIIN": "332052034",
+      "Descripción": "MANDARINAS CLEMENTINAS, CATEGORIA I Kg",
+      "Nombre": "MANDARINAS CLEMENTINAS, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.2
+    },
+    {
+      "NIIN": "332052018",
+      "Descripción": "MANDARINAS SATSUMA, CATEGORIA I Kg",
+      "Nombre": "MANDARINAS SATSUMA, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.22
+    },
+    {
+      "NIIN": "332051886",
+      "Descripción": "MANGO FRESCO, CATEGORIA EXTRA Kg",
+      "Nombre": "MANGO FRESCO, CATEGORIA EXTRA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.99
+    },
+    {
+      "NIIN": "332052028",
+      "Descripción": "MANZANAS FRESCAS GOLDEN, CATEGORIA I Kg",
+      "Nombre": "MANZANAS FRESCAS GOLDEN, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.27
+    },
+    {
+      "NIIN": "332064879",
+      "Descripción": "MANZANAS FRESCAS STARKING, CATEGORIA EXTRA Kg",
+      "Nombre": "MANZANAS FRESCAS STARKING, CATEGORIA EXTRA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 2.05
+    },
+    {
+      "NIIN": "332051959",
+      "Descripción": "MELOCOTON FRESCO, CATEGORIA I Kg",
+      "Nombre": "MELOCOTON FRESCO, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 2.31
+    },
+    {
+      "NIIN": "332051804",
+      "Descripción": "MELON AMARILLO, CATEGORIA I Kg",
+      "Nombre": "MELON AMARILLO, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.65
+    },
+    {
+      "NIIN": "332051991",
+      "Descripción": "MELON VERDE, CATEGORIA I Kg",
+      "Nombre": "MELON VERDE, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.34
+    },
+    {
+      "NIIN": "332052036",
+      "Descripción": "NARANJAS FRESCAS, CATEGORIA I Kg",
+      "Nombre": "NARANJAS FRESCAS, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.05
+    },
+    {
+      "NIIN": "332132624",
+      "Descripción": "NARANJAS ZUMO CATEGORIA I Kg",
+      "Nombre": "NARANJAS ZUMO CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.29
+    },
+    {
+      "NIIN": "332051956",
+      "Descripción": "NECTARINA FRESCA, CATEGORIA EXTRA Kg",
+      "Nombre": "NECTARINA FRESCA, CATEGORIA EXTRA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 2.31
+    },
+    {
+      "NIIN": "332052467",
+      "Descripción": "NISPERO, CATEGORIA EXTRA Kg",
+      "Nombre": "NISPERO, CATEGORIA EXTRA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 2.31
+    },
+    {
+      "NIIN": "332051987",
+      "Descripción": "PERAS CONFERENCIA, CATEGORIA I Kg",
+      "Nombre": "PERAS CONFERENCIA, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.42
+    },
+    {
+      "NIIN": "332052031",
+      "Descripción": "PERAS WILLIAMS, CATEGORIA I Kg",
+      "Nombre": "PERAS WILLIAMS, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.6
+    },
+    {
+      "NIIN": "332051836",
+      "Descripción": "PI?A FRESCA, CATEGORIA EXTRA Kg",
+      "Nombre": "PI?A FRESCA, CATEGORIA EXTRA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.39
+    },
+    {
+      "NIIN": "332051837",
+      "Descripción": "PLATANOS FRESCOS, CATEGORIA EXTRA Kg",
+      "Nombre": "PLATANOS FRESCOS, CATEGORIA EXTRA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.54
+    },
+    {
+      "NIIN": "332051994",
+      "Descripción": "PLATANOS FRESCOS, CATEGORIA I Kg",
+      "Nombre": "PLATANOS FRESCOS, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.4
+    },
+    {
+      "NIIN": "332051881",
+      "Descripción": "SANDIAS FRESCA, CATEGORIA I Kg",
+      "Nombre": "SANDIAS FRESCA, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.16
+    },
+    {
+      "NIIN": "332051885",
+      "Descripción": "UVAS MOSCATEL, CATEGORIA EXTRA Kg",
+      "Nombre": "UVAS MOSCATEL, CATEGORIA EXTRA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 3.77
+    },
+    {
+      "NIIN": "332039051",
+      "Descripción": "ACEITUNA MANZANILLA Caja de 4 latas de 2,5KGE",
+      "Nombre": "ACEITUNA MANZANILLA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 10
+    },
+    {
+      "NIIN": "332039052",
+      "Descripción": "ACEITUNA NEGRA Lata de 2,5 KGE",
+      "Nombre": "ACEITUNA NEGRA",
+      "Cód. U.Entrega": "CN",
+      "Precio": 10.5
+    },
+    {
+      "NIIN": "332039053",
+      "Descripción": "ACEITUNA RELLENA DE ANCHOA Lata de 0,7 KGE",
+      "Nombre": "ACEITUNA RELLENA DE ANCHOA",
+      "Cód. U.Entrega": "CN",
+      "Precio": 3.43
+    },
+    {
+      "NIIN": "332132629",
+      "Descripción": "COCKTAIL ENCURTIDOS ACEITE DE OLIVA ENVASADO 3 KG Lata de   2,5KGE",
+      "Nombre": "COCKTAIL ENCURTIDOS ACEITE DE OLIVA ENVASADO 3 KG",
+      "Cód. U.Entrega": "CN",
+      "Precio": 4.87
+    },
+    {
+      "NIIN": "332059002",
+      "Descripción": "ALMENDRA TOSTADAS Bolsa 1 KG.",
+      "Nombre": "ALMENDRA TOSTADAS",
+      "Cód. U.Entrega": "BG",
+      "Precio": 11.38
+    },
+    {
+      "NIIN": "332059003",
+      "Descripción": "AVELLANAS TOSTADAS Bolsa 1 KG.",
+      "Nombre": "AVELLANAS TOSTADAS",
+      "Cód. U.Entrega": "BG",
+      "Precio": 13.72
+    },
+    {
+      "NIIN": "332059005",
+      "Descripción": "CACAHUETE FRITOS Bolsa 1 KG.",
+      "Nombre": "CACAHUETE FRITOS",
+      "Cód. U.Entrega": "BG",
+      "Precio": 5.31
+    },
+    {
+      "NIIN": "332132613",
+      "Descripción": "NUECES MITADES MONDADA BOLSAS 1KG Bolsa 1 KG.",
+      "Nombre": "NUECES MITADES MONDADA BOLSAS 1KG",
+      "Cód. U.Entrega": "BG",
+      "Precio": 7.46
+    },
+    {
+      "NIIN": "332059006",
+      "Descripción": "PISTACHO TOSTADOS Bolsa 0,2 KG.",
+      "Nombre": "PISTACHO TOSTADOS",
+      "Cód. U.Entrega": "BG",
+      "Precio": 3.32
+    },
+    {
+      "NIIN": "332041318",
+      "Descripción": "COCTEL DE FRUTAS Caja 6 latas 3 KG.",
+      "Nombre": "COCTEL DE FRUTAS",
+      "Cód. U.Entrega": "BX",
+      "Precio": 7.71
+    },
+    {
+      "NIIN": "332041315",
+      "Descripción": "MELOCOTON EN ALMIBAR 3 KG. Caja 6 latas 3 KG.",
+      "Nombre": "MELOCOTON EN ALMIBAR 3 KG.",
+      "Cód. U.Entrega": "BX",
+      "Precio": 6.24
+    },
+    {
+      "NIIN": "332050396",
+      "Descripción": "PI?A EN ALMIBAR 3KG Caja 6 latas 3 KG.",
+      "Nombre": "PI?A EN ALMIBAR 3KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 5.67
+    },
+    {
+      "NIIN": "332052068",
+      "Descripción": "ACELGAS Kg",
+      "Nombre": "ACELGAS",
+      "Cód. U.Entrega": "KG",
+      "Precio": 2.85
+    },
+    {
+      "NIIN": "332051928",
+      "Descripción": "AJOS, CATEGORIA I Kg",
+      "Nombre": "AJOS, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 3.87
+    },
+    {
+      "NIIN": "332056385",
+      "Descripción": "ALUBIAS BLANCAS EXTRA 1 KG Caja de 10 bolsas de 1KG",
+      "Nombre": "ALUBIAS BLANCAS EXTRA 1 KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 2.02
+    },
+    {
+      "NIIN": "332051801",
+      "Descripción": "APIOS, CATEGORIA I Kg",
+      "Nombre": "APIOS, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 3.07
+    },
+    {
+      "NIIN": "332051800",
+      "Descripción": "BERENJENAS, CATEGORIA I Kg",
+      "Nombre": "BERENJENAS, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.82
+    },
+    {
+      "NIIN": "332052017",
+      "Descripción": "BRECOL, CATEGORIA I Kg",
+      "Nombre": "BRECOL, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 2.53
+    },
+    {
+      "NIIN": "332052591",
+      "Descripción": "CALABACIN, CATEGORIA I Kg",
+      "Nombre": "CALABACIN, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.89
+    },
+    {
+      "NIIN": "332052071",
+      "Descripción": "CALABAZA Kg",
+      "Nombre": "CALABAZA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.56
+    },
+    {
+      "NIIN": "332051876",
+      "Descripción": "CEBOLLAS, CATEGORIA I Kg",
+      "Nombre": "CEBOLLAS, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.2
+    },
+    {
+      "NIIN": "332051949",
+      "Descripción": "CHAMPI?ONES, CATEGORIA I Kg",
+      "Nombre": "CHAMPI?ONES, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.81
+    },
+    {
+      "NIIN": "332052042",
+      "Descripción": "COL LOMBARDA Kg",
+      "Nombre": "COL LOMBARDA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.11
+    },
+    {
+      "NIIN": "332052056",
+      "Descripción": "COL, CATEGORIA I Kg",
+      "Nombre": "COL, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.95
+    },
+    {
+      "NIIN": "332082373",
+      "Descripción": "GARBANZO CASTELLANO Caja de 10 bolsas de 1KG",
+      "Nombre": "GARBANZO CASTELLANO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.92
+    },
+    {
+      "NIIN": "332052194",
+      "Descripción": "GRELOS Kg",
+      "Nombre": "GRELOS",
+      "Cód. U.Entrega": "KG",
+      "Precio": 4.44
+    },
+    {
+      "NIIN": "332051793",
+      "Descripción": "LECHUGAS TIPO ICEBERG, CATEGORIA I Kg",
+      "Nombre": "LECHUGAS TIPO ICEBERG, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.09
+    },
+    {
+      "NIIN": "332051880",
+      "Descripción": "LECHUGAS TIPO ROMANA, CATEGORIA I Kg",
+      "Nombre": "LECHUGAS TIPO ROMANA, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.08
+    },
+    {
+      "NIIN": "332056387",
+      "Descripción": "LENTEJAS CASTELLANAS EXTRA 1 KG Caja de 10 bolsas de 1KG",
+      "Nombre": "LENTEJAS CASTELLANAS EXTRA 1 KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.76
+    },
+    {
+      "NIIN": "332052066",
+      "Descripción": "?ORAS Kg",
+      "Nombre": "?ORAS",
+      "Cód. U.Entrega": "KG",
+      "Precio": 23.96
+    },
+    {
+      "NIIN": "332051978",
+      "Descripción": "PEPINOS, CATEGORIA I Kg",
+      "Nombre": "PEPINOS, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.56
+    },
+    {
+      "NIIN": "332052043",
+      "Descripción": "PEREJIL Kg",
+      "Nombre": "PEREJIL",
+      "Cód. U.Entrega": "KG",
+      "Precio": 4.67
+    },
+    {
+      "NIIN": "332051986",
+      "Descripción": "PIMIENTOS DE PADRON, CATEGORIA I Kg",
+      "Nombre": "PIMIENTOS DE PADRON, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 4.99
+    },
+    {
+      "NIIN": "332051983",
+      "Descripción": "PIMIENTOS ROJOS,CATEGORIA I Kg",
+      "Nombre": "PIMIENTOS ROJOS,CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 2.85
+    },
+    {
+      "NIIN": "332051912",
+      "Descripción": "PIMIENTOS VERDES,CATEGORIA I Kg",
+      "Nombre": "PIMIENTOS VERDES,CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 2.85
+    },
+    {
+      "NIIN": "332051913",
+      "Descripción": "PUERROS, CATEGORIA I Kg",
+      "Nombre": "PUERROS, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 2.98
+    },
+    {
+      "NIIN": "332051914",
+      "Descripción": "SETAS, CATEGORIA EXTRA Kg",
+      "Nombre": "SETAS, CATEGORIA EXTRA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 6.46
+    },
+    {
+      "NIIN": "332082366",
+      "Descripción": "TOMATES CHERRY CATEGORIA I Kg",
+      "Nombre": "TOMATES CHERRY CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 3.15
+    },
+    {
+      "NIIN": "332051999",
+      "Descripción": "TOMATES REDONDOS, CATEGORIA I Kg",
+      "Nombre": "TOMATES REDONDOS, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 2.1
+    },
+    {
+      "NIIN": "332052008",
+      "Descripción": "ZANAHORIAS, CATEGORIA I Kg",
+      "Nombre": "ZANAHORIAS, CATEGORIA I",
+      "Cód. U.Entrega": "KG",
+      "Precio": 1.01
+    },
+    {
+      "NIIN": "332132619",
+      "Descripción": "AJO CONGELADO TROCEADO Caja 36 bolsas 0,15 KGNE.",
+      "Nombre": "AJO CONGELADO TROCEADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.8
+    },
+    {
+      "NIIN": "332041319",
+      "Descripción": "ALCAHOFA TROCEADAS AL NATURAL LATA  3KG Caja 6 latas 3 KG. (KGNE 1,55)",
+      "Nombre": "ALCAHOFA TROCEADAS AL NATURAL LATA  3KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 16.8
+    },
+    {
+      "NIIN": "332045840",
+      "Descripción": "ALUBIA BLANCA NATURAL LATA 3KG Caja 6 latas 3 KG. (KGNE 1,6)",
+      "Nombre": "ALUBIA BLANCA NATURAL LATA 3KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 5.82
+    },
+    {
+      "NIIN": "332091440",
+      "Descripción": "CEBOLLA FRITA LATA Caja 3 latas 5 KG. (KGNE 1,55)",
+      "Nombre": "CEBOLLA FRITA LATA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 10.5
+    },
+    {
+      "NIIN": "332042252",
+      "Descripción": "COLIFLOR LATA 3 KG",
+      "Nombre": "COLIFLOR LATA 3 KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.66
+    },
+    {
+      "NIIN": "332050393",
+      "Descripción": "ESPARRAGOS ENTERO BLANCO  LATA 1 KG Caja 12 latas 1 KG. (KGNE 0,425)",
+      "Nombre": "ESPARRAGOS ENTERO BLANCO  LATA 1 KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 7.47
+    },
+    {
+      "NIIN": "332050391",
+      "Descripción": "ESPARRAGOS TALLO LATA 3KG Caja 6 latas 3 KG. (KGNE 1,55)",
+      "Nombre": "ESPARRAGOS TALLO LATA 3KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 10.5
+    },
+    {
+      "NIIN": "332045841",
+      "Descripción": "ESPINACAS LATA 3KG Caja 6 latas 3 KG. (KGNE 1,55)",
+      "Nombre": "ESPINACAS LATA 3KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 5.1
+    },
+    {
+      "NIIN": "332041321",
+      "Descripción": "GARBANZO AL NATURAL EXTRA 3 KG Caja 6 latas 3 KG. (KGNE 1,55)",
+      "Nombre": "GARBANZO AL NATURAL EXTRA 3 KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 5.22
+    },
+    {
+      "NIIN": "332076004",
+      "Descripción": "GRELOS AL NATURAL LATA 3 KG Caja 6 latas 3 KG. (KGNE 1,55)",
+      "Nombre": "GRELOS AL NATURAL LATA 3 KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 20.7
+    },
+    {
+      "NIIN": "332041312",
+      "Descripción": "GUISANTE  LATA 3 KG Caja 6 latas 3 KG. (KGNE 1,55)",
+      "Nombre": "GUISANTE  LATA 3 KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 7.56
+    },
+    {
+      "NIIN": "330027433",
+      "Descripción": "JUDIA VERDE ANCHA LATA 3KG Caja 6 latas 3 KG. (KGNE 1,55)",
+      "Nombre": "JUDIA VERDE ANCHA LATA 3KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 9.6
+    },
+    {
+      "NIIN": "332046579",
+      "Descripción": "MACEDONIA VERDURAS LATA 3KG Caja 6 latas 3 KG. (KGNE 1,55)",
+      "Nombre": "MACEDONIA VERDURAS LATA 3KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 5.47
+    },
+    {
+      "NIIN": "332041311",
+      "Descripción": "MAIZ DULCE LATA 3KG Caja 6 latas 3 KG. (KGNE 1,55)",
+      "Nombre": "MAIZ DULCE LATA 3KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 8.31
+    },
+    {
+      "NIIN": "332132630",
+      "Descripción": "PEPINILLOS EN VINAGRE ENVASADO 3 KG Caja 6 latas 3 KG. (KGNE 1,55)",
+      "Nombre": "PEPINILLOS EN VINAGRE ENVASADO 3 KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 11.88
+    },
+    {
+      "NIIN": "332041320",
+      "Descripción": "PIMIENTO MORRON ENTERO LATA  1 KG. Caja de 12  latas de 1kg ( 0,5 KGNE)",
+      "Nombre": "PIMIENTO MORRON ENTERO LATA  1 KG.",
+      "Cód. U.Entrega": "BX",
+      "Precio": 4.63
+    },
+    {
+      "NIIN": "332042251",
+      "Descripción": "PIMIENTO ROJO AL NATURAL DE 3 KG. Caja 6 latas 3 KG. (KGNE 1,55)",
+      "Nombre": "PIMIENTO ROJO AL NATURAL DE 3 KG.",
+      "Cód. U.Entrega": "BX",
+      "Precio": 9.12
+    },
+    {
+      "NIIN": "332132627",
+      "Descripción": "PIMIENTOS DEL PIQUILLO ENLATADOS Caja 6 latas 3 KG. (KGNE 1,9)",
+      "Nombre": "PIMIENTOS DEL PIQUILLO ENLATADOS",
+      "Cód. U.Entrega": "BX",
+      "Precio": 14.1
+    },
+    {
+      "NIIN": "332046578",
+      "Descripción": "PISTO LATA 3KG Caja 6 latas 3 KG. (KGNE 1,55)",
+      "Nombre": "PISTO LATA 3KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 4.86
+    },
+    {
+      "NIIN": "332132635",
+      "Descripción": "TARRINAS TOMATE INDIVIDUAL DESAYUNOS Caja 450 UD. 0,025 KG.",
+      "Nombre": "TARRINAS TOMATE INDIVIDUAL DESAYUNOS",
+      "Cód. U.Entrega": "BX",
+      "Precio": 101.25
+    },
+    {
+      "NIIN": "332042249",
+      "Descripción": "TOMATE ENTERO PELADO LATA 5KG",
+      "Nombre": "TOMATE ENTERO PELADO LATA 5KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 5.85
+    },
+    {
+      "NIIN": "332041317",
+      "Descripción": "TOMATE FRITO LATA 3KG Caja 6 latas 3 KG. (KGNE 1,55)",
+      "Nombre": "TOMATE FRITO LATA 3KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 4.2
+    },
+    {
+      "NIIN": "332050389",
+      "Descripción": "ZANAHORIA RALLADA LATA 3KG Caja 6 latas 3 KG. (KGNE 1,55)",
+      "Nombre": "ZANAHORIA RALLADA LATA 3KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 5.22
+    },
+    {
+      "NIIN": "332051977",
+      "Descripción": "PATATAS FRESCAS GRUPO COMUN KG",
+      "Nombre": "PATATAS FRESCAS GRUPO COMUN",
+      "Cód. U.Entrega": "KG",
+      "Precio": 0.63
+    },
+    {
+      "NIIN": "332037160",
+      "Descripción": "PURE PATATA 5 KG Bolsa de   5KG",
+      "Nombre": "PURE PATATA 5 KG",
+      "Cód. U.Entrega": "BG",
+      "Precio": 18.5
+    },
+    {
+      "NIIN": "332075605",
+      "Descripción": "PATATAS FRITAS BOLSA 500 G",
+      "Nombre": "PATATAS FRITAS BOLSA 500 G",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.9
+    },
+    {
+      "NIIN": "332036949",
+      "Descripción": "AZUCAR BLANQUILLA SOBRES Caja 1350 SOBRES 0,006 KG.",
+      "Nombre": "AZUCAR BLANQUILLA SOBRES",
+      "Cód. U.Entrega": "BX",
+      "Precio": 16.68
+    },
+    {
+      "NIIN": "332042247",
+      "Descripción": "MERMELADA DE FRESA EN PORCIONES Caja de 250 unidades de 25 gr, total 6,25 kg",
+      "Nombre": "MERMELADA DE FRESA EN PORCIONES",
+      "Cód. U.Entrega": "BX",
+      "Precio": 26
+    },
+    {
+      "NIIN": "332042248",
+      "Descripción": "MERMELADA DE MELOCOTON EN PORCIONES Caja de  6,4",
+      "Nombre": "MERMELADA DE MELOCOTON EN PORCIONES",
+      "Cód. U.Entrega": "BX",
+      "Precio": 26.62
+    },
+    {
+      "NIIN": "332059829",
+      "Descripción": "MIEL CON DOSIFICADOR Caja de 6 unidades de 1 KG",
+      "Nombre": "MIEL CON DOSIFICADOR",
+      "Cód. U.Entrega": "BX",
+      "Precio": 5.07
+    },
+    {
+      "NIIN": "332036396",
+      "Descripción": "KETCHUP BOTE Caja 12 botes 0,3 KG.",
+      "Nombre": "KETCHUP BOTE",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.96
+    },
+    {
+      "NIIN": "332036397",
+      "Descripción": "KETCHUP SOBRE 12 G Caja 200 sobres 12 GR.",
+      "Nombre": "KETCHUP SOBRE 12 G",
+      "Cód. U.Entrega": "BX",
+      "Precio": 5.97
+    },
+    {
+      "NIIN": "332036400",
+      "Descripción": "MAYONESA SOBRE 14 G Caja 200 sobres 14 GR.",
+      "Nombre": "MAYONESA SOBRE 14 G",
+      "Cód. U.Entrega": "BX",
+      "Precio": 9.21
+    },
+    {
+      "NIIN": "332036401",
+      "Descripción": "MOSTAZA BOTE Caja 12 botes 0,3 KG.",
+      "Nombre": "MOSTAZA BOTE",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.04
+    },
+    {
+      "NIIN": "332036402",
+      "Descripción": "MOSTAZA SOBRE 6 G Caja 250 sobres 6 GR.",
+      "Nombre": "MOSTAZA SOBRE 6 G",
+      "Cód. U.Entrega": "BX",
+      "Precio": 6.51
+    },
+    {
+      "NIIN": "332093923",
+      "Descripción": "SACARINA SOBRES Caja 500 sobres 0,001 KG.",
+      "Nombre": "SACARINA SOBRES",
+      "Cód. U.Entrega": "BX",
+      "Precio": 3.92
+    },
+    {
+      "NIIN": "332132638",
+      "Descripción": "SALSA BOVRIL 500 GR. Caja 6 botes 500 gr",
+      "Nombre": "SALSA BOVRIL 500 GR",
+      "Cód. U.Entrega": "BX",
+      "Precio": 6.77
+    },
+    {
+      "NIIN": "332036403",
+      "Descripción": "VINAGRE DE VINO 1 L, CAJA DE 6 BOTELLAS 1lt",
+      "Nombre": "VINAGRE DE VINO 1 L",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.66
+    },
+    {
+      "NIIN": "332036352",
+      "Descripción": "AJO MOLIDO Bote de 310 gramos",
+      "Nombre": "AJO MOLIDO",
+      "Cód. U.Entrega": "BT",
+      "Precio": 0.94
+    },
+    {
+      "NIIN": "332036356",
+      "Descripción": "CANELA MOLIDA Bote de  1000 gramos",
+      "Nombre": "CANELA MOLIDA",
+      "Cód. U.Entrega": "BT",
+      "Precio": 3.21
+    },
+    {
+      "NIIN": "332036374",
+      "Descripción": "CLAVO GRANO Bote de 600 gr",
+      "Nombre": "CLAVO GRANO",
+      "Cód. U.Entrega": "BT",
+      "Precio": 9.4
+    },
+    {
+      "NIIN": "332036363",
+      "Descripción": "CLAVO MOLIDO Bote de 850 gr",
+      "Nombre": "CLAVO MOLIDO",
+      "Cód. U.Entrega": "BT",
+      "Precio": 12.38
+    },
+    {
+      "NIIN": "332036353",
+      "Descripción": "COLORANTE ALIMENTARIO Bote de 1000 gr",
+      "Nombre": "COLORANTE ALIMENTARIO",
+      "Cód. U.Entrega": "BT",
+      "Precio": 3.03
+    },
+    {
+      "NIIN": "332036367",
+      "Descripción": "COMINO EN GRANO Bote de 650 gr",
+      "Nombre": "COMINO EN GRANO",
+      "Cód. U.Entrega": "BT",
+      "Precio": 4.45
+    },
+    {
+      "NIIN": "332058600",
+      "Descripción": "CURRY Bote de 800gr",
+      "Nombre": "CURRY",
+      "Cód. U.Entrega": "BT",
+      "Precio": 3.82
+    },
+    {
+      "NIIN": "332036520",
+      "Descripción": "ESPECIAS SURTIDAS MOLIDAS Bote pet hosteler?a",
+      "Nombre": "ESPECIAS SURTIDAS MOLIDAS",
+      "Cód. U.Entrega": "BT",
+      "Precio": 4.28
+    },
+    {
+      "NIIN": "332052057",
+      "Descripción": "LAUREL Bote de 100 gr",
+      "Nombre": "LAUREL",
+      "Cód. U.Entrega": "BT",
+      "Precio": 1.64
+    },
+    {
+      "NIIN": "332036368",
+      "Descripción": "NUEZ MOSCADA MOLIDA Bote de 850 gr",
+      "Nombre": "NUEZ MOSCADA MOLIDA",
+      "Cód. U.Entrega": "BT",
+      "Precio": 13.99
+    },
+    {
+      "NIIN": "332036406",
+      "Descripción": "OR?GANO Bote pet hosteler?a",
+      "Nombre": "OR?GANO",
+      "Cód. U.Entrega": "BT",
+      "Precio": 2.74
+    },
+    {
+      "NIIN": "332036376",
+      "Descripción": "PEREJIL HOJA DESHIDRATADO Bote de 180 gr",
+      "Nombre": "PEREJIL HOJA DESHIDRATADO",
+      "Cód. U.Entrega": "BT",
+      "Precio": 2.6
+    },
+    {
+      "NIIN": "332036354",
+      "Descripción": "PIMENTON DULCE Bote de 750 gr",
+      "Nombre": "PIMENTON DULCE",
+      "Cód. U.Entrega": "BT",
+      "Precio": 3.59
+    },
+    {
+      "NIIN": "332036355",
+      "Descripción": "PIMENTON PICANTE Bote de 750 gr",
+      "Nombre": "PIMENTON PICANTE",
+      "Cód. U.Entrega": "BT",
+      "Precio": 4.26
+    },
+    {
+      "NIIN": "332036377",
+      "Descripción": "PIMIENTA BLANCA MOLIDA Bote de 800 gr",
+      "Nombre": "PIMIENTA BLANCA MOLIDA",
+      "Cód. U.Entrega": "BT",
+      "Precio": 7.4
+    },
+    {
+      "NIIN": "332036378",
+      "Descripción": "PIMIENTA NEGRA MOLIDA Bote de 800 gr",
+      "Nombre": "PIMIENTA NEGRA MOLIDA",
+      "Cód. U.Entrega": "BT",
+      "Precio": 5.96
+    },
+    {
+      "NIIN": "332036383",
+      "Descripción": "TOMILLO HOJA Bote de 410 gramos",
+      "Nombre": "TOMILLO HOJA",
+      "Cód. U.Entrega": "BT",
+      "Precio": 2
+    },
+    {
+      "NIIN": "332188737",
+      "Descripción": "ALBONDIGAS MIXTAS A LA JARDINERA PARA CELIACOS Platos de  350 gr",
+      "Nombre": "ALBONDIGAS MIXTAS A LA JARDINERA PARA CELIACOS",
+      "Cód. U.Entrega": "EA",
+      "Precio": 3.51
+    },
+    {
+      "NIIN": "332188740",
+      "Descripción": "ALBONDIGAS TERNERA CON PATATAS PARA CELIACOS Platos de  350 gr",
+      "Nombre": "ALBONDIGAS TERNERA CON PATATAS PARA CELIACOS",
+      "Cód. U.Entrega": "EA",
+      "Precio": 3.51
+    },
+    {
+      "NIIN": "332188657",
+      "Descripción": "ALUBIAS ESTOFADAS PARA CELIACOS Platos de  350 gr",
+      "Nombre": "ALUBIAS ESTOFADAS PARA CELIACOS",
+      "Cód. U.Entrega": "EA",
+      "Precio": 3.51
+    },
+    {
+      "NIIN": "332188687",
+      "Descripción": "ATUN ENCEBOLLADO PAR CELIACOS Platos de  350 gr",
+      "Nombre": "ATUN ENCEBOLLADO PAR CELIACOS",
+      "Cód. U.Entrega": "EA",
+      "Precio": 3.51
+    },
+    {
+      "NIIN": "332188688",
+      "Descripción": "BACALAO CON SAMFAINA PARA CELIACOS Platos de  350 gr",
+      "Nombre": "BACALAO CON SAMFAINA PARA CELIACOS",
+      "Cód. U.Entrega": "EA",
+      "Precio": 3.51
+    },
+    {
+      "NIIN": "332188730",
+      "Descripción": "CREMA DE CHAMPINONES CON ACEITE DE OLIVA PARA CELIACOS Platos de  350 gr",
+      "Nombre": "CREMA DE CHAMPINONES CON ACEITE DE OLIVA PARA CELIACOS",
+      "Cód. U.Entrega": "EA",
+      "Precio": 2.21
+    },
+    {
+      "NIIN": "332188706",
+      "Descripción": "ENSALADILLA RUSA PARA CELIACOS Platos de  350 gr",
+      "Nombre": "ENSALADILLA RUSA PARA CELIACOS",
+      "Cód. U.Entrega": "EA",
+      "Precio": 4.5
+    },
+    {
+      "NIIN": "332188718",
+      "Descripción": "ESPAGUETIS CON TOMATE Y ALBAHACA PARA CELIACOS Platos de  350 gr",
+      "Nombre": "ESPAGUETIS CON TOMATE Y ALBAHACA PARA CELIACOS",
+      "Cód. U.Entrega": "EA",
+      "Precio": 2.21
+    },
+    {
+      "NIIN": "332188716",
+      "Descripción": "ESPIRALES CON VERDURAS PARA CELIACOS Platos de  350 gr",
+      "Nombre": "ESPIRALES CON VERDURAS PARA CELIACOS",
+      "Cód. U.Entrega": "EA",
+      "Precio": 2.21
+    },
+    {
+      "NIIN": "332188710",
+      "Descripción": "ESTOFADO DE PAVO CON VERDURITAS PARA CELIACOS Platos de  350 gr",
+      "Nombre": "ESTOFADO DE PAVO CON VERDURITAS PARA CELIACOS",
+      "Cód. U.Entrega": "EA",
+      "Precio": 3.51
+    },
+    {
+      "NIIN": "332188735",
+      "Descripción": "FLETAN CON GUARNICION DE ARROZ PARA CELIACOS Platos de  350 gr",
+      "Nombre": "FLETAN CON GUARNICION DE ARROZ PARA CELIACOS",
+      "Cód. U.Entrega": "EA",
+      "Precio": 3.51
+    },
+    {
+      "NIIN": "332188733",
+      "Descripción": "FLETAN CON PARMENTIER PARA CELIACOS Platos de  350 gr",
+      "Nombre": "FLETAN CON PARMENTIER PARA CELIACOS",
+      "Cód. U.Entrega": "EA",
+      "Precio": 3.51
+    },
+    {
+      "NIIN": "332188713",
+      "Descripción": "FLETAN CON VERDURAS PARA CELIACOS Platos de  350 gr",
+      "Nombre": "FLETAN CON VERDURAS PARA CELIACOS",
+      "Cód. U.Entrega": "EA",
+      "Precio": 3.51
+    },
+    {
+      "NIIN": "332188738",
+      "Descripción": "FRICANDO DE TERNERA CON PATATAS PARA CELIACOS Platos de  350 gr",
+      "Nombre": "FRICANDO DE TERNERA CON PATATAS PARA CELIACOS",
+      "Cód. U.Entrega": "EA",
+      "Precio": 3.51
+    },
+    {
+      "NIIN": "332188711",
+      "Descripción": "HAMBRUGUESA DE TERNERA CON VERDURITAS PARA CELIACOS Platos de  350 gr",
+      "Nombre": "HAMBRUGUESA DE TERNERA CON VERDURITAS PARA CELIACOS",
+      "Cód. U.Entrega": "EA",
+      "Precio": 3.51
+    },
+    {
+      "NIIN": "332188736",
+      "Descripción": "LENTEJAS CON VERDURAS PARA CELIACOS Platos de  350 gr",
+      "Nombre": "LENTEJAS CON VERDURAS PARA CELIACOS",
+      "Cód. U.Entrega": "EA",
+      "Precio": 2.21
+    },
+    {
+      "NIIN": "332188741",
+      "Descripción": "LENTEJAS ESTOFADAS PARA CELIACOS Platos de  350 gr",
+      "Nombre": "LENTEJAS ESTOFADAS PARA CELIACOS",
+      "Cód. U.Entrega": "EA",
+      "Precio": 2.21
+    },
+    {
+      "NIIN": "332188705",
+      "Descripción": "MACARRONES A LA BOLOGNESA PARA CELIACOS Platos de  350 gr",
+      "Nombre": "MACARRONES A LA BOLOGNESA PARA CELIACOS",
+      "Cód. U.Entrega": "EA",
+      "Precio": 2.21
+    },
+    {
+      "NIIN": "332188717",
+      "Descripción": "MERLUZA EN SALSA VERDE Y ESPARRGOS PARA CELIACOS Platos de  350 gr",
+      "Nombre": "MERLUZA EN SALSA VERDE Y ESPARRGOS PARA CELIACOS",
+      "Cód. U.Entrega": "EA",
+      "Precio": 4.5
+    },
+    {
+      "NIIN": "332188707",
+      "Descripción": "PAELLA DE POLLO PARA CELIACOS Platos de  350 gr",
+      "Nombre": "PAELLA DE POLLO PARA CELIACOS",
+      "Cód. U.Entrega": "EA",
+      "Precio": 9.06
+    },
+    {
+      "NIIN": "332188719",
+      "Descripción": "PANACHE DE VERDURAS PARA CELIACOS Platos de  350 gr",
+      "Nombre": "PANACHE DE VERDURAS PARA CELIACOS",
+      "Cód. U.Entrega": "EA",
+      "Precio": 2.21
+    },
+    {
+      "NIIN": "332188709",
+      "Descripción": "REDONDO DE TERNERA CON SALSA ESPANOLA PARA CELIACOS Platos de  350 gr",
+      "Nombre": "REDONDO DE TERNERA CON SALSA ESPANOLA PARA CELIACOS",
+      "Cód. U.Entrega": "EA",
+      "Precio": 3.51
+    },
+    {
+      "NIIN": "332132643",
+      "Descripción": "CAF? DESCAFEINADO MOLIDO 1 KG Caja de 12 packs de 4 unidades de 250gr",
+      "Nombre": "CAF? DESCAFEINADO MOLIDO 1 KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 6.98
+    },
+    {
+      "NIIN": "332036952",
+      "Descripción": "CAFE MEZCLA GRANO 1 KG Caja de 8 bolsas de 1kg",
+      "Nombre": "CAFE MEZCLA GRANO 1 KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 6.9
+    },
+    {
+      "NIIN": "332036953",
+      "Descripción": "CAFE MEZCLA MOLIDO 1 KG Caja de 12 bolsas de 500 Gr",
+      "Nombre": "CAFE MEZCLA MOLIDO 1 KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 3.19
+    },
+    {
+      "NIIN": "332132639",
+      "Descripción": "CAFE NATURAL GRANO 1KG Caja de 8 bolsas de 1kg",
+      "Nombre": "CAFE NATURAL GRANO 1KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 6.51
+    },
+    {
+      "NIIN": "332036956",
+      "Descripción": "CAFE SOLUBLE NESCAFE DESCAFEINADO 100 X 2 GRAMOS o ALTERNATIVA Estuche de 100 monodosis de 2 g",
+      "Nombre": "CAFE SOLUBLE NESCAFE DESCAFEINADO 100 X 2 GRAMOS o ALTERNATIVA",
+      "Cód. U.Entrega": "CS",
+      "Precio": 12.87
+    },
+    {
+      "NIIN": "332036957",
+      "Descripción": "CAFE SOLUBLE NESCAFE NATURAL 100 X 2 GRAMOS o EQUIVALENTE Estuche de 100 monodosis de 2 g",
+      "Nombre": "CAFE SOLUBLE NESCAFE NATURAL 100 X 2 GRAMOS o EQUIVALENTE",
+      "Cód. U.Entrega": "CS",
+      "Precio": 11.56
+    },
+    {
+      "NIIN": "332036386",
+      "Descripción": "MANZANILLA Estuche de 100 unidades de  0,12KG",
+      "Nombre": "MANZANILLA",
+      "Cód. U.Entrega": "CS",
+      "Precio": 2.28
+    },
+    {
+      "NIIN": "332036388",
+      "Descripción": "MENTA-POLEO Estuche de 100 uniades de 0,15 kg",
+      "Nombre": "MENTA-POLEO",
+      "Cód. U.Entrega": "CS",
+      "Precio": 2.82
+    },
+    {
+      "NIIN": "332036385",
+      "Descripción": "TE Estuche de 100 unidades de  0,18KG",
+      "Nombre": "TE",
+      "Cód. U.Entrega": "CS",
+      "Precio": 2.52
+    },
+    {
+      "NIIN": "332036387",
+      "Descripción": "TILA Estuche de 100 unidades de  0,11KG",
+      "Nombre": "TILA",
+      "Cód. U.Entrega": "CS",
+      "Precio": 2.67
+    },
+    {
+      "NIIN": "332060394",
+      "Descripción": "CACAO INSTANTANEO 3 KG Caja de 10 bolsas de 1 KG",
+      "Nombre": "CACAO INSTANTANEO 3 KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 2.74
+    },
+    {
+      "NIIN": "332036951",
+      "Descripción": "CHOCOLATE A LA TAZA 1 KG Caja de 10 bolsas de 1kg",
+      "Nombre": "CHOCOLATE A LA TAZA 1 KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 3.05
+    },
+    {
+      "NIIN": "332036955",
+      "Descripción": "COLA CAO SOBRES\/ EQUIVALENTE PARA CELIACOS o ALTERNATIVA Estuche de 25 sobres de 18 gr",
+      "Nombre": "COLA CAO SOBRES\/ EQUIVALENTE PARA CELIACOS o ALTERNATIVA",
+      "Cód. U.Entrega": "CS",
+      "Precio": 6.54
+    },
+    {
+      "NIIN": "332036315",
+      "Descripción": "AGUA MINERAL BOTELLA Pack de  6 BT de  1,5LT",
+      "Nombre": "AGUA MINERAL BOTELLA",
+      "Cód. U.Entrega": "PK",
+      "Precio": 0.3
+    },
+    {
+      "NIIN": "332036314",
+      "Descripción": "AGUA MINERAL BOTELLIN Pack de  12 BT de  0,5LT",
+      "Nombre": "AGUA MINERAL BOTELLIN",
+      "Cód. U.Entrega": "PK",
+      "Precio": 0.13
+    },
+    {
+      "NIIN": "015585310",
+      "Descripción": "AQUARIUS LIMON LATA 33 CL o EQUIVALENTE Pack  de  24 latas de  0,33LT",
+      "Nombre": "AQUARIUS LIMON LATA 33 CL o EQUIVALENTE",
+      "Cód. U.Entrega": "PK",
+      "Precio": 0.82
+    },
+    {
+      "NIIN": "015585309",
+      "Descripción": "COCA COLA LIGHT LATA 33 CL o ALTERNATIVA Pack  de  24 latas de  0,33LT",
+      "Nombre": "COCA COLA LIGHT LATA 33 CL o ALTERNATIVA",
+      "Cód. U.Entrega": "PK",
+      "Precio": 0.73
+    },
+    {
+      "NIIN": "010406397",
+      "Descripción": "COCA-COLA LATA 33 CL o ALTERNATIVA Pack  de  24 latas de  0,33LT",
+      "Nombre": "COCA-COLA LATA 33 CL o ALTERNATIVA",
+      "Cód. U.Entrega": "PK",
+      "Precio": 0.73
+    },
+    {
+      "NIIN": "131206498",
+      "Descripción": "COCA-COLA ZERO LATA 33CL o ALTERNATIVA Pack  de  24 latas de  0,33LT",
+      "Nombre": "COCA-COLA ZERO LATA 33CL o ALTERNATIVA",
+      "Cód. U.Entrega": "PK",
+      "Precio": 0.73
+    },
+    {
+      "NIIN": "015507314",
+      "Descripción": "FANTA LIMON 33 CL o ALTERNATIVA Pack  de  24 latas de  0,33LT",
+      "Nombre": "FANTA LIMON 33 CL o ALTERNATIVA",
+      "Cód. U.Entrega": "PK",
+      "Precio": 0.59
+    },
+    {
+      "NIIN": "015507315",
+      "Descripción": "FANTA NARANJA 33 CL o ALTERNATIVA Pack  de  24 latas de  0,33LT",
+      "Nombre": "FANTA NARANJA 33 CL o ALTERNATIVA",
+      "Cód. U.Entrega": "PK",
+      "Precio": 0.59
+    },
+    {
+      "NIIN": "015585251",
+      "Descripción": "NESTEA LIMON LATA 33 CL o EQUIVALENTE Pack  de  24 latas de  0,33LT",
+      "Nombre": "NESTEA LIMON LATA 33 CL o EQUIVALENTE",
+      "Cód. U.Entrega": "PK",
+      "Precio": 0.73
+    },
+    {
+      "NIIN": "011341085",
+      "Descripción": "SPRITE LATA 33 CL o EQUIVALENTE Pack  de  24 latas de  0,33LT",
+      "Nombre": "SPRITE LATA 33 CL o EQUIVALENTE",
+      "Cód. U.Entrega": "PK",
+      "Precio": 0.45
+    },
+    {
+      "NIIN": "143731404",
+      "Descripción": "TONICA SCHWEPPES LATA 33 CL o EQUIVALENTE Pack  de  24 latas de  0,33LT",
+      "Nombre": "TONICA SCHWEPPES LATA 33 CL o EQUIVALENTE",
+      "Cód. U.Entrega": "PK",
+      "Precio": 0.73
+    },
+    {
+      "NIIN": "332036318",
+      "Descripción": "ZUMO MANZANA BRICK Caja 12 cartones 1 L.",
+      "Nombre": "ZUMO MANZANA BRICK",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.92
+    },
+    {
+      "NIIN": "332036320",
+      "Descripción": "ZUMO MANZANA, PI?A Y UVA BRICK Caja 12 cartones 1 L.",
+      "Nombre": "ZUMO MANZANA, PI?A Y UVA BRICK",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.08
+    },
+    {
+      "NIIN": "332036322",
+      "Descripción": "ZUMO MELOCOTON UVA Y MANZANA BRICK Caja 12 cartones 1 L.",
+      "Nombre": "ZUMO MELOCOTON UVA Y MANZANA BRICK",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.92
+    },
+    {
+      "NIIN": "332036316",
+      "Descripción": "ZUMO NARANJA BRICK Caja 12 cartones 1 L.",
+      "Nombre": "ZUMO NARANJA BRICK",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.95
+    },
+    {
+      "NIIN": "332036332",
+      "Descripción": "VINO BLANCO BRIK 1 LITRO Caja 12 cartones 1 L.",
+      "Nombre": "VINO BLANCO BRIK 1 LITRO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.9
+    },
+    {
+      "NIIN": "332036329",
+      "Descripción": "VINO TINTO BRIK 1 LITRO Caja 12 cartones 1 L.",
+      "Nombre": "VINO TINTO BRIK 1 LITRO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.8
+    },
+    {
+      "NIIN": "332042664",
+      "Descripción": "CERVEZA MAHOU BARRIL 30 LITROS o ALTERNATIVA Barril de 30 litros",
+      "Nombre": "CERVEZA MAHOU BARRIL 30 LITROS o ALTERNATIVA",
+      "Cód. U.Entrega": "BL",
+      "Precio": 49.5
+    },
+    {
+      "NIIN": "332036335",
+      "Descripción": "CERVEZA MAHOU BOTELLIN o ALTERNATIVA Pack de  24BT de  0,25LT",
+      "Nombre": "CERVEZA MAHOU BOTELLIN o ALTERNATIVA",
+      "Cód. U.Entrega": "PK",
+      "Precio": 0.47
+    },
+    {
+      "NIIN": "332036336",
+      "Descripción": "CERVEZA ESTRELLA DE GALICIA LATA o ALTERNATIVA Pack 24 latas 0,33 L.",
+      "Nombre": "CERVEZA ESTRELLA DE GALICIA LATA o ALTERNATIVA",
+      "Cód. U.Entrega": "PK",
+      "Precio": 0.57
+    },
+    {
+      "NIIN": "332036333",
+      "Descripción": "CERVEZA SIN ALCOHOL ESTRELLA DE GALICIA BOTELLIN o ALTERNATIVA Pack 24 botellines 0,25 L.",
+      "Nombre": "CERVEZA SIN ALCOHOL ESTRELLA DE GALICIA BOTELLIN o ALTERNATIVA",
+      "Cód. U.Entrega": "PK",
+      "Precio": 0.51
+    },
+    {
+      "NIIN": "332172667",
+      "Descripción": "LECHE BRICK SEMI SIN LACTOSA  Caja de 6 cartones  de  1LT",
+      "Nombre": "LECHE BRICK SEMI SIN LACTOSA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.99
+    },
+    {
+      "NIIN": "332075595",
+      "Descripción": "VINO BLANCO ALBARI?O (BURGANS) Caja de 6 botellas de 0,75cl",
+      "Nombre": "VINO BLANCO ALBARI?O (BURGANS)",
+      "Cód. U.Entrega": "BX",
+      "Precio": 7.37
+    },
+    {
+      "NIIN": "332132644",
+      "Descripción": "VINO TINTO CRIANZA RIBERA DUERO (VALTRAVIESO) Caja de 6 botellas de  0,75cl",
+      "Nombre": "VINO TINTO CRIANZA RIBERA DUERO (VALTRAVIESO)",
+      "Cód. U.Entrega": "BX",
+      "Precio": 7.45
+    },
+    {
+      "NIIN": "332071930",
+      "Descripción": "VINO TINTO CRIANZA RIOJA (PATA NEGRA)",
+      "Nombre": "VINO TINTO CRIANZA RIOJA (PATA NEGRA)",
+      "Cód. U.Entrega": "BX",
+      "Precio": 3.41
+    },
+    {
+      "NIIN": "011012411",
+      "Descripción": "SALSA DE TABASCO 60 ML Caja 12 botes 0,06 L.",
+      "Nombre": "SALSA DE TABASCO 60 ML",
+      "Cód. U.Entrega": "BX",
+      "Precio": 2.78
+    },
+    {
+      "NIIN": "332036317",
+      "Descripción": "ZUMO NARANJA MINIBRICK Caja de 5 packs de 6 unidades de 0,2 L.",
+      "Nombre": "ZUMO NARANJA MINIBRICK",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.27
+    },
+    {
+      "NIIN": "332036319",
+      "Descripción": "ZUMO MANZANA MINIBRICK Caja de 5 packs de 6 unidades de 0,2 L.",
+      "Nombre": "ZUMO MANZANA MINIBRICK",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.26
+    },
+    {
+      "NIIN": "332036321",
+      "Descripción": "ZUMO MANZANA PIÑA Y UVA MINIBRICK Caja de 10 packs de 3 unidades de 0,2 L.",
+      "Nombre": "ZUMO MANZANA PIÑA Y UVA MINIBRICK",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.31
+    },
+    {
+      "NIIN": "332036323",
+      "Descripción": "ZUMO MELOCOTON UVA Y MANZANA MINIBRICK Caja de 10 packs de 3 unidades de 0,2 L.",
+      "Nombre": "ZUMO MELOCOTON UVA Y MANZANA MINIBRICK",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.26
+    },
+    {
+      "NIIN": "332036340",
+      "Descripción": "AGUA GASEOSA DE 1,5 LITROS Caja 6 botellas 1,5 L.",
+      "Nombre": "AGUA GASEOSA DE 1,5 LITROS",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.52
+    },
+    {
+      "NIIN": "332036399",
+      "Descripción": "MAYONESA CUBO  1850 ML Caja 4 cubos 3,6 KG. (1850 Ml. contenido neto)",
+      "Nombre": "MAYONESA  CUBO 1850 ML",
+      "Cód. U.Entrega": "BX",
+      "Precio": 10.56
+    },
+    {
+      "NIIN": "332036899",
+      "Descripción": "HARINA BOLSA KG Caja de 10 bolsas de 1 KG.",
+      "Nombre": "HARINA BOLSA KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.93
+    },
+    {
+      "NIIN": "332036954",
+      "Descripción": "AZUCAR BLANCO BOLSA 1 KG Caja 10 bolsas 1 KG.",
+      "Nombre": "AZUCAR BLANCO BOLSA 1 KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.35
+    },
+    {
+      "NIIN": "332037133",
+      "Descripción": "ESPAGHETTI  5KG Bolsa de  5KG",
+      "Nombre": "ESPAGHETTI  5KG",
+      "Cód. U.Entrega": "BG",
+      "Precio": 6.5
+    },
+    {
+      "NIIN": "332037142",
+      "Descripción": "FIDEO ENTREFINO 5 KG Bolsa de  5KG",
+      "Nombre": "FIDEO ENTREFINO 5 KG",
+      "Cód. U.Entrega": "BG",
+      "Precio": 6.5
+    },
+    {
+      "NIIN": "332037143",
+      "Descripción": "FIDEO GRUESO 5 KG Bolsa de  5KG",
+      "Nombre": "FIDEO GRUESO 5 KG",
+      "Cód. U.Entrega": "BG",
+      "Precio": 7.5
+    },
+    {
+      "NIIN": "332037145",
+      "Descripción": "MACARRON PLUMA  5KG Bolsa de  5KG",
+      "Nombre": "MACARRON PLUMA  5KG",
+      "Cód. U.Entrega": "BG",
+      "Precio": 6.5
+    },
+    {
+      "NIIN": "332037147",
+      "Descripción": "TALLARIN  5KG Bolsa de  5KG",
+      "Nombre": "TALLARIN  5KG",
+      "Cód. U.Entrega": "BG",
+      "Precio": 7.5
+    },
+    {
+      "NIIN": "332037509",
+      "Descripción": "CANELON A LA ITALIANA CONG Caja de 4KgE",
+      "Nombre": "CANELON A LA ITALIANA CONG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 3.49
+    },
+    {
+      "NIIN": "332037515",
+      "Descripción": "GAMBA EN GABARDINA Caja de 2 bolsas de 1Kg\/BG",
+      "Nombre": "GAMBA EN GABARDINA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 8.3
+    },
+    {
+      "NIIN": "332037518",
+      "Descripción": "CROQUETAS POLLO CONG Caja de 4 bolsas de 1KG\/BG",
+      "Nombre": "CROQUETAS POLLO CONG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.87
+    },
+    {
+      "NIIN": "332037521",
+      "Descripción": "EMPANADILLA ATUN CONGELADA Caja de 4 bolsas de 1Kg\/BG",
+      "Nombre": "EMPANADILLA ATUN CONGELADA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 2.63
+    },
+    {
+      "NIIN": "332037522",
+      "Descripción": "FLAMENQUINES DE YORK CONG Caja de 4 Kg",
+      "Nombre": "FLAMENQUINES DE YORK CONG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 3.83
+    },
+    {
+      "NIIN": "332037523",
+      "Descripción": "SAN JACOBO CONG Caja de 6 KG",
+      "Nombre": "SAN JACOBO CONG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 2.55
+    },
+    {
+      "NIIN": "332038545",
+      "Descripción": "COSTILLA MEDIA DE CERDO CARNUDA CONG Caja 10 KG. aprox.",
+      "Nombre": "COSTILLA MEDIA DE CERDO CARNUDA CONG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 5.2
+    },
+    {
+      "NIIN": "332038789",
+      "Descripción": "MEJILLONES SIN CONCHA CONG Caja de 9 KGE",
+      "Nombre": "MEJILLONES SIN CONCHA CONG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 6.55
+    },
+    {
+      "NIIN": "332038791",
+      "Descripción": "POTA TUBO CON ALETA CONGELADO Caja de 4 kgE",
+      "Nombre": "POTA TUBO CON ALETA CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 6.55
+    },
+    {
+      "NIIN": "332038836",
+      "Descripción": "MARRAJO RODAJA S\/P CONGELADO Caja de 6,4 KGE.",
+      "Nombre": "MARRAJO RODAJA S\/P CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 8
+    },
+    {
+      "NIIN": "332038849",
+      "Descripción": "CALAMARES A LA ROMANA Caja de 4 bolsas de 1Kg\/BG",
+      "Nombre": "CALAMARES A LA ROMANA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 3.77
+    },
+    {
+      "NIIN": "332038879",
+      "Descripción": "LANGOSTINO CRUDO (40\/60) CONGELADO Caja de 10 bolsas de 2 KGE",
+      "Nombre": "LANGOSTINO CRUDO (40\/60) CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 8.98
+    },
+    {
+      "NIIN": "332038880",
+      "Descripción": "LANGOSTINO COCIDO (40-60) CONG Caja con 5 kge",
+      "Nombre": "LANGOSTINO COCIDO (40-60) CONG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 10.5
+    },
+    {
+      "NIIN": "332038881",
+      "Descripción": "CIGALA Nº2, CONGELADA Caja de 1,25 kge",
+      "Nombre": "CIGALA Nº2, CONGELADA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 13.54
+    },
+    {
+      "NIIN": "332038900",
+      "Descripción": "QUESO RALLADO. Caja 10 bolsas 1 KG.",
+      "Nombre": "QUESO RALLADO.",
+      "Cód. U.Entrega": "BX",
+      "Precio": 6.5
+    },
+    {
+      "NIIN": "332039025",
+      "Descripción": "PERCA FILETE CONGELADO Caja de 6 KGE. Sin glaseo",
+      "Nombre": "PERCA FILETE CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 8.04
+    },
+    {
+      "NIIN": "332039027",
+      "Descripción": "VIEIRAS CON CONCHA CONGELADA Caja de 7 KgE",
+      "Nombre": "VIEIRAS CON CONCHA CONGELADA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 6.84
+    },
+    {
+      "NIIN": "332039040",
+      "Descripción": "POLLO EMPANADO CONGELADO Caja 4 bolsas 1 KG\/BG",
+      "Nombre": "POLLO EMPANADO CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 3.42
+    },
+    {
+      "NIIN": "332039056",
+      "Descripción": "JUDIA PLANA TROCEADA CONGELADA Caja 4 bolsas 2,5 KG.",
+      "Nombre": "JUDIA PLANA TROCEADA CONGELADA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.29
+    },
+    {
+      "NIIN": "332039057",
+      "Descripción": "MENESTRA DE VERDURAS CONGELADA Caja 4 bolsas 2,5 KG.",
+      "Nombre": "MENESTRA DE VERDURAS CONGELADA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 2.48
+    },
+    {
+      "NIIN": "332039058",
+      "Descripción": "ENSALADILLA CONGELADA Caja 4 bolsas 2,5 KG.",
+      "Nombre": "ENSALADILLA CONGELADA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.01
+    },
+    {
+      "NIIN": "332039059",
+      "Descripción": "ESPINACAS HOJA CONGELADA Caja 4 bolsas 2,5 KG.",
+      "Nombre": "ESPINACAS HOJA CONGELADA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 3.05
+    },
+    {
+      "NIIN": "332039061",
+      "Descripción": "GUISANTE CONGELADO Caja 4 bolsas 2,5 KG.",
+      "Nombre": "GUISANTE CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.35
+    },
+    {
+      "NIIN": "332039063",
+      "Descripción": "COLIFLOR CONGELADA Caja 4 bolsas 2,5 KG.",
+      "Nombre": "COLIFLOR CONGELADA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.47
+    },
+    {
+      "NIIN": "332039066",
+      "Descripción": "CHAMPIÑON ENTERO,CO Caja 4 bolsas 2,5 KG.",
+      "Nombre": "CHAMPIÑON ENTERO,CO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 3.05
+    },
+    {
+      "NIIN": "332040765",
+      "Descripción": "SALTEADO CAMPESTRE CONGELADO Caja 4 bolsas 2,5 KG.",
+      "Nombre": "SALTEADO CAMPESTRE CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 3.35
+    },
+    {
+      "NIIN": "332040766",
+      "Descripción": "SALTEADO MEDITERRANEO CONGELADO Caja 2 bolsas 2,5 KG.",
+      "Nombre": "SALTEADO MEDITERRANEO CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 3.3
+    },
+    {
+      "NIIN": "332040767",
+      "Descripción": "SALTEADO TRADICIONAL CONGELADO Caja 4 bolsas 2,5 KG.",
+      "Nombre": "SALTEADO TRADICIONAL CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 3.35
+    },
+    {
+      "NIIN": "332040768",
+      "Descripción": "SALTEADO ROMANESCO CONGELADO Caja 4 bolsas 2,5 KG.",
+      "Nombre": "SALTEADO ROMANESCO CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 2.5
+    },
+    {
+      "NIIN": "332041309",
+      "Descripción": "ATUN ACEITE VEGETAL RO 70-85 Caja 32 packs de 3 latas 0,05 KGNE",
+      "Nombre": "ATUN ACEITE VEGETAL RO 70-85",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.2
+    },
+    {
+      "NIIN": "332041310",
+      "Descripción": "ATUN ACEITE VEGETAL RO 1000 Caja 12 latas 0,6 KGNE",
+      "Nombre": "ATUN ACEITE VEGETAL RO 1000",
+      "Cód. U.Entrega": "BX",
+      "Precio": 4.23
+    },
+    {
+      "NIIN": "332042253",
+      "Descripción": "CHAMPIÑON LAMINADO LATA 3KG Caja 6 latas 3 KG.",
+      "Nombre": "CHAMPIÑON LAMINADO LATA 3KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 12.6
+    },
+    {
+      "NIIN": "332042255",
+      "Descripción": "PATATA SEMIFRITA 10 MM Caja 4 bolsas 2,5 KG.",
+      "Nombre": "PATATA SEMIFRITA 10 MM",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.46
+    },
+    {
+      "NIIN": "332042651",
+      "Descripción": "PANCETA SALADA Pieza 8,2 KG. peso variable",
+      "Nombre": "PANCETA SALADA",
+      "Cód. U.Entrega": "BG",
+      "Precio": 6.62
+    },
+    {
+      "NIIN": "332052333",
+      "Descripción": "CALAMARES FRESCOS kg kg",
+      "Nombre": "CALAMARES FRESCOS kg",
+      "Cód. U.Entrega": "KG",
+      "Precio": 12.9
+    },
+    {
+      "NIIN": "332054056",
+      "Descripción": "COSTILLAR DE CERDO SALADO FRESCO KILO KG.",
+      "Nombre": "COSTILLAR DE CERDO SALADO FRESCO KILO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 5.6
+    },
+    {
+      "NIIN": "332054118",
+      "Descripción": "CARNE PICADA DE CERDO FRESCA KG.",
+      "Nombre": "CARNE PICADA DE CERDO FRESCA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 5.95
+    },
+    {
+      "NIIN": "332054123",
+      "Descripción": "JARRETE DE CERDO CONGELADO KG.",
+      "Nombre": "JARRETE DE CERDO CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 4.91
+    },
+    {
+      "NIIN": "332054126",
+      "Descripción": "SALCHICHAS DE CERDO FRESCAS Caja 10 bandejas 1 KG.",
+      "Nombre": "SALCHICHAS DE CERDO FRESCAS",
+      "Cód. U.Entrega": "BX",
+      "Precio": 5.39
+    },
+    {
+      "NIIN": "332054129",
+      "Descripción": "ZORZA DE CERDO FRESCA KG.",
+      "Nombre": "ZORZA DE CERDO FRESCA",
+      "Cód. U.Entrega": "KG",
+      "Precio": 6.81
+    },
+    {
+      "NIIN": "332054873",
+      "Descripción": "ZUMO DE FRUTAS Y LECHE TROPICAL Caja de 7 packs de  3 unidades de 0,33 L.",
+      "Nombre": "ZUMO DE FRUTAS Y LECHE TROPICAL",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.38
+    },
+    {
+      "NIIN": "332055114",
+      "Descripción": "ZORZA DE POLLO FRESCO KG.",
+      "Nombre": "ZORZA DE POLLO FRESCO",
+      "Cód. U.Entrega": "KG",
+      "Precio": 7.87
+    },
+    {
+      "NIIN": "332055118",
+      "Descripción": "NATA MONTADA SPRAY DE 250GR Caja 12 botes 0,25 KG.",
+      "Nombre": "NATA MONTADA SPRAY DE 250GR",
+      "Cód. U.Entrega": "BX",
+      "Precio": 2.24
+    },
+    {
+      "NIIN": "332056216",
+      "Descripción": "MANTEQUILLA 1 KG Caja 12 unidades de 250 gr.",
+      "Nombre": "MANTEQUILLA 1 KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 10
+    },
+    {
+      "NIIN": "332056419",
+      "Descripción": "NOCILLA FAMILIAR o EQUIVALENTE Caja 12 unidades 0,62 KG.",
+      "Nombre": "NOCILLA FAMILIAR o EQUIVALENTE",
+      "Cód. U.Entrega": "BX",
+      "Precio": 4.14
+    },
+    {
+      "NIIN": "332057720",
+      "Descripción": "SALMON AHUMADO SIN PRECORTAR Caja 6 unidades 1 KG. aprox.",
+      "Nombre": "SALMON AHUMADO SIN PRECORTAR",
+      "Cód. U.Entrega": "BX",
+      "Precio": 25.4
+    },
+    {
+      "NIIN": "332061664",
+      "Descripción": "SAL GRUESA SECA 1 KG Caja 12 bolsas 1 KG.",
+      "Nombre": "SAL GRUESA SECA 1 KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.28
+    },
+    {
+      "NIIN": "332064463",
+      "Descripción": "PALETA DE CEBO DE CAMPO IBERICA Caja 1 pieza 4 KG. aprox.",
+      "Nombre": "PALETA DE CEBO DE CAMPO IBERICA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 13.35
+    },
+    {
+      "NIIN": "332065495",
+      "Descripción": "VASITO DE HELADO VAINILLA Y CHOCOLATE Caja 48 unidades 0,07lt",
+      "Nombre": "VASITO DE HELADO VAINILLA Y CHOCOLATE",
+      "Cód. U.Entrega": "BX",
+      "Precio": 7.08
+    },
+    {
+      "NIIN": "332075587",
+      "Descripción": "TARTA HELADA AL WHISKY Caja 1 unidad 3 L.",
+      "Nombre": "TARTA HELADA AL WHISKY",
+      "Cód. U.Entrega": "BX",
+      "Precio": 7.08
+    },
+    {
+      "NIIN": "332075604",
+      "Descripción": "TARTA DE SANTIAGO CONG Caja de 12 unidades de 800gr",
+      "Nombre": "TARTA DE SANTIAGO CONG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 10.4
+    },
+    {
+      "NIIN": "332075994",
+      "Descripción": "MEJILLONES EN SALSA ESCABECHE OL-550 Caja 12 latas 0,315 KGNE",
+      "Nombre": "MEJILLONES EN SALSA ESCABECHE OL-550",
+      "Cód. U.Entrega": "BX",
+      "Precio": 8.22
+    },
+    {
+      "NIIN": "332075996",
+      "Descripción": "COCKTAIL DE FRUTOS SECOS Caja 12 bolsas 0,15 KG.",
+      "Nombre": "COCKTAIL DE FRUTOS SECOS",
+      "Cód. U.Entrega": "BX",
+      "Precio": 2.12
+    },
+    {
+      "NIIN": "332091406",
+      "Descripción": "MIGA DESALADA CONGELADA Caja de  6 kg",
+      "Nombre": "MIGA DESALADA CONGELADA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 10
+    },
+    {
+      "NIIN": "332132331",
+      "Descripción": "SALSA DE SOJA 1 LITRO Caja 12 botellas 1 L.",
+      "Nombre": "SALSA DE SOJA 1 LITRO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 6.1
+    },
+    {
+      "NIIN": "332132615",
+      "Descripción": "PASAS SULTANAS BOLSA 1 KILO Bolsa 1 KG.",
+      "Nombre": "PASAS SULTANAS BOLSA 1 KILO",
+      "Cód. U.Entrega": "BG",
+      "Precio": 2.86
+    },
+    {
+      "NIIN": "332132626",
+      "Descripción": "BROCOLI CONGELADO Caja 4 bolsas 2,5 KG.",
+      "Nombre": "BROCOLI CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.79
+    },
+    {
+      "NIIN": "332132632",
+      "Descripción": "PINCHO CERDO CATERING, 80 GR. KG.",
+      "Nombre": "PINCHO CERDO CATERING, 80 GR.",
+      "Cód. U.Entrega": "KG",
+      "Precio": 9.29
+    },
+    {
+      "NIIN": "332132637",
+      "Descripción": "SAL FINA 1 KG Caja 12 bolsas 1 KG.",
+      "Nombre": "SAL FINA 1 KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.25
+    },
+    {
+      "NIIN": "332132645",
+      "Descripción": "CERVEZA ESTRELLA DE GALICIA 1906 33 CL o ALTERNATIVA Pack 24 latas 0,33 L.",
+      "Nombre": "CERVEZA ESTRELLA DE GALICIA 1906 33 CL o ALTERNATIVA",
+      "Cód. U.Entrega": "PK",
+      "Precio": 0.74
+    },
+    {
+      "NIIN": "332132656",
+      "Descripción": "FOGONERO FILETE CONGELADO Caja de7,7 KgE",
+      "Nombre": "FOGONERO FILETE CONGELADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 6.55
+    },
+    {
+      "NIIN": "332132659",
+      "Descripción": "SALMON LOMOS CONGELADOS Caja de 4KgE",
+      "Nombre": "SALMON LOMOS CONGELADOS",
+      "Cód. U.Entrega": "BX",
+      "Precio": 13.17
+    },
+    {
+      "NIIN": "332132660",
+      "Descripción": "ALMEJA FINA CONGELADA 40\/60 Caja de 6 bolsas de 1KgE\/BG",
+      "Nombre": "ALMEJA FINA CONGELADA 40\/60",
+      "Cód. U.Entrega": "BX",
+      "Precio": 4.3
+    },
+    {
+      "NIIN": "332132661",
+      "Descripción": "VASITO HELADO FRESA Caja 48 unidades de 0,07 lt",
+      "Nombre": "VASITO HELADO FRESA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 8.29
+    },
+    {
+      "NIIN": "332132662",
+      "Descripción": "BACALAO AHUMADO Caja 2 tarrinas 0,7 KGNE",
+      "Nombre": "BACALAO AHUMADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 31.98
+    },
+    {
+      "NIIN": "332132664",
+      "Descripción": "NATILLAS  REFRIGERADAS Caja 8 packs 4 tarrinas - 0,115 KG.",
+      "Nombre": "NATILLAS  REFRIGERADAS",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.95
+    },
+    {
+      "NIIN": "332132667",
+      "Descripción": "CARNE PICADA MIXTA (50% VAC.\/50% CERDO) Caja 8 KG. aprox.",
+      "Nombre": "CARNE PICADA MIXTA (50% VAC.\/50% CERDO)",
+      "Cód. U.Entrega": "BX",
+      "Precio": 6.95
+    },
+    {
+      "NIIN": "332132668",
+      "Descripción": "CODILLO SALMUERIZADO FRESCO Caja 12 piezas 0,7 KG. aprox.",
+      "Nombre": "CODILLO SALMUERIZADO FRESCO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 4.95
+    },
+    {
+      "NIIN": "332132669",
+      "Descripción": "FLAN DE HUEVO REFRIGERADO Caja 6 packs 4 tarrinas - 0,11 KG.",
+      "Nombre": "FLAN DE HUEVO REFRIGERADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 3.14
+    },
+    {
+      "NIIN": "332132672",
+      "Descripción": "FLAN DE VAINILLA REFRIGERADO Caja 6 packs 4 tarrinas - 0,10 KG.",
+      "Nombre": "FLAN DE VAINILLA REFRIGERADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.66
+    },
+    {
+      "NIIN": "332132673",
+      "Descripción": "QUESO FRESCO PARA UNTAR Envases 2 KG.",
+      "Nombre": "QUESO FRESCO PARA UNTAR",
+      "Cód. U.Entrega": "BX",
+      "Precio": 9.92
+    },
+    {
+      "NIIN": "332132677",
+      "Descripción": "LATA ANCHOAS RO 1150-1000 HOSTELERIA Caja 12 latas 0,60 KGNE",
+      "Nombre": "LATA ANCHOAS RO 1150-1000 HOSTELERIA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 5.5
+    },
+    {
+      "NIIN": "151389659",
+      "Descripción": "LECHE,CONDENSADA,AZUCARADA Caja 12 unidades 0,37 KG.",
+      "Nombre": "LECHE,CONDENSADA,AZUCARADA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 16.08
+    },
+    {
+      "NIIN": "332037153",
+      "Descripción": "CALDO INSTANTANEO SABOR CARNE Caja 6 botes 1 KG. cantidad neta",
+      "Nombre": "CALDO INSTANTANEO SABOR CARNE",
+      "Cód. U.Entrega": "BX",
+      "Precio": 2.44
+    },
+    {
+      "NIIN": "332037154",
+      "Descripción": "CALDO INSTANTANEO SABOR PESCADO Caja 6 botes 1 KG. cantidad neta",
+      "Nombre": "CALDO INSTANTANEO SABOR PESCADO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 2.45
+    },
+    {
+      "NIIN": "332037155",
+      "Descripción": "CALDO INSTANTANEO SABOR POLLO Caja 6 botes 1 KG. cantidad neta",
+      "Nombre": "CALDO INSTANTANEO SABOR POLLO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 2.44
+    },
+    {
+      "NIIN": "332042250",
+      "Descripción": "TOMATE TRITURADO DE 5 KG. Latas 5 KG. (4 KG. PESO NETO)",
+      "Nombre": "TOMATE TRITURADO DE 5 KG.",
+      "Cód. U.Entrega": "BX",
+      "Precio": 7
+    },
+    {
+      "NIIN": "332042254",
+      "Descripción": "PATATA SEMIFRITA JULIANA Caja 4 bolsas 2,5 KG.",
+      "Nombre": "PATATA SEMIFRITA JULIANA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.92
+    },
+    {
+      "NIIN": "332042645",
+      "Descripción": "JAMON DE CEBO DE CAMPO IBERICO Caja pieza 7 KG. aprox.",
+      "Nombre": "JAMON DE CEBO DE CAMPO IBERICO",
+      "Cód. U.Entrega": "BX",
+      "Precio": 18.7
+    },
+    {
+      "NIIN": "332054131",
+      "Descripción": "CRIOLLOS DE CERDO FRESCOS Caja 4 bolsas 2,5 KG.",
+      "Nombre": "CRIOLLOS DE CERDO FRESCOS",
+      "Cód. U.Entrega": "BX",
+      "Precio": 6.67
+    },
+    {
+      "NIIN": "332065498",
+      "Descripción": "HELADO MAGNUM DE FRIGO o EQUIVALENTE Caja 20 unidades  0,10 L.",
+      "Nombre": "HELADO MAGNUM DE FRIGO o EQUIVALENTE",
+      "Cód. U.Entrega": "BX",
+      "Precio": 0.98
+    },
+    {
+      "NIIN": "332075396",
+      "Descripción": "ALIOLI BOTE 2KG Caja 4 cubos 2 KG.",
+      "Nombre": "ALIOLI BOTE 2KG",
+      "Cód. U.Entrega": "BX",
+      "Precio": 7.5
+    },
+    {
+      "NIIN": "332132671",
+      "Descripción": "ENSALADAS PREPARADAS ENLATADAS ITALIANA Caja 12 latas 0,22 KG.",
+      "Nombre": "ENSALADAS PREPARADAS ENLATADAS ITALIANA",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.73
+    },
+    {
+      "NIIN": "332037519",
+      "Descripción": "CROQUETA JAMON CONG Caja de 4 bolsas de 1KG\/BG",
+      "Nombre": "CROQUETA DE JAMON",
+      "Cód. U.Entrega": "BX",
+      "Precio": 1.87
+    }
+  ]
+}

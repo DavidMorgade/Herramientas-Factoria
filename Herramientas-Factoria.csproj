@@ -322,6 +322,9 @@
     </Content>
     <None Include="Herramientas-Factoria_TemporaryKey.pfx" />
     <None Include="packages.config" />
+    <Content Include="Recursos\Productos.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
