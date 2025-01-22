@@ -52,10 +52,13 @@ namespace Herramientas_Factoria.Paginas.Productos
                 {
                     string jsonContent = File.ReadAllText(jsonPath);
                     Console.WriteLine(jsonContent);
-                    var productos = JsonConvert.DeserializeObject<ObservableCollection<Producto>>(jsonContent);
-                    foreach (var producto in productos)
+                    var productosData = JsonConvert.DeserializeObject<ProductosData>(jsonContent);
+                    if (productosData?.Productos != null)
                     {
-                        Productos.Add(producto);
+                        foreach (var producto in productosData.Productos)
+                        {
+                            Productos.Add(producto);
+                        }
                     }
                 }
                 else
@@ -90,6 +93,11 @@ namespace Herramientas_Factoria.Paginas.Productos
             FiltrarProductos(FilterTextBox.Text.ToLower());
         }
 
+    }
+    public class ProductosData
+    {
+        [JsonProperty("Productos")]
+        public ObservableCollection<Producto> Productos { get; set; }
     }
 
     public class Producto
