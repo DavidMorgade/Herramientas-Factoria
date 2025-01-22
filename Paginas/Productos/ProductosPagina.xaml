@@ -24,8 +24,8 @@
                         <TextBlock Text="{Binding NIIN}" Width="100" Margin="5" />
                         <TextBlock Text="{Binding Descripcion}" Width="500" Margin="5" />
                         <TextBlock Text="{Binding CodUEntrega}" Width="50" Margin="5" />
-                        <TextBlock Text="{Binding Precio}" Width="100" Margin="5" />
-                        <Button Content="Copiar NIIN" Width="100" Margin="5" Command="{Binding CopyCommand}" />
+                        <TextBlock Text="{Binding Precio, StringFormat='{}{0} €'}" Width="100" Margin="5" />
+                        <Button Content="Copiar NIIN" Width="100" Margin="5" Background="#007ACC" Foreground="white" Cursor="Hand" Command="{Binding CopyCommand}" />
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>

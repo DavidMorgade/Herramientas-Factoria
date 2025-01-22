@@ -45,13 +45,10 @@ namespace Herramientas_Factoria.Paginas.Productos
                 string appDirectory = AppDomain.CurrentDomain.BaseDirectory;
                 // Construye la ruta completa al archivo Productos.json
 
-                Console.WriteLine(appDirectory);
                 string jsonPath = Path.Combine(appDirectory, "Recursos\\Productos.json");
-                Console.WriteLine(jsonPath);
                 if (File.Exists(jsonPath))
                 {
                     string jsonContent = File.ReadAllText(jsonPath);
-                    Console.WriteLine(jsonContent);
                     var productosData = JsonConvert.DeserializeObject<ProductosData>(jsonContent);
                     if (productosData?.Productos != null)
                     {

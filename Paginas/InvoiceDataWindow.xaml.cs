@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -40,7 +41,7 @@ namespace Herramientas_Factoria
             this.Close();
 
         }
-        private void Button_Generar(object sender, RoutedEventArgs e)
+        private async void Button_Generar(object sender, RoutedEventArgs e)
         {
             if (this.nombreFactura == null || expediente == null || importe == null)
             {
@@ -54,30 +55,46 @@ namespace Herramientas_Factoria
             }
 
             SaveFileDialog saveFileDialog = new SaveFileDialog();
-
             saveFileDialog.Title = "Guardar Certificados";
             saveFileDialog.Filter = "PDF Files (*.pdf)|*.pdf|Word Documents (*.docx)|*.docx|All files (*.*)|*.*";
-            saveFileDialog.FileName = "CERTIFICADO GLOBAL " + this.nombreFactura.Substring(nombreFactura.Length - 3) + " JEFE"; // Nombre por defecto
-
-
-
+            saveFileDialog.FileName = "CERTIFICADO GLOBAL " + this.nombreFactura.Substring(nombreFactura.Length - 3) + " JEFE";
 
             if (saveFileDialog.ShowDialog() == true)
             {
-                string folderOfTheFile = Path.GetDirectoryName(saveFileDialog.FileName);
-                string filePath = saveFileDialog.FileName;
-                string sinIvaFilePath = saveFileDialog.FileName.Replace("GLOBAL", "SIN IVA");
-                string[] bothFiles = { filePath, sinIvaFilePath };
-                string[] pdfAndExcel = { pdfFilePath, excelFilePath };
-                Factura.GenerarCertificadoGlobal(expediente, importe, nombreFactura, fechaFactura, filePath);
-                if (GenerarSinIVA.IsChecked == true)
-                {
-                    Factura.GenerarCertificadoSinIVA(tableData, sinIvaFilePath, expediente, importe, importeActas, nombreFactura, fechaFactura);
-                }
-                this.CreateDirectoryAndSaveFiles(folderOfTheFile, this.nombreFactura, bothFiles);
-                this.CopyFilesToDirectory(Path.Combine(folderOfTheFile, this.nombreFactura), pdfAndExcel);
-            }
+                ProgressBar.Visibility = Visibility.Visible;
+                ProgressBar.IsIndeterminate = true;
 
+                try
+                {
+                    string folderOfTheFile = Path.GetDirectoryName(saveFileDialog.FileName);
+                    string filePath = saveFileDialog.FileName;
+                    string sinIvaFilePath = saveFileDialog.FileName.Replace("GLOBAL", "SIN IVA");
+                    string[] bothFiles = { filePath, sinIvaFilePath };
+                    string[] pdfAndExcel = { pdfFilePath, excelFilePath };
+                    bool? isChecked = GenerarSinIVA.IsChecked;
+
+                    await Task.Run(() =>
+                    {
+                        Factura.GenerarCertificadoGlobal(expediente, importe, nombreFactura, fechaFactura, filePath);
+                        if (isChecked == true)
+                        {
+                            Factura.GenerarCertificadoSinIVA(tableData, sinIvaFilePath, expediente, importe, importeActas, nombreFactura, fechaFactura);
+                        }
+                        this.CreateDirectoryAndSaveFiles(folderOfTheFile, this.nombreFactura, bothFiles);
+                        this.CopyFilesToDirectory(Path.Combine(folderOfTheFile, this.nombreFactura), pdfAndExcel);
+                    });
+                    MessageBox.Show("Certificado generado correctamente", "Información", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error al generar el certificado: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                finally
+                {
+                    ProgressBar.Visibility = Visibility.Collapsed;
+                    ProgressBar.IsIndeterminate = false;
+                }
+            }
         }
         private void CreateDirectoryAndSaveFiles(string directoryPath, string directoryName, params string[] filePaths)
         {
@@ -112,7 +129,6 @@ namespace Herramientas_Factoria
                         string destinationPath = Path.Combine(fullDirectoryPath, fileName);
                         File.Move(filePath, destinationPath);
                         Console.WriteLine($"File {fileName} copied to {destinationPath}");
-                        MessageBox.Show("Certificado generado correctamente", "Información", MessageBoxButton.OK, MessageBoxImage.Information);
                     }
                     else
                     {
