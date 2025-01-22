@@ -16,7 +16,6 @@ namespace Herramientas_Factoria
     /// </summary>
     public partial class InvoiceDataWindow : Window
     {
-        private string filePath;
         private string nombreFactura;
         private string expediente;
         private string importe;
@@ -28,6 +27,8 @@ namespace Herramientas_Factoria
         public InvoiceDataWindow()
         {
             InitializeComponent();
+            // Set the default value for the DatePicker to the current date
+            DatePicker.SelectedDate = DateTime.Now;
         }
 
         private void Button_Volver(object sender, RoutedEventArgs e)
@@ -209,7 +210,6 @@ namespace Herramientas_Factoria
                 this.fechaFactura = formattedDate;
 
                 // Muestra la fecha en consola o úsala como necesites
-                MessageBox.Show($"Fecha seleccionada: {formattedDate}", "Información");
             }
         }
         private void CopyFilesToDirectory(string targetDirectory, string[] filePaths)
